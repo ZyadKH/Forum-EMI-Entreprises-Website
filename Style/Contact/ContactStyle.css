@@ -71,7 +71,7 @@ textarea {
 }
 
 .alt-send-button:hover {
-  transform: translate3d(0px, -29px, 0px);
+  transform: translate(0, -29px);
 }
 
 /* Begin Right Contact Page */

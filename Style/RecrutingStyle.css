@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:ital@1&display=swap');
+
 
 .recruting-section {
     position: relative;
@@ -13,16 +15,19 @@
     position: absolute;
     top: 50%;
     /* Adjust the value to position the text vertically */
-    left: 35%;
+    left: 34%;
     /* Adjust the value to position the text horizontally */
     transform: translate(-50%, -50%);
     z-index: 2;
-    background-color: rgba(255, 255, 255, 0.7);
-    /* Add a semi-transparent background to improve text readability */
     padding: 20px;
     max-width: 700px;
     /* Adjust the maximum width of the text box as needed */
+    color: white;
+    font-family: 'Volkhov', serif;
 }
+
+
+
 
 
 /* Additional styling for the button and other elements if required */
@@ -44,7 +49,7 @@
 .recruting-button {
     padding: 25px 30px;
     background-color: #050801;
-    color: #03e9f4;
+    color: #9F1D35;
     font-weight: bold;
     border: none;
     border-radius: 5px;
@@ -55,11 +60,11 @@
 }
 
 .recruting-button:hover {
-    background: #03e9f4;
+    background: #9F1D35;
     color: #050801;
-    box-shadow: 0 0 5px #03e9f4,
-        0 0 25px #03e9f4,
-        0 0 50px #03e9f4,
-        0 0 200px #03e9f4;
+    box-shadow: 0 0 5px #9F1D35,
+        0 0 25px #9F1D35,
+        0 0 50px #9F1D35,
+        0 0 200px #9F1D35;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
