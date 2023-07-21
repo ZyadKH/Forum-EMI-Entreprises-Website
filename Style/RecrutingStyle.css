@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+.recruting-section {
+    position: relative;
+}
+
+.recruting-background {
+    position: relative;
+    z-index: 1;
+}
+
+.recruting-text {
+    position: absolute;
+    top: 50%;
+    /* Adjust the value to position the text vertically */
+    left: 35%;
+    /* Adjust the value to position the text horizontally */
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Add a semi-transparent background to improve text readability */
+    padding: 20px;
+    max-width: 700px;
+    /* Adjust the maximum width of the text box as needed */
+}
+
+
+/* Additional styling for the button and other elements if required */
+
+
+.button-container {
+    position: absolute;
+    top: 73%;
+    /* Adjust the value to lower or raise the button */
+    left: 18%;
+    /* Adjust the value to position the button horizontally */
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+.recruting-button {
+    padding: 25px 30px;
+    background-color: #050801;
+    color: #03e9f4;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.recruting-button:hover {
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+        0 0 25px #03e9f4,
+        0 0 50px #03e9f4,
+        0 0 200px #03e9f4;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
