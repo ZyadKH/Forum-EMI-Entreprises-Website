@@ -31,10 +31,10 @@
 
 /* Style for each individual div */
 .box {
-    width: 30%;
+    width: 31%;
     height: 105px;
     box-sizing: border-box;
-    margin: 4px;
+    margin: 7px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -44,7 +44,7 @@
 
 /* Style for the merged box */
 .merged-box {
-    width: 60%;
+    width: 62%;
     /* Adjust as needed to accommodate the merged box */
 }
 
@@ -67,7 +67,7 @@
     font-size: 26px;
     text-align: center;
     color: white;
-    margin-left: 250px;
+    margin-left: 230px;
     /* Adjust the margin to move the stats section towards the right */
     font-family: 'Poppins', sans-serif;
 }
