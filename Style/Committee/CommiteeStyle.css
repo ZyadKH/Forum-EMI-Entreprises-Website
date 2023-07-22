@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.committee-section {
+    text-align: center; /* Center the content horizontally */
+    padding: 20px 0; /* Add some padding to create space around the title */
+}
+
+.committee-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff; /* Optionally, you can set the color of the title */
+}
