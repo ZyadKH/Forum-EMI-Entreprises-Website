@@ -10,13 +10,26 @@
     <title>Forum EMI-Entreprises</title>
     <link rel="icon" type="image/png" href="./images/ForumIcon.jpg" sizes="16x16">
 
+    <!-- ------------------------------------------------- Swiper ------------------------------------------------- -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css'>
+    <link rel="stylesheet" href="./Style/TimeLineStyle.css">
+
+
+    <!-- ------------------------------------------------- Fonts ------------------------------------------------- -->
+
+    <link href="https://www.dafontfree.net/embed/cXVhcmstbGlnaHQmZGF0YS80Ni9xLzU5ODQxL1F1YXJrLUxpZ2h0Lm90Zg"
+        rel="stylesheet" type="text/css" />
+
     <!-- ------------------------------------------------- Style Sheets ------------------------------------------------- -->
+
     <link rel="stylesheet" href="./Style/WholePage.css">
     <link rel="stylesheet" href="./Style/NavBarStyle.css">
     <link rel="stylesheet" href="./Style/PresVideoStyle.css">
     <link rel="stylesheet" href="./Style/PatronageStyle.css">
     <link rel="stylesheet" href="./Style/StatsStyle.css">
-    <link rel="stylesheet" href="./Style/GlorySection.css">
+    <link rel="stylesheet" href="./Style/RecrutingStyle.css">
     <link rel="stylesheet" href="./Style/footerStyle.css">
 
 
@@ -29,21 +42,20 @@
         <!-- --------------------------------------------------- NAVBAR --------------------------------------------------- -->
         <header>
             <nav class="NavBar">
-
-                <div class="NavBarLogo">
+                <a href="index.html" class="NavBarLogo">
                     <img src="./images/logoNavBarFull.png" alt="Logo Forum EMI-ENTREPRISES">
-                </div>
+                </a>
 
                 <div class="NavBarElements">
-                    <a href="index.html"> HOME </a>
+                    <a href="#stats-section" id="forum-link"> LE FORUM </a>
                     <a href="committee.html"> LE COMITÉ </a>
                     <a href="school.html"> L'ÉCOLE </a>
-                    <a href="services.html"> SERVICES </a>
+                    <a > SERVICES </a>
                     <a href="contact.html"> CONTACT </a>
                 </div>
-
             </nav>
         </header>
+
         <!-- --------------------------------------------------- LANDING PAGE --------------------------------------------------- -->
         <div id="videoContainer">
             <video id="PresentationVideo" autoplay playsinline muted loop>
@@ -59,7 +71,7 @@
 
         <!-- --------------------------------------------------- Stats--------------------------------------------------- -->
 
-        <section>
+        <section id="stats-section">
 
             <div class="king">
                 <p id="glow-text"> SOUS LE HAUT PATRONAGE DE SA MAJESTÉ LE ROI MOHAMMED VI </p>
@@ -72,11 +84,11 @@
                         <p> Le <strong>Forum EMI-Entreprises</strong> </p>
                         <p> <strong>Plus grand</strong> Forum <br>
                             de type École-Entreprises au <br>
-                            Maroc
+                            <strong> Maroc </strong>
                         </p>
                     </div>
 
-                    <div class="container">
+                    <div class="stats-container">
                         <div class="row">
                             <div class="box merged-box">
                                 <p class="stats">20</p>
@@ -95,7 +107,7 @@
                         </div>
                         <div class="row">
                             <div class="box">
-                                <p class="stats">18000</p>
+                                <p class="stats">20000</p>
                                 <p class="description">Visiteurs</p>
                             </div>
                             <div class="box">
@@ -110,7 +122,7 @@
 
                     <img id="logoright" src="./images/logoStatsWhite.png" alt="logo forum EMI Entreprises">
 
-                    <div class="button">
+                    <div class="stats-button">
                         <p>En savoir plus</p>
                     </div>
 
@@ -120,12 +132,75 @@
 
         </section>
 
-        <!-- --------------------------------------------------- Next Section--------------------------------------------------- -->
+        <!-- --------------------------------------------------- Time Line --------------------------------------------------- -->
+        <div id="timeline-section" class="timeline-container">
+            <h1 class="container-title"> UN PASSÉ GLORIEUX ...<br>
+                <strong>UN AVENIR PLUS RADIEUX</strong>
+            </h1>
+            <div class="timeline">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image: url(./images/TimeLineImages/1994.JPG)"
+                            data-year="1994">
+                            <div class="swiper-slide-content"><span class="timeline-year">1994</span>
+                                <h4 class="timeline-title"> CRÉATION DU <br> FORUM <br> EMI-ENTREPRISES </h4>
+                                <p class="timeline-text"> Création du premier Forum de type école-entreprises au Maroc
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background-image: url(./images/TimeLineImages/1999.JPG)"
+                            data-year="1999">
+                            <div class="swiper-slide-content"><span class="timeline-year">1999</span>
+                                <h4 class="timeline-title">HAUT PATRONAGE <br> DE SA MAJESTÉ <br> LE ROI MOHAMMED VI
+                                </h4>
+                                <p class="timeline-text">Le Forum EMI-Entreprises devient le premier Forum à avoir
+                                    bénéficier du Haut Patronage Royal </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background-image: url(./images/TimeLineImages/2019.JPG)"
+                            data-year="2019">
+                            <div class="swiper-slide-content"><span class="timeline-year">2019</span>
+                                <h4 class="timeline-title">L'ÉDITION <br> QUART DU <br> SIÈCLE</h4>
+                                <p class="timeline-text">La 25ème édition du Forum EMI-Entreprises fût un grand succès
+                                    avec plus de 100 entreprises participantes, plus de 70 partenaires médiatiques et
+                                    plus de 12000 visiteurs</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background-image: url(./images/TimeLineImages/2021.JPG)"
+                            data-year="2021">
+                            <div class="swiper-slide-content"><span class="timeline-year">2021</span>
+                                <h4 class="timeline-title">PREMIÈRE <br> ÉDITION <br> VIRTUELLE</h4>
+                                <p class="timeline-text">Première édition totalement digitale en partenariat avec la
+                                    plateforme Seekube.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
 
-        <p class="title-AdGloriam">UN PASSÉ GLORIEUX<br>
-            <strong>UN FUTUR PLUS RADIEUX</strong>
-        </p>
+        <!-- ------------------------------------------------- Recruting ------------------------------------------------- -->
 
+        <section class="recruting-section">
+            <div class="recruting-background">
+                <img src="./images/Recruting.png" alt="Paulette EMI">
+            </div>
+            <div class="recruting-content">
+                <div class="recruting-text">
+                    <h1>RECRUTEMENT DU COMITÉ DE SOUTIEN DE LA 30ÈME ÉDITION</h1>
+                    <p> Vous êtes EMIste en première année ? <br>
+                        Voulez-vous vivre l'expérience la plus enrichissante de votre parcours universitaire ?</p>
+                </div>
+                <div class="button-container">
+                    <a class="recruting-button"> REJOIGNEZ NOUS ! </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ------------------------------------------------- Baraka  ------------------------------------------------- -->
 
         <footer>
 
@@ -136,8 +211,14 @@
 
             <script src="./JS/StatsCountUp.js""></script>
             <script src=" ./JS/NavBarFadeAway.js"></script>
-            <script src="./JS/PatronageGolden.js"></script>
+            <script src="./JS/StatsLogoSlide.js"></script>
+            <script src="./JS/EnSavoirPlusButton.js"></script>
+            <script src="./JS/ForumSectionSlide.js"></script>
 
+            <!-- -------------------------------------------------  Swiper ------------------------------------------------- -->
+
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js'></script>
+            <script src="./JS/TimeLineSwiper.js"></script>
 
         </footer>
 

@@ -1,27 +1,29 @@
-@font-face {
-    font-family: 'Montserrat';
-    src: url('./fonts/Montserrat-Black.ttf') format('truetype'),
-        url('./fonts/Montserrat-ExtraLight.ttf') format('truetype'),
-        url('./fonts/Montserrat-Bold.ttf') format('truetype');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+/* Poppins Thin 100 */
 
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+/* Montserrat Thin 100 */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@100&display=swap');
+/* Noto Serif Thin 100  */
+
 
 /*Splitting the whole segment in two side : left & right */
 
 .articles-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 50px;
 }
 
 /* LEFT SIDE */
 
 .left-article {
     background-color: black;
-    font-family: 'Montserrat-ExtraLight';
 }
 
 /* Style for the container div */
-.container {
+.stats-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,11 +31,10 @@
 
 /* Style for each individual div */
 .box {
-    width: 30%;
+    width: 31%;
     height: 105px;
-    border: 1px solid #dfb7b7;
     box-sizing: border-box;
-    margin: 1px;
+    margin: 7px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -43,7 +44,7 @@
 
 /* Style for the merged box */
 .merged-box {
-    width: 60%;
+    width: 62%;
     /* Adjust as needed to accommodate the merged box */
 }
 
@@ -66,8 +67,9 @@
     font-size: 26px;
     text-align: center;
     color: white;
-    margin-left: 250px;
+    margin-left: 230px;
     /* Adjust the margin to move the stats section towards the right */
+    font-family: 'Poppins', sans-serif;
 }
 
 .stats {
@@ -76,15 +78,16 @@
     color: white;
     margin-bottom: 1px;
     /* Add margin between stat and description */
+    font-family: 'Montserrat', sans-serif;
 }
 
 .description {
-    font-size: 14px;
+    font-size: 13px;
     text-align: center;
     color: white;
     width: 170px;
     /* Adjust the width as needed */
-
+    font-family: 'Noto Serif', serif;
 }
 
 
@@ -117,7 +120,7 @@
 /*Button Styling*/
 
 /* Styles for the normal state */
-.button {
+.stats-button {
     display: inline-block;
     padding: 7px 30px;
     color: white;
@@ -128,11 +131,26 @@
     /* Adding a smooth transition effect */
     margin-right: 160px;
     margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Styles for the hover state */
-.button:hover {
+.stats-button:hover {
     color: black;
     border-color: black;
     background-color: white;
+}
+
+.stats-button a {
+    color: #ffffff;
+    /* Change the color to your desired text color */
+    text-decoration: none;
+    /* Remove underlining */
+}
+
+.stats-button:hover a {
+    color: black;
+    /* Change the text color to black on hover */
+    font-weight: bold;
+    /* Set the font weight to bold on hover */
 }

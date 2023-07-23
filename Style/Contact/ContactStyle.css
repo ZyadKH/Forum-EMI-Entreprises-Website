@@ -1,0 +1,264 @@
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  margin-top: 20px;
+}
+
+#contact {
+  width: 100%;
+  height: 100%;
+}
+
+.section-header {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 0;
+  font: 300 60px 'Oswald', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  position: relative;
+  max-width: 840px;
+}
+
+/* Left contact page */
+.form-horizontal {
+  /*float: left;*/
+  max-width: 400px;
+  font-family: 'Lato';
+  font-weight: 400;
+}
+
+.form-control,
+textarea {
+  max-width: 400px;
+  background-color: #000;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.send-button {
+  margin-top: 15px;
+  height: 34px;
+  width: 400px;
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+}
+
+.alt-send-button {
+  width: 400px;
+  height: 34px;
+  transition: all .2s ease-in-out;
+}
+
+.send-text {
+  display: block;
+  margin-top: 10px;
+  font: 700 12px 'Lato', sans-serif;
+  letter-spacing: 2px;
+}
+
+.alt-send-button:hover {
+  transform: translate(0, -29px);
+}
+
+/* Begin Right Contact Page */
+.direct-contact-container {
+  max-width: 400px;
+}
+
+/* Location, Phone, Email Section */
+.contact-list {
+  list-style-type: none;
+  margin-left: -30px;
+  padding-right: 20px;
+}
+
+.list-item {
+  line-height: 4;
+  color: #aaa;
+}
+
+.contact-text {
+  font: 300 18px 'Lato', sans-serif;
+  letter-spacing: 1.9px;
+  color: #bbb;
+}
+
+.place {
+  margin-left: 62px;
+}
+
+.phone {
+  margin-left: 56px;
+}
+
+.gmail {
+  margin-left: 53px;
+}
+
+.contact-text a {
+  color: #bbb;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+.contact-text a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/*------------------------------------------------------Social Media Icons Start Here ------------------------------------------------------- */
+
+ul.social-icons {
+  /* Remove the absolute positioning and centering */
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+ul.social-icons li {
+  list-style: none;
+}
+
+ul.social-icons li a {
+  display: block;
+  position: relative;
+  width: 70px; /* Adjust the width as needed */
+  height: 70px; /* Adjust the height as needed */
+  font-size: 24px; /* Adjust the font size as needed */
+  text-align: center;
+  text-decoration: none;
+  color: #aaaaaa;
+  margin: 0 10px; /* Adjust the margin as needed */
+  transition: .5s;
+  outline: none; /*  remove the focus outline */
+}
+
+
+/* Adjust the positioning of the social media icons within the list items */
+ul.social-icons li i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+ul.social-icons li a span {
+  position: absolute;
+  transition: transform .5s;
+}
+
+ul.social-icons li a span:nth-child(1),
+ul.social-icons li a span:nth-child(3){
+  width: 100%;
+  height: 3px;
+  background: #aaaaaa;
+}
+
+ul.social-icons li a span:nth-child(1) {
+  top: 0;
+  left: 0;
+  transform-origin: right;
+}
+
+ul.social-icons li a:hover span:nth-child(1) {
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+ul.social-icons li a span:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  transform-origin: left;
+}
+
+ul.social-icons li a:hover span:nth-child(3) {
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+ul.social-icons li a span:nth-child(2),
+ul.social-icons li a span:nth-child(4){
+  width: 3px;
+  height: 100%;
+  background: #404040;
+}
+
+ul.social-icons li a span:nth-child(2) {
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transform-origin: bottom;
+}
+
+ul.social-icons li a:hover span:nth-child(2) {
+  transform: scale(1);
+  transform-origin: top;
+}
+
+ul.social-icons li a span:nth-child(4) {
+  top: 0;
+  right: 0;
+  transform: scale(0);
+  transform-origin: top;
+}
+
+ul.social-icons li a:hover span:nth-child(4) {
+  transform: scale(1);
+  transform-origin: bottom;
+}
+
+ul.social-icons li a.linkedin-icon:hover {
+  color: #0077B5;
+}
+
+ul.social-icons li a.linkedin-icon:hover span { 
+  background: #0077B5;
+}
+
+ul.social-icons li a.facebook-icon:hover {
+  color: #3b5998;
+}
+
+ul.social-icons li a.facebook-icon:hover span { 
+  background: #3b5998;
+}
+
+ul.social-icons li a.instagram-icon:hover {
+  color: #c32aa3;
+}
+
+ul.social-icons li a.instagram-icon:hover span { 
+  background: #c32aa3;
+}
+
+ul.social-icons li a.youtube-icon:hover {
+  color: #c4302b;
+}
+
+ul.social-icons li a.youtube-icon:hover span { 
+  background: #c4302b;
+}
+
+.copyright {
+  font: 200 14px 'Oswald', sans-serif;
+  color: #555;
+  letter-spacing: 1px;
+  text-align: center;
+}
