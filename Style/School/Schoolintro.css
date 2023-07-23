@@ -4,11 +4,12 @@
     display: flex;
     align-items: center; /* Center items vertically */
     justify-content: space-between; /* Spread items horizontally */
-    margin-bottom: 20px; /* Add some space below the logos and title */
+    margin-bottom: 40px; /* Add some space below the logos and title */
 }
 
 #logoleft, #logoright {
     max-width: 200px; /* You can adjust the width to your preference */
+    margin: 10px;
 }
 
 .introduction-title {
@@ -17,7 +18,6 @@
     margin: 0 20px; /* Add space on both sides of the title */
     font-size: 30px;
     font-family: 'Playfair Display', sans-serif;
-
 }
 
 .introduction-description {
@@ -28,14 +28,16 @@
 
 .introduction-details {
     text-align: left;
+    text-align: justify;
     font-size: 20px;
     font-family: 'Playfair Display', sans-serif;
-    margin-top: 220px;
-    margin-left: 30px;
+    margin-top: 150px;
+    margin-left: 37px;
+    margin-right: 37px;
     line-height: 1.5;
 }
 
-/* */
+/* to put the logos on top of the video*/
 
 .introduction {
     position: absolute;
