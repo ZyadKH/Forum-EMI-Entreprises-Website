@@ -4,13 +4,14 @@
   --clip-path: circle(15px at left);
   --clip-path-hover: circle(70px at left);
   --clip-path-clicked: circle(100vw at left);
-  --duration: .4s;
+  --duration: .5s;
   --timing-function: ease;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+  position: relative;
 }
 
 .school-video-wrapper .school-video {
@@ -160,6 +161,8 @@
   -webkit-clip-path: var(--clip-path-clicked);
   clip-path: var(--clip-path-clicked);
 }
+
+
 
 body {
   background: #E8EBF3;

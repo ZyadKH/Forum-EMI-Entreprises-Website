@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="./Style/WholePage.css">
     <link rel="stylesheet" href="./Style/NavBarStyle.css">
     <link rel="stylesheet" href="./Style/School/SchoolVideoStyle.css">
+    <link rel="stylesheet" href="./Style/School/Schoolintro.css">
+
 
     <!-- ------------------------------------------------- Imports ------------------------------------------------- -->
 
@@ -33,7 +35,7 @@
 
             <div class="NavBarElements">
                 <a href="index.html" class="smooth-scroll-link"> LE FORUM </a>
-                <a href="committee.html"  class="smooth-scroll-link"> LE COMITÉ </a>
+                <a href="committee.html" class="smooth-scroll-link"> LE COMITÉ </a>
                 <a href="school.html" class="smooth-scroll-link"> L'ÉCOLE </a>
                 <a class="smooth-scroll-link"> SERVICES </a>
                 <a href="contact.html" class="smooth-scroll-link"> CONTACT </a>
@@ -43,14 +45,39 @@
 
 
     <div class="school-video-wrapper">
-        <input type="checkbox">
+        <input type="checkbox" onclick="toggleIntroduction()">
         <div class="school-video">
             <video src="./videos/instit.mp4" loop muted autoplay playsinline></video>
         </div>
         <div class="video-text">
-            <span data-text="Watch the video"></span>
+            <span data-text="REGARDER LA VIDÉO"></span>
         </div>
     </div>
+
+
+    <div class="introduction" id="introduction">
+
+        <div class="school-logos">
+            <img id="logoleft" src="./images/Schoolimages/EMI.png" alt="logo EMI">
+            <p class="introduction-title">ÉCOLE MOHAMMADIA D'INGÉNIEURS (EMI)</p>
+            <img id="logoright" src="./images/Schoolimages/UM5R.png" alt="logo UM5R">
+        </div>
+
+        <div class="introduction-description">
+            <p>École pionnière de l'ingénierie pluridisciplinaire au Maroc et en Afrique, l'EMI est l'école de référence
+                en formation polytechnique par excellence.</p>
+        </div>
+
+        <div class="introduction-details">
+            <p>L’EMI est la plus ancienne école d'ingénierie au Maroc. Elle fut inaugurée par feu sa majesté Mohamed V
+                en 1959 afin de doter le Maroc très tôt d'ingénieurs de haut niveau. <br> 
+                Pour permettre la genèse de profils généralistes , l’EMI propose à ses étudiants une formation à la fois
+                verticale et transversale.
+            </p>
+        </div>
+    </div>
+
+    <script src="./JS/School/HideIntro.js"></script>
 
 </body>
 
