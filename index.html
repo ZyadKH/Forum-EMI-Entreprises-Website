@@ -22,6 +22,13 @@
     <link href="https://www.dafontfree.net/embed/cXVhcmstbGlnaHQmZGF0YS80Ni9xLzU5ODQxL1F1YXJrLUxpZ2h0Lm90Zg"
         rel="stylesheet" type="text/css" />
 
+    <!-- ------------------------------------------------- Imported Style Sheets for Mobile NavBar ------------------------------------------------- -->
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css'>
+
+
     <!-- ------------------------------------------------- Style Sheets ------------------------------------------------- -->
 
     <link rel="stylesheet" href="./Style/WholePage.css">
@@ -47,14 +54,59 @@
                 </a>
 
                 <div class="NavBarElements">
+
+                    <!-- Hamburger icon for mobile menu -->
+                    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
                     <a href="#stats-section" id="forum-link"> LE FORUM </a>
                     <a href="committee.html"> LE COMITÉ </a>
                     <a href="school.html"> L'ÉCOLE </a>
-                    <a > SERVICES </a>
+                    <a> SERVICES </a>
                     <a href="contact.html"> CONTACT </a>
                 </div>
             </nav>
         </header>
+
+        <!-- ---------------------------------------------Mobile NAVBAR ---------------------------------------------- -->
+
+
+        <div class="container">
+            <span class="menu-trigger">
+                <i class="menu-trigger-bar top"></i>
+                <i class="menu-trigger-bar middle"></i>
+                <i class="menu-trigger-bar bottom"></i>
+            </span>
+            <span class="close-trigger">
+                <i class="close-trigger-bar left"></i>
+                <i class="close-trigger-bar right"></i>
+            </span>
+
+            <div class="inner-container">
+                <i class="menu-bg top"></i>
+                <i class="menu-bg middle"></i>
+                <i class="menu-bg bottom"></i>
+                <div class="menu-container">
+                    <ul class="menu">
+                        <li>
+                            <a href="index.html">LE FORUM</a>
+                        </li>
+                        <li>
+                            <a href="committee.html">LE COMITÉ</a>
+                        </li>
+                        <li>
+                            <a href="school.html">L'ÉCOLE</a>
+                        </li>
+                        <li>
+                            <a>SERVICES</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
 
         <!-- --------------------------------------------------- LANDING PAGE --------------------------------------------------- -->
         <div id="videoContainer">
@@ -199,7 +251,7 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- ------------------------------------------------- Baraka  ------------------------------------------------- -->
 
         <footer>
@@ -211,7 +263,6 @@
 
             <script src="./JS/StatsCountUp.js""></script>
             <script src=" ./JS/NavBarFadeAway.js"></script>
-            <script src="./JS/StatsLogoSlide.js"></script>
             <script src="./JS/EnSavoirPlusButton.js"></script>
             <script src="./JS/ForumSectionSlide.js"></script>
 
@@ -219,6 +270,13 @@
 
             <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js'></script>
             <script src="./JS/TimeLineSwiper.js"></script>
+
+            <!-- -------------------------------------------------  JQuery for Mobile NavBar ------------------------------------------------- -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js'></script>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TimelineMax.min.js'></script>
+
+            <script src="./JS/NavBarBars.js"></script>
 
         </footer>
 

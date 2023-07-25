@@ -270,3 +270,10 @@
     right: 25%;
   }
 }
+
+@media (max-width: 768px) {
+  .container-title {
+    font-size: 30px;
+    text-align: center;
+  }
+}

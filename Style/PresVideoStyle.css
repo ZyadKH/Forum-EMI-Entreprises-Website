@@ -57,3 +57,10 @@ video::-webkit-media-controls-enclosure {
 #PresentationVideoTextOverlay span {
     font-weight: bold;
 }
+
+
+@media (max-width: 768px) {
+    #PresentationVideoTextOverlay p {
+        font-size: 18px;
+    }
+}

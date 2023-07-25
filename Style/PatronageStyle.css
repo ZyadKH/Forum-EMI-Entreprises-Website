@@ -10,3 +10,11 @@
     text-transform: uppercase;
     color: rgb(245, 189, 46);
 }
+
+@media (max-width: 768px) {
+    #glow-text {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
