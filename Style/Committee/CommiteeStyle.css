@@ -6,6 +6,7 @@ body {
 .committee-section {
     text-align: center; /* Center the content horizontally */
     padding: 20px 0; /* Add some padding to create space around the title */
+    margin-top: 50px; 
 }
 
 .committee-title {

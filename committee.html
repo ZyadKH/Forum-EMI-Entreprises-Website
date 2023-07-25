@@ -3,44 +3,99 @@
 
 <head>
 
-    <meta charset='UTF-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-    <title>Forum EMI-Entreprises</title>
-    <link rel="icon" type="image/png" href="./images/ForumIcon.jpg" sizes="16x16">
+  <title>Forum EMI-Entreprises</title>
+  <link rel="icon" type="image/png" href="./images/ForumIcon.jpg" sizes="16x16">
 
-    <!-- ------------------------------------------------- Style Sheets ------------------------------------------------- -->
-    <link rel="stylesheet" href="./Style/WholePage.css">
-    <link rel="stylesheet" href="./Style/NavBarStyle.css">
-    <link rel="stylesheet" href="./Style/Committee/CommiteeStyle.css">
+  <!-- ------------------------------------------------- Style Sheets ------------------------------------------------- -->
+  <link rel="stylesheet" href="./Style/WholePage.css">
+  <link rel="stylesheet" href="./Style/NavBarStyle.css">
+  <link rel="stylesheet" href="./Style/Committee/CommiteeStyle.css">
+
+  <!-- ------------------------------------------------- Imported Style Sheets ------------------------------------------------- -->
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css'>
 
 </head>
 
 <body>
 
-    <!-- --------------------------------------------------- NAVBAR --------------------------------------------------- -->
-    <header>
-        <nav class="NavBar">
-            <a href="index.html" class="NavBarLogo">
-                <img src="./images/logoNavBarFull.png" alt="Logo Forum EMI-ENTREPRISES">
-            </a>
+  <!-- --------------------------------------------------- NAVBAR --------------------------------------------------- -->
+  <header>
+    <nav class="NavBar">
+      <a href="index.html" class="NavBarLogo">
+        <img src="./images/logoNavBarFull.png" alt="Logo Forum EMI-ENTREPRISES">
+      </a>
 
-            <div class="NavBarElements">
-                <a href="index.html" id="forum-link"> LE FORUM </a>
-                <a href="committee.html"> LE COMITÉ </a>
-                <a href="school.html"> L'ÉCOLE </a>
-                <a> SERVICES </a>
-                <a href="contact.html"> CONTACT </a>
-            </div>
-        </nav>
-    </header>
+      <div class="NavBarElements">
+        <a href="index.html" id="forum-link"> LE FORUM </a>
+        <a href="committee.html"> LE COMITÉ </a>
+        <a href="school.html"> L'ÉCOLE </a>
+        <a> SERVICES </a>
+        <a href="contact.html"> CONTACT </a>
+      </div>
+    </nav>
+  </header>
 
-    <div class="committee-section">
-        <div class="title-section">
-            <p class="committee-title">UN COMITÉ PRODIGE, POUR UN FORUM DE PRESTIGE</p>
-        </div>
+  <div class="container">
+    <span class="menu-trigger">
+      <i class="menu-trigger-bar top"></i>
+      <i class="menu-trigger-bar middle"></i>
+      <i class="menu-trigger-bar bottom"></i>
+    </span>
+    <span class="close-trigger">
+      <i class="close-trigger-bar left"></i>
+      <i class="close-trigger-bar right"></i>
+    </span>
+
+    <div class="inner-container">
+      <i class="menu-bg top"></i>
+      <i class="menu-bg middle"></i>
+      <i class="menu-bg bottom"></i>
+      <div class="menu-container">
+        <ul class="menu">
+          <li>
+            <a href="index.html">LE FORUM</a>
+          </li>
+          <li>
+            <a href="committee.html">LE COMITÉ</a>
+          </li>
+          <li>
+            <a href="school.html">L'ÉCOLE</a>
+          </li>
+          <li>
+            <a>SERVICES</a>
+          </li>
+          <li>
+            <a href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </div>
+
+
+
+
+
+
+  <div class="committee-section">
+    <div class="title-section">
+      <p class="committee-title">UN COMITÉ PRODIGE, POUR UN FORUM DE PRESTIGE</p>
+    </div>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TimelineMax.min.js'></script>
+  <script src="./JS/NavBarBars.js"></script>
+  <script src="./JS/Committee/AppearAfterMenuBars.js"></script>
 
 </body>
 
