@@ -154,3 +154,74 @@
     font-weight: bold;
     /* Set the font weight to bold on hover */
 }
+
+
+
+
+/*MOBILE*/
+
+/* Add the existing CSS styles above */
+
+/* Mobile Layout */
+@media (max-width: 767px) {
+    .articles-container {
+        grid-template-columns: 1fr;
+        /* Change to a single column layout */
+        justify-content: center;
+        /* Center the grid items horizontally */
+    }
+
+    .left-article {
+        order: 1;
+        /* Set the order to 1, so it appears above the right article */
+    }
+
+    .right-article {
+        order: 2;
+        /* Set the order to 2, so it appears below the left article */
+    }
+
+    .stats-title {
+        margin-left: 0;
+        /* Remove the left margin for mobile layout */
+        text-align: center;
+        /* Center the text on mobile */
+    }
+
+    .stats-container {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Center the content horizontally within stats-container */
+    }
+
+    .stats-button {
+        margin: 0 auto;
+        /* Center the button on mobile */
+    }
+
+    .right-article img {
+        margin: 0 auto;
+        /* Center the image on mobile */
+        margin-bottom: 20px;
+        /* Add some bottom margin for spacing on mobile */
+    }
+
+    .stats {
+        font-size: 45px;
+    }
+
+    .description {
+        font-size: 13px;
+    }
+
+    /* Style for each row */
+    .row {
+        justify-content: center;
+    }
+
+    .box {
+        margin: 15px;
+    }
+}

@@ -20,6 +20,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&amp;display=swap'>
 
+    <!-- ------------------------------------------------- Imported Style Sheets for Mobile NavBar ------------------------------------------------- -->
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css'>
+
+
+
 </head>
 
 <body>
@@ -33,13 +41,55 @@
 
             <div class="NavBarElements">
                 <a href="index.html" class="smooth-scroll-link"> LE FORUM </a>
-                <a href="committee.html"  class="smooth-scroll-link"> LE COMITÉ </a>
+                <a href="committee.html" class="smooth-scroll-link"> LE COMITÉ </a>
                 <a href="school.html" class="smooth-scroll-link"> L'ÉCOLE </a>
                 <a class="smooth-scroll-link"> SERVICES </a>
                 <a href="contact.html" class="smooth-scroll-link"> CONTACT </a>
             </div>
         </nav>
     </header>
+
+    <!-- ---------------------------------------------Mobile NAVBAR ---------------------------------------------- -->
+
+
+    <div class="container">
+        <span class="menu-trigger">
+            <i class="menu-trigger-bar top"></i>
+            <i class="menu-trigger-bar middle"></i>
+            <i class="menu-trigger-bar bottom"></i>
+        </span>
+        <span class="close-trigger">
+            <i class="close-trigger-bar left"></i>
+            <i class="close-trigger-bar right"></i>
+        </span>
+
+        <div class="inner-container">
+            <i class="menu-bg top"></i>
+            <i class="menu-bg middle"></i>
+            <i class="menu-bg bottom"></i>
+            <div class="menu-container">
+                <ul class="menu">
+                    <li>
+                        <a href="index.html">LE FORUM</a>
+                    </li>
+                    <li>
+                        <a href="committee.html">LE COMITÉ</a>
+                    </li>
+                    <li>
+                        <a href="school.html">L'ÉCOLE</a>
+                    </li>
+                    <li>
+                        <a>SERVICES</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------------------------School Intro Section ---------------------------------------------- -->
 
 
     <div class="school-video-wrapper">
@@ -51,6 +101,15 @@
             <span data-text="Watch the video"></span>
         </div>
     </div>
+
+
+    <!-- -------------------------------------------------  JQuery for Mobile NavBar ------------------------------------------------- -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TimelineMax.min.js'></script>
+
+    <script src="./JS/NavBarBars.js"></script>
+
 
 </body>
 

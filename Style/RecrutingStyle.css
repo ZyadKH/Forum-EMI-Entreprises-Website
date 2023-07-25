@@ -26,12 +26,7 @@
     font-family: 'Volkhov', serif;
 }
 
-
-
-
-
 /* Additional styling for the button and other elements if required */
-
 
 .button-container {
     position: absolute;
@@ -44,10 +39,9 @@
     font-family: 'Raleway', sans-serif;
 }
 
-
-
 .recruting-button {
     padding: 25px 30px;
+    /* This controls the size of the button */
     background-color: #050801;
     color: #9F1D35;
     font-weight: bold;
@@ -67,4 +61,40 @@
         0 0 50px #9F1D35,
         0 0 200px #9F1D35;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+@media (max-width: 768px) {
+
+    .recruting-section {
+        background: url('//images/Recruting.png') no-repeat;
+        background-position: left;
+        /* Display the right section of the background */
+    }
+
+
+    .button-container {
+        position: absolute;
+        top: 82%;
+        /* Adjust the value to lower or raise the button */
+        left: 36%;
+        /* Adjust the value to position the button horizontally */
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        font-family: 'Raleway', sans-serif;
+    }
+
+
+    .recruting-button {
+        padding: 10px 25px;
+        /* This controls the size of the button */
+        font-size: 12px;
+    }
+
+    .recruting-text h1 {
+        font-size: 21px;
+    }
+
+    .recruting-text {
+        font-size: 13px;
+    }
 }
