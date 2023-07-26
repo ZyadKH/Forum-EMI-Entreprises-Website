@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
+
 /* Remove default list styles */
 .NavBar {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
+
 
 /* Style the navigation bar */
 .NavBar {
@@ -59,7 +62,7 @@
     /* Set the font size to 25 pixels (adjust as needed) */
     transition: color 0.8s;
     /* Add slow-motion effect to color change (0.5 seconds) */
-    font-family: 'Times New Roman', sans-serif;
+    font-family: 'Sanchez', serif;
 }
 
 /* Add hover effect for the links */
@@ -75,6 +78,21 @@
 }
 
 
+
+/* Styles for laptops/desktops */
+.mobile-navbar {
+    display: none;
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 767px) {
+    .mobile-navbar {
+      display: block;
+    }
+  }
+
+
+  
 /* Mobile-specific styles using media query */
 @media (max-width: 768px) {
 
@@ -88,7 +106,7 @@
 
     .container {
         background-color: transparent;
-        margin: 0 auto;
+        margin-top: 20px;
         width: 100%;
         max-width: 320px;
         min-height: 568px;
