@@ -8,6 +8,12 @@
 /* Noto Serif Thin 100  */
 
 
+
+#stats-section {
+    height: 100vh; /* Set the section height to cover the full viewport height */
+  }
+
+  
 /*Splitting the whole segment in two side : left & right */
 
 .articles-container {
@@ -70,6 +76,8 @@
     margin-left: 230px;
     /* Adjust the margin to move the stats section towards the right */
     font-family: 'Poppins', sans-serif;
+    margin-bottom: 40px;
+    margin-top: 30px;
 }
 
 .stats {
