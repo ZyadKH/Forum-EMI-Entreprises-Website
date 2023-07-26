@@ -3,7 +3,7 @@
 
 .recruting-section {
     position: relative;
-    height: 100vh; /* Set the section height to cover the full viewport height */
+
 }
 
 .recruting-background {
@@ -70,26 +70,21 @@
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
 
+
+/*----------------------------------------------------MOBILE ---------------------------------------------------------*/
+
 @media (max-width: 768px) {
-
-    .recruting-section {
-        background: url('//images/Recruting.png') no-repeat;
-        background-position: left;
-        /* Display the right section of the background */
-    }
-
 
     .button-container {
         position: absolute;
-        top: 82%;
+        top: 55%;
         /* Adjust the value to lower or raise the button */
-        left: 36%;
+        left: 37%;
         /* Adjust the value to position the button horizontally */
         transform: translate(-50%, -50%);
         z-index: 2;
         font-family: 'Raleway', sans-serif;
     }
-
 
     .recruting-button {
         padding: 10px 25px;
@@ -103,5 +98,10 @@
 
     .recruting-text {
         font-size: 13px;
+        position: absolute;
+        top: 35%;
+        /* Adjust the value to position the text vertically */
+        left: 34%;
+        /* Adjust the value to position the text horizontally */
     }
 }
