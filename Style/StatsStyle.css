@@ -10,10 +10,11 @@
 
 
 #stats-section {
-    height: 100vh; /* Set the section height to cover the full viewport height */
-  }
+    height: 100vh;
+    /* Set the section height to cover the full viewport height */
+}
 
-  
+
 /*Splitting the whole segment in two side : left & right */
 
 .articles-container {
@@ -166,11 +167,8 @@
 
 
 
-/*MOBILE*/
+/*----------------------------------------------------MOBILE ---------------------------------------------------------*/
 
-/* Add the existing CSS styles above */
-
-/* Mobile Layout */
 @media (max-width: 767px) {
     .articles-container {
         grid-template-columns: 1fr;
@@ -207,12 +205,13 @@
     .stats-button {
         margin: 0 auto;
         /* Center the button on mobile */
+        margin-bottom: 15px;
     }
 
     .right-article img {
         margin: 0 auto;
         /* Center the image on mobile */
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         /* Add some bottom margin for spacing on mobile */
     }
 

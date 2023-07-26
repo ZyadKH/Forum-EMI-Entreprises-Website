@@ -82,17 +82,17 @@
 /* Styles for laptops/desktops */
 .mobile-navbar {
     display: none;
-  }
-  
-  /* Media query for mobile devices */
-  @media (max-width: 767px) {
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
     .mobile-navbar {
-      display: block;
+        display: block;
     }
-  }
+}
 
 
-  
+
 /* Mobile-specific styles using media query */
 @media (max-width: 768px) {
 
@@ -106,22 +106,19 @@
 
     .container {
         background-color: transparent;
-        margin-top: 20px;
         width: 100%;
-        max-width: 320px;
-        min-height: 568px;
-        border-radius: 8px;
+        height: 100%;
+        /* Set the height to cover the whole page */
+        border-radius: 0;
+        /* Remove the border radius to cover the whole page */
         position: fixed;
         overflow: hidden;
         transform: scale(1);
-
         /* Centering properties */
-        top: 35%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
+        top: 0;
+        left: 0;
+        /* Remove the transform property for centering */
         z-index: 999;
-
     }
 
     .menu-trigger,
@@ -231,7 +228,10 @@
 
     .menu-container {
         display: flex;
+        justify-content: center;
         align-items: center;
+        height: 100%;
+        /* Set the height to cover the whole page */
     }
 
     .menu {
@@ -274,31 +274,52 @@
     }
 
     .menu-bg {
+        /* This container will be positioned absolutely within its parent. */
         position: absolute;
         display: block;
         width: 200%;
+        /* The menu's width is set to twice the parent's width. */
         left: -53%;
+        /* The menu will be shifted 53% of the parent's width to the left. */
         top: -25%;
+        /* The menu will be shifted 25% of the parent's height to the top. */
         height: 40%;
+        /* The menu's height is set to 40% of the parent's height. */
         background-color: white;
+        /* The menu's background color is white. */
     }
 
     .menu-bg.middle {
-        top: 29%;
-        left: -53%;
+        /* This class represents the middle portion of the menu (the diagonal shape). */
+        top: 22%;
+        /* The menu will be shifted 29% of the parent's height to the top. */
+        left: -49%;
+        /* The menu will be shifted 53% of the parent's width to the left. */
         transform: rotate(-45deg) scaleY(0);
+        /* The menu will be rotated by -45 degrees and vertically scaled to 0, making it initially invisible. */
+        height: 60vh; /* Set the height to 50% of the viewport height to make it bigger. */
     }
 
     .menu-bg.top {
-        left: -34%;
-        top: 0;
-        transform: rotate(-45deg) translateY(-152%);
+        /* This class represents the top portion of the menu (the triangle). */
+        left: -250%; /* Adjusted the value to make it start from outside the screen. */
+        top: 0%;
+        transform: rotate(-45deg) translateX(110%) translateY(5%);
+        /* The menu will be rotated by -45 degrees and shifted 152% of the parent's height upwards, creating a triangle shape. */
+        height: 40vh; /* Set the height to 50% of the viewport height to make it bigger. */
+
     }
 
     .menu-bg.bottom {
-        top: 105%;
+        /* This class represents the bottom portion of the menu (the triangle). */
+        top: 120%;
+        /* The menu will be shifted 105% of the parent's height downwards. */
         transform: rotate(-45deg) translateY(25%);
-        left: -20%;
+        /* The menu will be rotated by -45 degrees and shifted 25% of the parent's height downwards, creating a triangle shape. */
+        left: -57%;
+        /* The menu will be shifted 20% of the parent's width to the left. */
     }
+
+
 
 }

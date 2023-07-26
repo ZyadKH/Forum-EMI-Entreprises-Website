@@ -5,4 +5,14 @@
   /* To make the text bold */
   text-align: center;
   /* To center-align the text */
+  padding: 20px;
+
+}
+
+@media (max-width: 768px) {
+
+  footer {
+    padding: 20px;
+  }
+
 }
