@@ -157,6 +157,19 @@ ul.social-icons li a {
 
 
 /* Adjust the positioning of the social media icons within the list items */
+
+/* Center the social media icons horizontally and vertically */
+ul.social-icons {
+  display: flex; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* If you want to center the entire list horizontally */
+}
+
+ul.social-icons li {
+  /* Add margin or padding as needed */
+  margin: 0 10px; /* Adjust the spacing between social media icons */
+}
+
 ul.social-icons li i {
   position: absolute;
   top: 50%;
@@ -268,6 +281,14 @@ ul.social-icons li a.youtube-icon:hover span {
   letter-spacing: 1px;
   text-align: center;
 }
+
+
+
+
+
+
+
+
 
 /* Set the display of the contact wrapper to column on mobile devices */
 @media screen and (max-width: 767px) {
