@@ -42,7 +42,7 @@ video::-webkit-media-controls-enclosure {
     left: 45%;
     transform: translate(-50%, -50%);
     text-align: left;
-    font-family: 'aileronregular';
+    font-family: 'Aileron Regular';
 }
 
 #PresentationVideoTextOverlay p {
@@ -56,7 +56,7 @@ video::-webkit-media-controls-enclosure {
 
 
 #PresentationVideoTextOverlay p span.golden2 {
-    font-family: 'aileronsemibold';
+    font-family: 'Aileron Semi Bold';
 }
 
 @media (max-width: 768px) {
