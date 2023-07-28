@@ -42,7 +42,7 @@ video::-webkit-media-controls-enclosure {
     left: 45%;
     transform: translate(-50%, -50%);
     text-align: left;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cabinet Grotesk Medium';
 }
 
 #PresentationVideoTextOverlay p {
@@ -58,6 +58,9 @@ video::-webkit-media-controls-enclosure {
     font-weight: bold;
 }
 
+#PresentationVideoTextOverlay p span.golden-2 {
+    font-family: 'Cabinet Grotesk Extrabold';
+}
 
 @media (max-width: 768px) {
 
@@ -84,7 +87,10 @@ video::-webkit-media-controls-enclosure {
         white-space: nowrap; /* Prevent the word from breaking across lines */
     }
 
-    #PresentationVideoTextOverlay p span.golden {
+    #PresentationVideoTextOverlay p span.golden-1 {
+        color: rgb(204, 176, 15);
+    }
+    #PresentationVideoTextOverlay p span.golden-2 {
         color: rgb(204, 176, 15);
     }
 

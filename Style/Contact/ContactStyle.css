@@ -160,14 +160,18 @@ ul.social-icons li a {
 
 /* Center the social media icons horizontally and vertically */
 ul.social-icons {
-  display: flex; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  justify-content: center; /* If you want to center the entire list horizontally */
+  display: flex;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  justify-content: center;
+  /* If you want to center the entire list horizontally */
 }
 
 ul.social-icons li {
   /* Add margin or padding as needed */
-  margin: 0 10px; /* Adjust the spacing between social media icons */
+  margin: 0 10px;
+  /* Adjust the spacing between social media icons */
 }
 
 ul.social-icons li i {
@@ -260,11 +264,11 @@ ul.social-icons li a.facebook-icon:hover span {
 }
 
 ul.social-icons li a.instagram-icon:hover {
-  color: #c32aa3;
+  color:#A2006D;
 }
 
 ul.social-icons li a.instagram-icon:hover span {
-  background: #c32aa3;
+  background:#A2006D;
 }
 
 ul.social-icons li a.youtube-icon:hover {
