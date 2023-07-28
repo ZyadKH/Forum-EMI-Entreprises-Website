@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'aileronblack';
+    src: url('/Style/Fonts/Aymane/Aileron-Black.otf') format('opentype');
+    /* Add additional font formats here if desired, though it's recommended to include WOFF or WOFF2 for better browser support */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'aileronblack_italic';
+    src: url('/Style/Fonts/Aymane/Aileron-BlackItalic.otf') format('opentype');
+    /* Add additional font formats here if desired, though it's recommended to include WOFF or WOFF2 for better browser support */
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'aileronbold';
+    src: url('/Style/Fonts/Aymane/Aileron-Bold.otf') format('opentype');
+    /* Add additional font formats here if desired, though it's recommended to include WOFF or WOFF2 for better browser support */
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'aileronbold_italic';
+    src: url('/Style/Fonts/Aymane/Aileron-BoldItalic.otf') format('opentype');
+    /* Add additional font formats here if desired, though it's recommended to include WOFF or WOFF2 for better browser support */
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'aileronheavy';
+    src: url('/Style/Fonts/Aymane/Aileron-Heavy.otf') format('opentype');
+    /* Add additional font formats here if desired, though it's recommended to include WOFF or WOFF2 for better browser support */
+    font-weight: normal;
+    font-style: normal;
+
+
+}
+
+@font-face {
+    font-family: 'aileronheavy_italic';
+    src: url('/Style/Fonts/Aymane/Aileron-HeavyItalic.otf') format('opentype');
+    /* Add additional font formats here if desired, though it's recommended to include WOFF or WOFF2 for better browser support */
+    font-weight: normal;
+    font-style: normal;
+
+
+}
+
+@font-face {
+    font-family: 'aileronitalic';
+    src: url('/Style/Fonts/Aymane/Aileron-Italic.otf') format('opentype');
+    /* Add additional font formats here if desired, though it's recommended to include WOFF or WOFF2 for better browser support */
+    font-weight: normal;
+    font-style: normal;
+
+
+}
+
+@font-face {
+    font-family: 'aileronlight';
+    src: url('/Style/Fonts/Aymane/Aileron-Light.otf') format('opentype');
+    /* Add additional font formats here if desired, though it's recommended to include WOFF or WOFF2 for better browser support */
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'aileronlight_italic';
+    src: url('/Style/Fonts/Aymane/Aileron-LightItalic.otf') format('opentype');
+    /* Add additional font formats here if desired, though it's recommended to include WOFF or WOFF2 for better browser support */
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'aileronregular';
+    src: url('/Style/Fonts/Aymane/Aileron-Regular.otf') format('opentype');
+    /* Add additional font formats here if desired, though it's recommended to include WOFF or WOFF2 for better browser support */
+    font-weight: normal;
+    font-style: normal;
+
+
+}
+
+@font-face {
+    font-family: 'aileronsemibold';
+    src: url('/Style/Fonts/Aymane/Aileron-SemiBold.otf') format('opentype');
+    /* Add additional font formats here if desired, though it's recommended to include WOFF or WOFF2 for better browser support */
+    font-weight: normal;
+    font-style: normal;
+
+
+}
+
+@font-face {
+    font-family: 'aileronsemibold_italic';
+    src: url('/Style/Fonts/Aymane/Aileron-SemiBoldItalic.otf') format('opentype');
+    /* Add additional font formats here if desired, though it's recommended to include WOFF or WOFF2 for better browser support */
+    font-weight: normal;
+    font-style: normal;
+
+
+}
+
+@font-face {
+    font-family: 'aileronthin';
+    src: url('/Style/Fonts/Aymane/Aileron-Thin.otf') format('opentype');
+    /* Add additional font formats here if desired, though it's recommended to include WOFF or WOFF2 for better browser support */
+    font-weight: normal;
+    font-style: normal;
+
+
+}
+
+@font-face {
+    font-family: 'aileronthin_italic';
+    src: url('/Style/Fonts/Aymane/Aileron-ThinItalic.otf') format('opentype');
+    /* Add additional font formats here if desired, though it's recommended to include WOFF or WOFF2 for better browser support */
+    font-weight: normal;
+    font-style: normal;
+
+
+}
+
+@font-face {
+    font-family: 'aileronultralight';
+    src: url('/Style/Fonts/Aymane/Aileron-UltraLight.otf') format('opentype');
+    /* Add additional font formats here if desired, though it's recommended to include WOFF or WOFF2 for better browser support */
+    font-weight: normal;
+    font-style: normal;
+
+
+}
+
+@font-face {
+    font-family: 'aileronultralight_italic';
+    src: url('/Style/Fonts/Aymane/Aileron-UltraLightItalic.otf') format('opentype');
+    /* Add additional font formats here if desired, though it's recommended to include WOFF or WOFF2 for better browser support */
+    font-weight: normal;
+    font-style: normal;
+
+
+}
