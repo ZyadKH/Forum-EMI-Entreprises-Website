@@ -7,6 +7,7 @@
 }
 
 .recruting-background {
+    background-image: url('/images/Recruting.png');
     position: relative;
     z-index: 1;
 }
@@ -75,8 +76,13 @@
 @media (max-width: 768px) {
 
     .recruting-background {
-        background-image: url('/images/MobileRecruting.png');
-        /* Add any other background properties you want for the mobile version */
+        display: none;
+        /* Hide the normal version on mobile */
+    }
+
+    .recruting-background-mobile {
+        background-image: url("/images/MobileRecruting.png");
+        /* Add other styles for the mobile background */
     }
 
     .button-container {

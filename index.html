@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css'>
-    <link rel="stylesheet" href="./Style/TimeLineStyle.css">
+    <link rel="stylesheet" href="./Style/Index/TimeLineStyle.css">
 
 
     <!-- ------------------------------------------------- Fonts ------------------------------------------------- -->
@@ -33,10 +33,10 @@
 
     <link rel="stylesheet" href="./Style/WholePage.css">
     <link rel="stylesheet" href="./Style/NavBarStyle.css">
-    <link rel="stylesheet" href="./Style/PresVideoStyle.css">
-    <link rel="stylesheet" href="./Style/PatronageStyle.css">
-    <link rel="stylesheet" href="./Style/StatsStyle.css">
-    <link rel="stylesheet" href="./Style/RecrutingStyle.css">
+    <link rel="stylesheet" href="./Style/Index/PresVideoStyle.css">
+    <link rel="stylesheet" href="./Style/Index/PatronageStyle.css">
+    <link rel="stylesheet" href="./Style/Index/StatsStyle.css">
+    <link rel="stylesheet" href="./Style/Index/RecrutingStyle.css">
     <link rel="stylesheet" href="./Style/footerStyle.css">
 
 
@@ -73,7 +73,7 @@
                 <i class="menu-trigger-bar middle"></i>
                 <i class="menu-trigger-bar bottom"></i>
             </span>
-            
+
             <span class="close-trigger">
                 <i class="close-trigger-bar left"></i>
                 <i class="close-trigger-bar right"></i>
@@ -119,8 +119,10 @@
             <div id="gradientOverlay"></div>
 
             <div id="PresentationVideoTextOverlay">
-                <p> OSEZ L'EXPERTISE <br> OSEZ LE <span> FORUM EMI-ENTREPRISES </span> </p>
+                <p> OSEZ <span class="golden">L'EXPERTISE </span><br class="mobile-br"> OSEZ LE <span
+                        class="golden">FORUM <span class="no-wrap">EMI-ENTREPRISES</span> </span> </p>
             </div>
+
         </div>
 
         <!-- --------------------------------------------------- Stats--------------------------------------------------- -->
@@ -239,9 +241,16 @@
         <!-- ------------------------------------------------- Recruting ------------------------------------------------- -->
 
         <section class="recruting-section">
+            <!-- Normal version -->
             <div class="recruting-background">
                 <img src="./images/Recruting.png" alt="Paulette EMI">
             </div>
+
+            <!-- Mobile version -->
+            <div class="recruting-background-mobile">
+                <img src="./images/MobileRecruting.png" alt="Paulette EMI">
+            </div>
+
             <div class="recruting-content">
                 <div class="recruting-text">
                     <h1>RECRUTEMENT DU COMITÉ DE SOUTIEN DE LA 30ÈME ÉDITION</h1>
@@ -263,15 +272,15 @@
 
             <!-- ------------------------------------------------- JavaScript Sheets ------------------------------------------------- -->
 
-            <script src="./JS/StatsCountUp.js""></script>
             <script src=" ./JS/NavBarFadeAway.js"></script>
-            <script src="./JS/EnSavoirPlusButton.js"></script>
-            <script src="./JS/ForumSectionSlide.js"></script>
+            <script src="./JS/Index/StatsCountUp.js""></script>
+            <script src=" ./JS/Index/EnSavoirPlusButton.js"></script>
+            <script src="./JS/Index/ForumSectionSlide.js"></script>
 
             <!-- -------------------------------------------------  Swiper ------------------------------------------------- -->
 
             <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js'></script>
-            <script src="./JS/TimeLineSwiper.js"></script>
+            <script src="./JS/Index/TimeLineSwiper.js"></script>
 
             <!-- -------------------------------------------------  JQuery for Mobile NavBar ------------------------------------------------- -->
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>

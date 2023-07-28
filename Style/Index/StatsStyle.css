@@ -177,15 +177,17 @@
         /* Center the grid items horizontally */
     }
 
-    .left-article {
+    .right-article {
         order: 1;
+        /* Set the order to 2, so it appears below the left article */
+    }
+
+    
+    .left-article {
+        order: 2;
         /* Set the order to 1, so it appears above the right article */
     }
 
-    .right-article {
-        order: 2;
-        /* Set the order to 2, so it appears below the left article */
-    }
 
     .stats-title {
         margin-left: 0;
