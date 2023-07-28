@@ -74,6 +74,11 @@
 
 @media (max-width: 768px) {
 
+    .recruting-background {
+        background-image: url('/images/MobileRecruting.png');
+        /* Add any other background properties you want for the mobile version */
+    }
+
     .button-container {
         position: absolute;
         top: 55%;
