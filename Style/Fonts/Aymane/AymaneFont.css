@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Aileron Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Aileron Regular'), url('Aileron-Regular-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Aileron Semi Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Aileron Semi Bold'), url('Aileron-SemiBold-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Aileron Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Aileron Thin'), url('Aileron-Thin-webfont.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Aileron Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Aileron Light'), url('Aileron-Light-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Aileron Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Aileron Black'), url('Aileron-Black-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Aileron Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Aileron Thin'), url('Aileron-Thin-webfont.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Aileron Ultralight';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Aileron Ultralight'), url('Aileron-UltraLight-webfont.woff') format('woff');
+}

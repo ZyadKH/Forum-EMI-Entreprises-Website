@@ -42,7 +42,7 @@ video::-webkit-media-controls-enclosure {
     left: 45%;
     transform: translate(-50%, -50%);
     text-align: left;
-    font-family: 'Cabinet Grotesk Medium';
+    font-family: 'Aileron Regular';
 }
 
 #PresentationVideoTextOverlay p {
@@ -54,12 +54,9 @@ video::-webkit-media-controls-enclosure {
     /* Prevent the text from wrapping */
 }
 
-#PresentationVideoTextOverlay span {
-    font-weight: bold;
-}
 
-#PresentationVideoTextOverlay p span.golden-2 {
-    font-family: 'Cabinet Grotesk Extrabold';
+#PresentationVideoTextOverlay p span.golden2 {
+    font-family: 'Aileron Semi Bold';
 }
 
 @media (max-width: 768px) {
@@ -87,10 +84,10 @@ video::-webkit-media-controls-enclosure {
         white-space: nowrap; /* Prevent the word from breaking across lines */
     }
 
-    #PresentationVideoTextOverlay p span.golden-1 {
+    #PresentationVideoTextOverlay p span.golden1 {
         color: rgb(204, 176, 15);
     }
-    #PresentationVideoTextOverlay p span.golden-2 {
+    #PresentationVideoTextOverlay p span.golden2 {
         color: rgb(204, 176, 15);
     }
 

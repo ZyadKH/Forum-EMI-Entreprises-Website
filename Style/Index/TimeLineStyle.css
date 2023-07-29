@@ -11,7 +11,7 @@
   /* To center-align the text */
   margin-top: 20px;
   margin-bottom: 20px;
-  font-family: 'Cabinet Grotesk Medium';
+  font-family: 'Aileron Semi Bold';
 }
 
 .timeline-container {
@@ -88,7 +88,7 @@
 .timeline .swiper-slide .timeline-title {
   font-weight: 800;
   font-size: 34px;
-  font-family: 'Cabinet Grotesk Light';
+  font-family: 'Aileron Light';
   margin: 0 0 30px;
   opacity: 0;
   transform: translate3d(20px, 0, 0);
