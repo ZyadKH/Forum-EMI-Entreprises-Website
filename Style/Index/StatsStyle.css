@@ -76,7 +76,7 @@
     color: white;
     margin-left: 230px;
     /* Adjust the margin to move the stats section towards the right */
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Cabinet Grotesk Thin';
     margin-bottom: 40px;
     margin-top: 30px;
 }
@@ -87,7 +87,7 @@
     color: white;
     margin-bottom: 1px;
     /* Add margin between stat and description */
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Cabinet Grotesk Extralight';
 }
 
 .description {
@@ -96,7 +96,7 @@
     color: white;
     width: 170px;
     /* Adjust the width as needed */
-    font-family: 'Noto Serif', serif;
+    font-family: 'Cabinet Grotesk Extralight';
 }
 
 
@@ -140,7 +140,7 @@
     /* Adding a smooth transition effect */
     margin-right: 160px;
     margin-bottom: 10px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Cabinet Grotesk Medium';
 }
 
 /* Styles for the hover state */
