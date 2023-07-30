@@ -87,8 +87,7 @@
     }
 
     .recruting-background-mobile {
-        background-image: url("/images/MobileRecruting.png");
-        /* Add other styles for the mobile background */
+        display: block;
     }
 
     .button-container {
