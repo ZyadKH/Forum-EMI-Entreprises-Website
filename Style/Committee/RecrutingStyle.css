@@ -1,18 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Volkhov:ital@1&display=swap');
 
-.recruting-section {
-    height: 100vh; /* Set the height to cover the whole screen */
-    position : relative;
+@media (min-width: 769px) {
+    .recruting-section {
+        background-image: url('/images/Recruting.png');
+        background-size: cover;
+    }
 }
 
+.recruting-section {
+    height: 100vh;
+    /* Set the height to cover the whole screen */
+    position: relative;
+}
 
 .recruting-text h1 {
     font-size: 30px;
     margin-bottom: 20px;
     font-family: 'Aileron Semi Bold';
 }
-
 
 .recruting-text {
     position: absolute;
@@ -28,8 +34,6 @@
     color: white;
     font-family: 'Aileron Regular';
 }
-
-/* Additional styling for the button and other elements if required */
 
 .button-container {
     position: absolute;
@@ -71,21 +75,9 @@
 
 @media (max-width: 768px) {
 
-    .button-container {
-        position: absolute;
-        top: 55%;
-        /* Adjust the value to lower or raise the button */
-        left: 37%;
-        /* Adjust the value to position the button horizontally */
-        transform: translate(-50%, -50%);
-        z-index: 2;
-        font-family: 'Raleway', sans-serif;
-    }
-
-    .recruting-button {
-        padding: 10px 25px;
-        /* This controls the size of the button */
-        font-size: 12px;
+    .recruting-section {
+        background-image: url('/images/MobileRecruting.png');
+        background-size: cover;
     }
 
     .recruting-text h1 {
@@ -95,44 +87,24 @@
     .recruting-text {
         font-size: 13px;
         position: absolute;
-        top: 35%;
-        /* Adjust the value to position the text vertically */
-        left: 34%;
-        /* Adjust the value to position the text horizontally */
-    }
-}
-
-@media (min-width: 769px) {
-    .recruting-section {
-        background-image: url('/images/Recruting.png');
-        background-size: cover;
-    }
-}
-
-/* background for screens*/
-@media (max-width: 768px) {
-    .recruting-section {
-        background-image: url('/images/MobileRecruting.png');
-        background-size: cover;
-    }
-
-    .recruting-text {
-        position: absolute;
-        top: 50%;
+        top: 25%;
         /* Adjust the value to position the text vertically */
         left: 34%;
         /* Adjust the value to position the text horizontally */
         transform: translate(-50%, -50%);
     }
-    
-    /* Additional styling for the button and other elements if required */
-    
+
+    .recruting-button {
+        padding: 10px 25px;
+        /* This controls the size of the button */
+        font-size: 12px;
+    }
+
     .button-container {
         position: absolute;
-        top: 70%;
+        top: 45%;
         /* Adjust the value to lower or raise the button */
         left: 34%;
         /* Adjust the value to position the button horizontally */
     }
 }
-
