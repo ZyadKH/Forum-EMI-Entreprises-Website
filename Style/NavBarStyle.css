@@ -79,11 +79,17 @@
 
 
 
-/* Media query for mobile devices */
 @media (max-width: 767px) {
+    .NavBarElements {
+        display: flex; /* Make the elements in the nav bar display in one line */
+        align-items: center; /* Align elements vertically in the center */
+        overflow-x: auto; /* Allow horizontal scrolling if elements exceed the width */
+    }
+
     .NavBarElements a {
-        font-size: 8px; /* You can adjust the font size for mobile devices */
-        padding: 1px 1px; /* Adjust padding to fit in the small navbar */
+        flex: 0 0 auto; /* Control the size of the elements */
+        font-size: 16px; /* Adjust the font size for mobile devices */
+        padding: 8px 12px; /* Adjust padding to fit in the small navbar */
         margin-right: 5px; /* Reduce the margin for more compact spacing */
     }
 
