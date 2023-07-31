@@ -3,7 +3,7 @@
 
 @media (min-width: 769px) {
     .recruting-section {
-        background-image: url('/images/Recruting.png');
+        background-image: url('/images/Committee/DesktopRecruting.png');
         background-size: cover;
     }
 }
@@ -76,7 +76,7 @@
 @media (max-width: 768px) {
 
     .recruting-section {
-        background-image: url('/images/MobileRecruting.png');
+        background-image: url('/images/Committee/MobileRecruting.png');
         background-size: cover;
     }
 

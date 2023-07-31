@@ -31,20 +31,20 @@
     margin: 0 20px;
     /* Add space on both sides of the title */
     font-size: 30px;
-    font-family: 'Playfair Display', sans-serif;
+    font-family: 'Aileron Regular', sans-serif;
 }
 
 .introduction-description {
     text-align: center;
     font-size: 20px;
-    font-family: 'Playfair Display', sans-serif;
+    font-family: 'Aileron Regular', sans-serif;
 }
 
 .introduction-details {
     text-align: left;
     text-align: justify;
     font-size: 20px;
-    font-family: 'Playfair Display', sans-serif;
+    font-family: 'Aileron Regular', sans-serif;
     margin-top: 150px;
     margin-left: 37px;
     margin-right: 37px;
@@ -52,7 +52,9 @@
 }
 
 @media only screen and (max-width: 767px) {
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+    .introduction {
+        position: absolute;
+    }
 
     .school-logos {
         display: flex;
@@ -77,35 +79,32 @@
         /* Reduce space on both sides of the title for mobile */
         font-size: 15px;
         /* Decrease font size for mobile */
-        font-family: 'Playfair Display', sans-serif;
+        font-family: 'Aileron Regular', sans-serif;
     }
 
     .introduction-description {
-        text-align: center;
+        text-align: justify;
+        margin-left: 15px;
+        /* Reduce left margin for mobile */
+        margin-right: 15px;
+        /* Reduce right margin for mobile */
+        line-height: 1.5;
         font-size: 10px;
         /* Decrease font size for mobile */
-        font-family: 'Playfair Display', sans-serif;
+        font-family: 'Aileron Regular', sans-serif;
     }
 
     .introduction-details {
         text-align: justify;
         font-size: 10px;
         /* Decrease font size for mobile */
-        font-family: 'Playfair Display', sans-serif;
-        margin-top: 100px;
+        font-family: 'Aileron Regular', sans-serif;
+        margin-top: 10px;
         /* Reduce top margin for mobile */
         margin-left: 15px;
         /* Reduce left margin for mobile */
         margin-right: 15px;
         /* Reduce right margin for mobile */
         line-height: 1.5;
-    }
-
-    /* to put the logos on top of the video*/
-
-    .introduction {
-        position: absolute;
-        top: 20px;
-        /* Adjust top position for mobile */
     }
 }
