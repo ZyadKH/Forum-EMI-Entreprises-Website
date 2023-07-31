@@ -81,15 +81,15 @@
 
 /* Media query for mobile devices */
 @media (max-width: 767px) {
-    .NavBarElements {
-        display: none; /* Hide the desktop navigation links */
-    }
-
-    .NavBar.mobile-show {
-        display: flex; /* Show the mobile navigation links */
+    .NavBarElements a {
+        font-size: 8px; /* You can adjust the font size for mobile devices */
+        padding: 1px 1px; /* Adjust padding to fit in the small navbar */
+        margin-right: 5px; /* Reduce the margin for more compact spacing */
     }
 
     .NavBarLogo img {
-        margin-left: 15px; /* Adjust the logo margin on mobile */
+        margin-left: 5px; /* Adjust the logo margin on mobile */
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 }
