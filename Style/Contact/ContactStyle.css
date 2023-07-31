@@ -23,6 +23,7 @@ body {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 6px;
+  margin-top: 20px;
 }
 
 .contact-wrapper {
@@ -38,7 +39,7 @@ body {
 .form-horizontal {
   /*float: left;*/
   max-width: 400px;
-  font-family: 'Lato';
+  font-family: 'Aileron Light';
   font-weight: 400;
 }
 
@@ -83,8 +84,6 @@ textarea {
 /* Location, Phone, Email Section */
 .contact-list {
   list-style-type: none;
-  margin-left: 30px;
-  padding-right: 20px;
 }
 
 .list-item {
@@ -93,7 +92,8 @@ textarea {
 }
 
 .contact-text {
-  font: 300 18px 'Aileron Light', sans-serif;
+  font-family: 'Aileron Light', sans-serif;
+  font-size: 17px;
   letter-spacing: 1.9px;
   color: #bbb;
 }
@@ -280,7 +280,7 @@ ul.social-icons li a.youtube-icon:hover span {
 }
 
 .copyright {
-  font: 200 14px 'Oswald', sans-serif;
+  font: 200 14px 'Aileron Regular', sans-serif;
   color: #555;
   letter-spacing: 1px;
   text-align: center;
@@ -321,7 +321,7 @@ ul.social-icons li a.youtube-icon:hover span {
 
   .form-horizontal {
     max-width: 400px;
-    font-family: 'Lato';
+    font-family: 'Aileron Light';
     font-weight: 400;
     margin: 0 auto;
     /* Center the form horizontally */
@@ -364,7 +364,7 @@ ul.social-icons li a.youtube-icon:hover span {
 
   .send-text {
     display: block;
-    font: 700 12px 'Lato', sans-serif;
+    font: 700 12px 'Aileron Semi Bold', sans-serif;
     letter-spacing: 2px;
   }
 
@@ -398,7 +398,7 @@ ul.social-icons li a.youtube-icon:hover span {
   }
 
   .contact-text {
-    font: 300 12px 'Lato', sans-serif;
+    font: 300 12px 'Aileron Regular', sans-serif;
     letter-spacing: 1.9px;
     color: #bbb;
     width: 100%;
