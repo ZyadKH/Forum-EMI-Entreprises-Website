@@ -83,12 +83,4 @@ video::-webkit-media-controls-enclosure {
     #PresentationVideoTextOverlay p span.no-wrap {
         white-space: nowrap; /* Prevent the word from breaking across lines */
     }
-
-    #PresentationVideoTextOverlay p span.golden1 {
-        color: rgb(204, 176, 15);
-    }
-    #PresentationVideoTextOverlay p span.golden2 {
-        color: rgb(204, 176, 15);
-    }
-
 }

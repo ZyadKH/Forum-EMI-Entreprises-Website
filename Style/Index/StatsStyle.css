@@ -82,7 +82,7 @@
 }
 
 .description {
-    font-size: 13px;
+    font-size: 14px;
     text-align: center;
     color: white;
     width: 170px;
@@ -185,6 +185,7 @@
         /* Remove the left margin for mobile layout */
         text-align: center;
         /* Center the text on mobile */
+        font-size: 23px;
     }
 
     .stats-container {
@@ -209,11 +210,11 @@
     }
 
     .stats {
-        font-size: 45px;
+        font-size: 55px;
     }
 
     .description {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     /* Style for each row */

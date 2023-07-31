@@ -2,20 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Volkhov:ital@1&display=swap');
 
 .recruting-section {
-    position: relative;
-    display: block; /* Show the normal version on desktop */
+    height: 100vh; /* Set the height to cover the whole screen */
+    position : relative;
 }
 
-/* Styles for the mobile version (hidden on desktop) */
-.recruting-background-mobile {
-    display: none; /* Hide the mobile version on desktop */
-}
-
-.recruting-background {
-    background-image: url('/images/Recruting.png');
-    position: relative;
-    z-index: 1;
-}
 
 .recruting-text h1 {
     font-size: 30px;
@@ -81,16 +71,6 @@
 
 @media (max-width: 768px) {
 
-    .recruting-background {
-        display: none;
-        /* Hide the normal version on mobile */
-    }
-
-    .recruting-background-mobile {
-        background-image: url("/images/MobileRecruting.png");
-        /* Add other styles for the mobile background */
-    }
-
     .button-container {
         position: absolute;
         top: 55%;
@@ -121,3 +101,38 @@
         /* Adjust the value to position the text horizontally */
     }
 }
+
+@media (min-width: 769px) {
+    .recruting-section {
+        background-image: url('/images/Recruting.png');
+        background-size: cover;
+    }
+}
+
+/* background for screens*/
+@media (max-width: 768px) {
+    .recruting-section {
+        background-image: url('/images/MobileRecruting.png');
+        background-size: cover;
+    }
+
+    .recruting-text {
+        position: absolute;
+        top: 50%;
+        /* Adjust the value to position the text vertically */
+        left: 34%;
+        /* Adjust the value to position the text horizontally */
+        transform: translate(-50%, -50%);
+    }
+    
+    /* Additional styling for the button and other elements if required */
+    
+    .button-container {
+        position: absolute;
+        top: 70%;
+        /* Adjust the value to lower or raise the button */
+        left: 34%;
+        /* Adjust the value to position the button horizontally */
+    }
+}
+
