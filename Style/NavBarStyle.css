@@ -76,3 +76,20 @@
     opacity: 0;
     /* Set opacity to 0 to make it fade out */
 }
+
+
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+    .NavBarElements {
+        display: none; /* Hide the desktop navigation links */
+    }
+
+    .NavBar.mobile-show {
+        display: flex; /* Show the mobile navigation links */
+    }
+
+    .NavBarLogo img {
+        margin-left: 15px; /* Adjust the logo margin on mobile */
+    }
+}
