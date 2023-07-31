@@ -1,0 +1,15 @@
+font-face {
+  font-family: 'DIN Next LT Arabic Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DIN Next LT Arabic Light'), url('DIN Next LT Arabic Light.woff') format('woff');
+  }
+  
+
+@font-face {
+  font-family: 'Rabat Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Rabat Regular'), url('Rabat Regular.woff') format('woff');
+  }
+  

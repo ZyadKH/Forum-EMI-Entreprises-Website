@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+.school-logos {
+    display: flex;
+    align-items: center;
+    /* Center items vertically */
+    justify-content: space-between;
+    /* Spread items horizontally */
+    margin-bottom: 40px;
+    /* Add some space below the logos and title */
+}
+
+#logoleft,
+#logoright {
+    max-width: 200px;
+    /* You can adjust the width to your preference */
+    margin: 10px;
+}
+
+.introduction {
+    position: absolute;
+    top: 50px;
+}
+
+.introduction-title {
+    text-align: center;
+    /* Center the title */
+    flex: 1;
+    /* Allow the title to take the remaining space between logos */
+    margin: 0 20px;
+    /* Add space on both sides of the title */
+    font-size: 30px;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+.introduction-description {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+.introduction-details {
+    text-align: left;
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Playfair Display', sans-serif;
+    margin-top: 150px;
+    margin-left: 37px;
+    margin-right: 37px;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 767px) {
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+    .school-logos {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        /* Reduce space below logos and title for mobile */
+    }
+
+    #logoleft,
+    #logoright {
+        max-width: 100px;
+        /* Reduce the maximum width of logos for mobile */
+        margin: 5px;
+        /* Reduce margin for logos */
+    }
+
+    .introduction-title {
+        text-align: center;
+        flex: 1;
+        margin: 0 10px;
+        /* Reduce space on both sides of the title for mobile */
+        font-size: 15px;
+        /* Decrease font size for mobile */
+        font-family: 'Playfair Display', sans-serif;
+    }
+
+    .introduction-description {
+        text-align: center;
+        font-size: 10px;
+        /* Decrease font size for mobile */
+        font-family: 'Playfair Display', sans-serif;
+    }
+
+    .introduction-details {
+        text-align: justify;
+        font-size: 10px;
+        /* Decrease font size for mobile */
+        font-family: 'Playfair Display', sans-serif;
+        margin-top: 100px;
+        /* Reduce top margin for mobile */
+        margin-left: 15px;
+        /* Reduce left margin for mobile */
+        margin-right: 15px;
+        /* Reduce right margin for mobile */
+        line-height: 1.5;
+    }
+
+    /* to put the logos on top of the video*/
+
+    .introduction {
+        position: absolute;
+        top: 20px;
+        /* Adjust top position for mobile */
+    }
+}

@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
+
 /* Remove default list styles */
 .NavBar {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
+
 
 /* Style the navigation bar */
 .NavBar {
@@ -59,7 +62,7 @@
     /* Set the font size to 25 pixels (adjust as needed) */
     transition: color 0.8s;
     /* Add slow-motion effect to color change (0.5 seconds) */
-    font-family: 'Times New Roman', sans-serif;
+    font-family: 'Aileron Regular';
 }
 
 /* Add hover effect for the links */
@@ -72,4 +75,27 @@
 .NavBar.fade-out {
     opacity: 0;
     /* Set opacity to 0 to make it fade out */
+}
+
+
+
+@media (max-width: 767px) {
+    .NavBarElements {
+        display: flex; /* Make the elements in the nav bar display in one line */
+        align-items: center; /* Align elements vertically in the center */
+        overflow-x: auto; /* Allow horizontal scrolling if elements exceed the width */
+    }
+
+    .NavBarElements a {
+        flex: 0 0 auto; /* Control the size of the elements */
+        font-size: 16px; /* Adjust the font size for mobile devices */
+        padding: 8px 12px; /* Adjust padding to fit in the small navbar */
+        margin-right: 5px; /* Reduce the margin for more compact spacing */
+    }
+
+    .NavBarLogo img {
+        margin-left: 5px; /* Adjust the logo margin on mobile */
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
 }

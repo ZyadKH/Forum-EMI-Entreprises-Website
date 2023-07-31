@@ -42,7 +42,7 @@ video::-webkit-media-controls-enclosure {
     left: 45%;
     transform: translate(-50%, -50%);
     text-align: left;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Aileron Regular';
 }
 
 #PresentationVideoTextOverlay p {
@@ -54,6 +54,33 @@ video::-webkit-media-controls-enclosure {
     /* Prevent the text from wrapping */
 }
 
-#PresentationVideoTextOverlay span {
-    font-weight: bold;
+
+#PresentationVideoTextOverlay p span.golden2 {
+    font-family: 'Aileron Semi Bold';
+}
+
+@media (max-width: 768px) {
+
+    #PresentationVideoTextOverlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    #PresentationVideoTextOverlay p {
+        font-size: 40px;
+        word-wrap: break-word;
+        max-width: 100%;
+        white-space: normal; /* Make sure white space is treated normally */
+        overflow-wrap: break-word; /* Handle long words that don't contain spaces */
+    }
+
+    #PresentationVideoTextOverlay p .mobile-br {
+        margin-bottom: 10px; /* Add space below the first part of the sentence on mobile */
+    }
+    #PresentationVideoTextOverlay p span.no-wrap {
+        white-space: nowrap; /* Prevent the word from breaking across lines */
+    }
 }

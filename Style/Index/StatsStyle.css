@@ -8,12 +8,12 @@
 /* Noto Serif Thin 100  */
 
 
+
 /*Splitting the whole segment in two side : left & right */
 
 .articles-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 50px;
 }
 
 /* LEFT SIDE */
@@ -32,7 +32,7 @@
 /* Style for each individual div */
 .box {
     width: 31%;
-    height: 105px;
+    height: 95px;
     box-sizing: border-box;
     margin: 7px;
     display: flex;
@@ -64,30 +64,30 @@
 /* All the Writing of the Left Side */
 
 .stats-title {
-    font-size: 26px;
+    font-size: 23px;
     text-align: center;
     color: white;
-    margin-left: 230px;
+    margin-left: 243px;
     /* Adjust the margin to move the stats section towards the right */
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Aileron Thin';
 }
 
 .stats {
-    font-size: 70px;
+    font-size: 65px;
     text-align: center;
     color: white;
     margin-bottom: 1px;
     /* Add margin between stat and description */
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Aileron Ultralight';
 }
 
 .description {
-    font-size: 13px;
+    font-size: 14px;
     text-align: center;
     color: white;
     width: 170px;
     /* Adjust the width as needed */
-    font-family: 'Noto Serif', serif;
+    font-family: 'Aileron Ultralight';
 }
 
 
@@ -105,16 +105,16 @@
 .right-article img {
     width: 100%;
     /* Set the width to 100% of the parent container */
-    max-width: 320px;
+    max-width: 300px;
     /* Set a maximum width for the image to control its size */
     height: auto;
     /* Maintain the aspect ratio of the image */
     display: block;
     /* Remove any default inline spacing */
     margin-right: 160px;
-    margin-top: 30px;
     /* Adjust the value to lower the image */
     margin-bottom: 20px;
+    margin-top: 22px;
 }
 
 /*Button Styling*/
@@ -122,7 +122,7 @@
 /* Styles for the normal state */
 .stats-button {
     display: inline-block;
-    padding: 7px 30px;
+    padding: 2px 20px;
     color: white;
     border: 2px solid white;
     border-radius: 20px;
@@ -131,7 +131,7 @@
     /* Adding a smooth transition effect */
     margin-right: 160px;
     margin-bottom: 10px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Aileron Black';
 }
 
 /* Styles for the hover state */
@@ -153,4 +153,76 @@
     /* Change the text color to black on hover */
     font-weight: bold;
     /* Set the font weight to bold on hover */
+}
+
+
+
+
+/*----------------------------------------------------MOBILE ---------------------------------------------------------*/
+
+@media (max-width: 767px) {
+    .articles-container {
+        grid-template-columns: 1fr;
+        /* Change to a single column layout */
+        justify-content: center;
+        /* Center the grid items horizontally */
+    }
+
+    .right-article {
+        order: 1;
+        /* Set the order to 2, so it appears below the left article */
+    }
+
+    
+    .left-article {
+        order: 2;
+        /* Set the order to 1, so it appears above the right article */
+    }
+
+
+    .stats-title {
+        margin-left: 0;
+        /* Remove the left margin for mobile layout */
+        text-align: center;
+        /* Center the text on mobile */
+        font-size: 23px;
+    }
+
+    .stats-container {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Center the content horizontally within stats-container */
+    }
+
+    .stats-button {
+        margin: 0 auto;
+        /* Center the button on mobile */
+        margin-bottom: 15px;
+    }
+
+    .right-article img {
+        margin: 0 auto;
+        /* Center the image on mobile */
+        margin-bottom: 15px;
+        /* Add some bottom margin for spacing on mobile */
+    }
+
+    .stats {
+        font-size: 55px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    /* Style for each row */
+    .row {
+        justify-content: center;
+    }
+
+    .box {
+        margin: 15px;
+    }
 }

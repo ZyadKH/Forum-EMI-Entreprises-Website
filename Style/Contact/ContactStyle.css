@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -18,10 +19,11 @@ body {
   text-align: center;
   margin: 0 auto;
   padding: 40px 0;
-  font: 300 60px 'Oswald', sans-serif;
+  font: 300 60px 'Aileron Semi Bold', sans-serif;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 6px;
+  margin-top: 20px;
 }
 
 .contact-wrapper {
@@ -37,7 +39,7 @@ body {
 .form-horizontal {
   /*float: left;*/
   max-width: 400px;
-  font-family: 'Lato';
+  font-family: 'Aileron Light';
   font-weight: 400;
 }
 
@@ -66,7 +68,7 @@ textarea {
 .send-text {
   display: block;
   margin-top: 10px;
-  font: 700 12px 'Lato', sans-serif;
+  font: 700 12px 'Aileron Semi Bold', sans-serif;
   letter-spacing: 2px;
 }
 
@@ -82,8 +84,6 @@ textarea {
 /* Location, Phone, Email Section */
 .contact-list {
   list-style-type: none;
-  margin-left: -30px;
-  padding-right: 20px;
 }
 
 .list-item {
@@ -92,7 +92,8 @@ textarea {
 }
 
 .contact-text {
-  font: 300 18px 'Lato', sans-serif;
+  font-family: 'Aileron Light', sans-serif;
+  font-size: 17px;
   letter-spacing: 1.9px;
   color: #bbb;
 }
@@ -138,19 +139,41 @@ ul.social-icons li {
 ul.social-icons li a {
   display: block;
   position: relative;
-  width: 70px; /* Adjust the width as needed */
-  height: 70px; /* Adjust the height as needed */
-  font-size: 24px; /* Adjust the font size as needed */
+  width: 70px;
+  /* Adjust the width as needed */
+  height: 70px;
+  /* Adjust the height as needed */
+  font-size: 24px;
+  /* Adjust the font size as needed */
   text-align: center;
   text-decoration: none;
   color: #aaaaaa;
-  margin: 0 10px; /* Adjust the margin as needed */
+  margin: 0 10px;
+  /* Adjust the margin as needed */
   transition: .5s;
-  outline: none; /*  remove the focus outline */
+  outline: none;
+  /*  remove the focus outline */
 }
 
 
 /* Adjust the positioning of the social media icons within the list items */
+
+/* Center the social media icons horizontally and vertically */
+ul.social-icons {
+  display: flex;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  justify-content: center;
+  /* If you want to center the entire list horizontally */
+}
+
+ul.social-icons li {
+  /* Add margin or padding as needed */
+  margin: 0 10px;
+  /* Adjust the spacing between social media icons */
+}
+
 ul.social-icons li i {
   position: absolute;
   top: 50%;
@@ -165,7 +188,7 @@ ul.social-icons li a span {
 }
 
 ul.social-icons li a span:nth-child(1),
-ul.social-icons li a span:nth-child(3){
+ul.social-icons li a span:nth-child(3) {
   width: 100%;
   height: 3px;
   background: #aaaaaa;
@@ -194,7 +217,7 @@ ul.social-icons li a:hover span:nth-child(3) {
 }
 
 ul.social-icons li a span:nth-child(2),
-ul.social-icons li a span:nth-child(4){
+ul.social-icons li a span:nth-child(4) {
   width: 3px;
   height: 100%;
   background: #404040;
@@ -228,7 +251,7 @@ ul.social-icons li a.linkedin-icon:hover {
   color: #0077B5;
 }
 
-ul.social-icons li a.linkedin-icon:hover span { 
+ul.social-icons li a.linkedin-icon:hover span {
   background: #0077B5;
 }
 
@@ -236,29 +259,175 @@ ul.social-icons li a.facebook-icon:hover {
   color: #3b5998;
 }
 
-ul.social-icons li a.facebook-icon:hover span { 
+ul.social-icons li a.facebook-icon:hover span {
   background: #3b5998;
 }
 
 ul.social-icons li a.instagram-icon:hover {
-  color: #c32aa3;
+  color:#A2006D;
 }
 
-ul.social-icons li a.instagram-icon:hover span { 
-  background: #c32aa3;
+ul.social-icons li a.instagram-icon:hover span {
+  background:#A2006D;
 }
 
 ul.social-icons li a.youtube-icon:hover {
   color: #c4302b;
 }
 
-ul.social-icons li a.youtube-icon:hover span { 
+ul.social-icons li a.youtube-icon:hover span {
   background: #c4302b;
 }
 
 .copyright {
-  font: 200 14px 'Oswald', sans-serif;
+  font: 200 14px 'Aileron Regular', sans-serif;
   color: #555;
   letter-spacing: 1px;
   text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* Set the display of the contact wrapper to column on mobile devices */
+@media screen and (max-width: 767px) {
+
+
+  /*THIS IS TO DISPLAY THEM ONE ON TOP OF THE OTHER*/
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  /* Set the order for the left and right contact pages */
+  .left-contact-page {
+    order: 1;
+  }
+
+  .right-contact-page {
+    order: 2;
+  }
+
+  .section-header {
+    font-size: 30px;
+    /* Reduce header font size on mobile */
+  }
+
+  /*THIS IS TO DISPLAY THE MESSAGE BOXES CORRECTLY*/
+
+  .form-horizontal {
+    max-width: 400px;
+    font-family: 'Aileron Light';
+    font-weight: 400;
+    margin: 0 auto;
+    /* Center the form horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center the form elements vertically */
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  .form-control,
+  textarea {
+    width: 100%;
+    max-width: 400px;
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+  }
+
+
+  /*THIS IS TO CORRECTLY STYLE THE SEND BUTTON*/
+
+
+  .send-button {
+    width: 90%;
+    height: 34px;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+  }
+
+  .alt-send-button {
+    width: 100%;
+    height: 24px;
+    transition: all .2s ease-in-out;
+  }
+
+  .send-text {
+    display: block;
+    font: 700 12px 'Aileron Semi Bold', sans-serif;
+    letter-spacing: 2px;
+  }
+
+  .alt-send-button:hover {
+    transform: translate(0, -20px);
+  }
+
+
+  /* THIS IS TO DIPLAY THE CONTACTS CORRECTLY*/
+
+  /* Center the contact-list */
+  .contact-wrapper .contact-list-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .contact-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .list-item {
+    line-height: 4;
+    color: #aaa;
+    width: 100%;
+  }
+
+  .contact-text {
+    font: 300 12px 'Aileron Regular', sans-serif;
+    letter-spacing: 1.9px;
+    color: #bbb;
+    width: 100%;
+    text-align: center;
+  }
+
+  .place,
+  .phone,
+  .gmail {
+    width: 100%;
+  }
+
+
+  /*THIS IS TO PLACE THE SOCIAL MEDIA CORRECTLY*/
+
+
+  /* Reduce the font size for social media icons */
+  ul.social-icons li a {
+    font-size: 18px;
+  }
+
+  /* Adjust the social media icon size */
+  ul.social-icons li a i {
+    font-size: 18px;
+  }
+
+  /* Reduce the font size for the copyright text */
+  .copyright {
+    font-size: 12px;
+  }
+
 }
