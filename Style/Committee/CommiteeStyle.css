@@ -8,3 +8,10 @@
     color: #ffffff; /* Optionally, you can set the color of the title */
     margin-top: 70px; 
 }
+
+
+@media (max-width: 768px) {
+    .committee-title {
+        font-size: 25px;
+    }
+}
