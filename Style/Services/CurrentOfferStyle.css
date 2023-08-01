@@ -55,9 +55,9 @@ p {
 .card {
   display: grid;
   place-items: center;
-  width: 40vw;
+  width: 37vw;
   /* Change the value to make it larger */
-  height: 40vw;
+  height: 37vw;
   /* Change the value to make it larger and square-shaped */
   max-width: 31.25rem;
   /* Adjust the max-width to control scaling */
