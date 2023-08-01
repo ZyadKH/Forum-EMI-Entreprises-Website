@@ -59,6 +59,7 @@
     overflow: hidden;
     transition: 0.5s;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .recruting-button:hover {
