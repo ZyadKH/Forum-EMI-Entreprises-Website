@@ -40,7 +40,7 @@
     position: absolute;
     top: 73%;
     /* Adjust the value to lower or raise the button */
-    left: 18%;
+    left: 34%;
     /* Adjust the value to position the button horizontally */
     transform: translate(-50%, -50%);
     z-index: 2;
