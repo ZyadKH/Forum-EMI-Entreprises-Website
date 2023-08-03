@@ -45,6 +45,34 @@
 }
 
 
+/* OVERLAY EFFECT*/
+.NavBarLogo {
+    display: inline-block;
+    position: relative;
+}
+
+/* Style the overlay with a gradient (red to blue) */
+.NavBarLogo .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #DCD747, #B03060);
+    /* Gradient from red to blue */
+    mix-blend-mode: multiply;
+    /* This blend mode will blend with the image */
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 0.5s ease;
+}
+
+/* Show the overlay on hover */
+.NavBarLogo:hover .overlay {
+    opacity: 1;
+}
+
+
 /* Style the navigation links */
 .NavBarElements a {
     outline: none;
@@ -81,20 +109,28 @@
 
 @media (max-width: 767px) {
     .NavBarElements {
-        display: flex; /* Make the elements in the nav bar display in one line */
-        align-items: center; /* Align elements vertically in the center */
-        overflow-x: auto; /* Allow horizontal scrolling if elements exceed the width */
+        display: flex;
+        /* Make the elements in the nav bar display in one line */
+        align-items: center;
+        /* Align elements vertically in the center */
+        overflow-x: auto;
+        /* Allow horizontal scrolling if elements exceed the width */
     }
 
     .NavBarElements a {
-        flex: 0 0 auto; /* Control the size of the elements */
-        font-size: 16px; /* Adjust the font size for mobile devices */
-        padding: 8px 12px; /* Adjust padding to fit in the small navbar */
-        margin-right: 5px; /* Reduce the margin for more compact spacing */
+        flex: 0 0 auto;
+        /* Control the size of the elements */
+        font-size: 16px;
+        /* Adjust the font size for mobile devices */
+        padding: 8px 12px;
+        /* Adjust padding to fit in the small navbar */
+        margin-right: 5px;
+        /* Reduce the margin for more compact spacing */
     }
 
     .NavBarLogo img {
-        margin-left: 5px; /* Adjust the logo margin on mobile */
+        margin-left: 5px;
+        /* Adjust the logo margin on mobile */
         margin-top: 5px;
         margin-bottom: 5px;
     }
