@@ -1,57 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
-
 body {
     background: #000000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
-
-.school-logos {
-    display: flex;
-    align-items: center;
-    /* Center items vertically */
-    justify-content: space-between;
-    /* Spread items horizontally */
-    margin-bottom: 40px;
-    /* Add some space below the logos and title */
 }
 
 .introduction {
-    position: absolute;
-    top: 50px;
     color: #f2eaea;
 }
 
 .introduction-title {
     text-align: center;
     /* Center the title */
-    flex: 1;
-    /* Allow the title to take the remaining space between logos */
-    margin: 20px;
+    margin-top: 70px;
     /* Add space on both sides of the title */
     font-size: 30px;
-    font-family: 'Aileron Regular', sans-serif;
+    font-family: 'Aileron Thin';
+}
+
+#video-container {
+    max-width: 50%;
+    /* Adjust this value to make the video smaller or larger */
+    margin: 0 auto;
+    text-align: center;
+    border: 6px solid #1a1e21;
+    /* Cool blue border color */
+    border-radius: 10px;
+    /* Rounded corners */
+    overflow: hidden;
+    /* Hide overflowing border */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Style for the video element */
+#video-container video {
+    display: block;
+    width: 100%;
 }
 
 .introduction-description {
     text-align: center;
     font-size: 20px;
-    font-family: 'Aileron Regular', sans-serif;
+    font-family: 'Aileron Thin';
 }
 
 .introduction-details {
     text-align: left;
     text-align: justify;
     font-size: 20px;
-    font-family: 'Aileron Regular', sans-serif;
+    font-family: 'Aileron Thin';
     margin-left: 37px;
     margin-right: 37px;
     line-height: 1.5;
 }
+
+
+
+
+
+
 
 @media screen and (min-width: 768px) and (max-width: 1100px) {
     .introduction-description {
@@ -73,6 +81,12 @@ body {
         line-height: 1.5;
     }
 }
+
+
+
+
+
+
 
 @media only screen and (max-width: 767px) {
     .introduction {
