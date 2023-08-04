@@ -11,15 +11,11 @@
     <link rel="icon" type="image/png" href="./images/ForumIcon.png" sizes="16x16">
 
     <!-- ------------------------------------------------- Style Sheets ------------------------------------------------- -->
-    <link rel="stylesheet" href="./Style/WholePage.css">
     <link rel="stylesheet" href="./Style/NavBarStyle.css">
-    <link rel="stylesheet" href="./Style/School/SchoolVideoStyle.css">
     <link rel="stylesheet" href="./Style/School/SchoolintroStyle.css">
+    <link rel="stylesheet" href="./Style/School/SchoolVideoStyle.css">
+    <link rel="stylesheet" href="./Style/School/SchoolStats.css">
 
-    <!-- ------------------------------------------------- Imports ------------------------------------------------- -->
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&amp;display=swap'>
 
 </head>
 
@@ -44,28 +40,19 @@
 
     <!-- ---------------------------------------------School Intro Section ---------------------------------------------- -->
 
+    <section class="introduction" id="introduction">
 
-    <div class="school-video-wrapper">
-        <input type="checkbox" onclick="toggleIntroduction()">
-        <div class="school-video">
-            <video src="./videos/instit.mp4" loop muted autoplay playsinline></video>
-        </div>
-        <div class="video-text">
-            <span data-text="REGARDER LA VIDÉO"></span>
-        </div>
-    </div>
-
-    <div class="introduction" id="introduction">
-
-        <div class="school-logos">
-            <img id="logoleft" src="./images/Schoolimages/EMI.png" alt="logo EMI">
-            <p class="introduction-title">ÉCOLE MOHAMMADIA D'INGÉNIEURS (EMI)</p>
-            <img id="logoright" src="./images/Schoolimages/UM5R.png" alt="logo UM5R">
-        </div>
+        <div class="introduction-title"> ÉCOLE MOHAMMADIA D'INGÉNIEURS (EMI) </div>
 
         <div class="introduction-description">
             <p>École pionnière de l'ingénierie pluridisciplinaire au Maroc et en Afrique, l'EMI est l'école de référence
                 en formation polytechnique par excellence.</p>
+        </div>
+
+        <div id="video-container">
+            <video controls>
+                <source src="./videos/instit.mp4">
+            </video>
         </div>
 
         <div class="introduction-details">
@@ -81,9 +68,18 @@
                 transversale.
             </p>
         </div>
-    </div>
+    </section>
 
-    <script src="./JS/School/HideIntro.js"></script>
+
+    <!-- ---------------------------------------------School History Section ---------------------------------------------- -->
+
+
+
+    <!-- --------------------------------------------- JavaScript ---------------------------------------------- -->
+
+
+
+    <script src="./JS/School/SchoolStats.js"></script>
     <script src=" ./JS/NavBarFadeAway.js"></script>
 
 </body>
