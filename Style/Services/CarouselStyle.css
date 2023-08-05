@@ -1,3 +1,8 @@
+html {
+  background-image: url('/images/RecruitmentCampaignImages/ServicesBackground.png');
+  background-size: cover; /* This will crop the image as needed to cover the entire area */
+  background-position: center;
+}
 
 .carousel {
   width: 100%;
@@ -43,7 +48,7 @@ body .carousel {
 }
 
 .categories__title {
-  color: #f9f4ff;
+  color: #0f0e0f;
   font-size: 28px;
   font-family: 'Aileron Semi Bold';
   position: absolute;
