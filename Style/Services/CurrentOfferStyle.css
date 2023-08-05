@@ -6,6 +6,9 @@
   /* Fonts */
   --font-title: 'Aileron Thin', sans-serif;
   --font-text: 'Aileron Thin', sans-serif;
+    background-image: url('/images/RecruitmentCampaignImages/ServicesBackground.png');
+    background-size: cover; /* This will crop the image as needed to cover the entire area */
+    background-position: center;
 }
 
 /* RESET */
