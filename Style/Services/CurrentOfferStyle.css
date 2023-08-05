@@ -1,7 +1,3 @@
-html {
-  background-color: #222022;
-}
-
 
 /* Box sizing rules */
 *,
@@ -26,7 +22,7 @@ p {
 }
 
 .currentOffreContainertitle {
-  color: #0f0e0f;
+  color: #f5eef5;
   font-size: 28px;
   font-family: 'Aileron Semi Bold';
   position: absolute;
