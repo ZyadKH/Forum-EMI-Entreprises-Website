@@ -1,4 +1,3 @@
-
 /* Box sizing rules */
 *,
 *::before,
@@ -61,7 +60,7 @@ p {
   overflow: hidden;
   border-radius: 0.625rem;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
-  margin-top: 50px; 
+  margin-top: 50px;
 }
 
 
@@ -82,7 +81,7 @@ p {
   flex-direction: column;
   justify-content: space-between;
   align-self: flex-end;
-  height: 65%;
+  height: 55%;
   width: 100%;
   padding: 12% 1.25rem 1.875rem;
   background: linear-gradient(180deg,
@@ -214,9 +213,18 @@ p {
   }
 
   .card.show-content .card__content {
-    transform: translateY(0);
+    transform: translateY(1%);
     /* Translate the card content back to its original position when show-content class is applied */
   }
+
+  .card__content {
+    --flow-space: 0rem;
+  }
+  
+  .card__content--container {
+    --flow-space: 1.05rem;
+  }
+  
 
   .card__title {
     font-size: 1.8rem;
