@@ -35,6 +35,17 @@ body {
   max-width: 840px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
 /* Left contact page */
 .form-horizontal {
   /*float: left;*/
@@ -75,6 +86,16 @@ textarea {
 .alt-send-button:hover {
   transform: translate(0, -29px);
 }
+
+
+
+
+
+
+
+
+
+
 
 /* Begin Right Contact Page */
 .direct-contact-container {
@@ -121,6 +142,31 @@ textarea {
   text-decoration: none;
 }
 
+/* Override default link styles */
+.map-link {
+  color: inherit; /* Use the same color as the parent element */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Change the color of the icon */
+.map-link i {
+  color: #bbb; /* Replace with the color you want */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*------------------------------------------------------Social Media Icons Start Here ------------------------------------------------------- */
 
@@ -154,6 +200,10 @@ ul.social-icons li a {
   outline: none;
   /*  remove the focus outline */
 }
+
+
+
+
 
 
 /* Adjust the positioning of the social media icons within the list items */
