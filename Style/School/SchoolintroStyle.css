@@ -125,4 +125,10 @@ body {
         /* Reduce right margin for mobile */
         line-height: 1.5;
     }
+    
+    #video-container {
+        max-width: 80%;
+        /* Adjust this value to make the video smaller or larger */
+    }
+
 }
