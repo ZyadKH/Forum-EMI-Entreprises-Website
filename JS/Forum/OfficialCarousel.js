@@ -1,9 +1,9 @@
-const root = document.documentElement;
-const carouselElementsDisplayed = getComputedStyle(root).getPropertyValue("--carousel-elements-displayed");
-const carouselContent = document.querySelector("ul.carousel-Official-content");
+const Officialroot = document.documentElement;
+const OfficialcarouselElementsDisplayed = getComputedStyle(Officialroot).getPropertyValue("--carousel-Official-elements-displayed");
+const OfficialcarouselContent = document.querySelector("ul.carousel-Official-content");
 
-root.style.setProperty("--carousel-elements", carouselContent.children.length);
+Officialroot.style.setProperty("--carousel-Official-elements", OfficialcarouselContent.children.length);
 
-for(let i=0; i<carouselElementsDisplayed; i++) {
-  carouselContent.appendChild(carouselContent.children[i].cloneNode(true));
+for(let i=0; i<OfficialcarouselElementsDisplayed; i++) {
+  OfficialcarouselContent.appendChild(OfficialcarouselContent.children[i].cloneNode(true));
 }

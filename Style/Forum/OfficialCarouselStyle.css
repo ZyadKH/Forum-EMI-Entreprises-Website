@@ -19,15 +19,15 @@
   }
 
 :root {
-    --carousel-width: 100vw;
-    --carousel-elements-displayed: 5;
-    --carousel-element-width: calc(var(--carousel-width) / var(--carousel-elements-displayed));
-    --carousel-animation-duration: calc(var(--carousel-elements) * 3s);
+    --carousel-Official-width: 100vw;
+    --carousel-Official-elements-displayed: 5;
+    --carousel-Official-element-width: calc(var(--carousel-Official-width) / var(--carousel-Official-elements-displayed));
+    --carousel-Official-animation-duration: calc(var(--carousel-Official-elements) * 3s);
 }
 
 .carousel-Official {
-    width: var(--carousel-width);
-    height: var(--carousel-height);
+    width: var(--carousel-Official-width);
+    height: var(--carousel-Official-height);
     background-color: #ffffff;
     color: #eee;
     overflow: hidden;
@@ -58,7 +58,7 @@
     list-style: none;
     height: 100%;
     display: flex;
-    animation: scrolling var(--carousel-animation-duration) linear infinite;
+    animation: scrolling var(--carousel-Official-animation-duration) linear infinite;
 }
 
 @keyframes scrolling {
@@ -67,7 +67,7 @@
     }
 
     100% {
-        transform: translateX(calc(-1 * var(--carousel-element-width) * var(--carousel-elements)));
+        transform: translateX(calc(-1 * var(--carousel-Official-element-width) * var(--carousel-Official-elements)));
     }
 }
 
@@ -77,9 +77,9 @@
     align-items: center;
     /* text-align: center; */
     flex-shrink: 0;
-    width: var(--carousel-element-width);
+    width: var(--carousel-Official-element-width);
     max-height: 100%;
-    font-size: calc(var(--carousel-height)*3/4);
+    font-size: calc(var(--carousel-Official-height)*3/4);
     /* 5rem; */
     white-space: nowrap;
 }
@@ -97,9 +97,9 @@
     }
 
     :root {
-        --carousel-width: 100vw;
-        --carousel-height: 16vh;
-        --carousel-elements-displayed: 3;
+        --carousel-Official-width: 100vw;
+        --carousel-Official-height: 16vh;
+        --carousel-Official-elements-displayed: 3;
     }
 
     .carousel-Official:before,
