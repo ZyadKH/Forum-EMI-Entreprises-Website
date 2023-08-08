@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Entreprises29 {
+    width: 100%;
+    min-height: 60vh;
+    background-color: #333;
+    display: flex;
+    flex-direction: column; /* Stack carousels vertically */
+    align-items: center; /* Horizontally center carousels */
+}
+
+.carousel-Platinum {
+    margin: 10px 0; /* Add spacing between carousels */
+    /* ... Your carousel styles ... */
+  }
+
+:root {
+    --carousel-Platinum-width: 100vw;
+    --carousel-Platinum-elements-displayed: 5;
+    --carousel-Platinum-element-width: calc(var(--carousel-Platinum-width) / var(--carousel-Platinum-elements-displayed));
+    --carousel-Platinum-animation-duration: calc(var(--carousel-Platinum-elements) * 3s);
+}
+
+.carousel-Platinum {
+    width: var(--carousel-Platinum-width);
+    height: var(--carousel-Platinum-height);
+    background-color: #ffffff;
+    color: #eee;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-Platinum:before,
+.carousel-Platinum:after {
+    position: absolute;
+    top: 0;
+    width: 10rem;
+    height: 100%;
+    content: "";
+    z-index: 1;
+}
+
+.carousel-Platinum:before {
+    left: 0;
+    background: linear-gradient(to right, #ffffff 0%, transparent 100%);
+}
+
+.carousel-Platinum:after {
+    right: 0;
+    background: linear-gradient(to left, #ffffff 0%, transparent 100%);
+}
+
+.carousel-Platinum-content {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    animation: scrolling var(--carousel-Platinum-animation-duration) linear infinite;
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-1 * var(--carousel-Platinum-element-width) * var(--carousel-Platinum-elements)));
+    }
+}
+
+.carousel-Platinum-content li , .carousel-Platinum-content-Plat li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    flex-shrink: 0;
+    width: var(--carousel-Platinum-element-width);
+    max-height: 100%;
+    font-size: calc(var(--carousel-Platinum-height)*3/4);
+    /* 5rem; */
+    white-space: nowrap;
+}
+
+
+.carousel-Platinum-content li img {
+    width: 100%;
+}
+
+
+
+@media (max-width: 600px) {
+    html {
+        font-size: 12px;
+    }
+
+    :root {
+        --carousel-Platinum-width: 100vw;
+        --carousel-Platinum-height: 16vh;
+        --carousel-Platinum-elements-displayed: 3;
+    }
+
+    .carousel-Platinum:before,
+    .carousel-Platinum:after {
+        width: 5rem;
+    }
+}
