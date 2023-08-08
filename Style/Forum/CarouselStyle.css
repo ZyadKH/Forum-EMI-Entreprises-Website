@@ -17,12 +17,6 @@
     margin: 10px 0; /* Add spacing between carousels */
     /* ... Your carousel styles ... */
   }
-  
-  /* Adjust carousel heights as needed */
-  #Officiel,
-  #Platinium {
-    height: 100px; /* Adjust the height as needed */
-  }
 
 :root {
     --carousel-width: 100vw;
@@ -66,16 +60,7 @@
     display: flex;
     animation: scrolling var(--carousel-animation-duration) linear infinite;
 }
-.carousel-content-Plat {
-    list-style: none;
-    height: 100%;
-    display: flex;
-    animation: scrolling var(--carousel-animation-duration) linear infinite;
-}
 
-/* .carousel-content:hover {
-    animation-play-state: paused;
-  } */
 @keyframes scrolling {
     0% {
         transform: translateX(0);
@@ -102,7 +87,6 @@
 
 .carousel-content li img ,.carousel-content-Plat li img {
     width: 100%;
-
 }
 
 
