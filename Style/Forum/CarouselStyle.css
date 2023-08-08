@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Entreprises29 {
+    width: 100%;
+    min-height: 60vh;
+    background-color: #333;
+    display: flex;
+    flex-direction: column; /* Stack carousels vertically */
+    align-items: center; /* Horizontally center carousels */
+}
+
+.carousel {
+    margin: 10px 0; /* Add spacing between carousels */
+    /* ... Your carousel styles ... */
+  }
+  
+  /* Adjust carousel heights as needed */
+  #Officiel,
+  #Platinium {
+    height: 100px; /* Adjust the height as needed */
+  }
+
+:root {
+    --carousel-width: 100vw;
+    --carousel-elements-displayed: 5;
+    --carousel-element-width: calc(var(--carousel-width) / var(--carousel-elements-displayed));
+    --carousel-animation-duration: calc(var(--carousel-elements) * 3s);
+}
+
+.carousel {
+    width: var(--carousel-width);
+    height: var(--carousel-height);
+    background-color: #ffffff;
+    color: #eee;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel:before,
+.carousel:after {
+    position: absolute;
+    top: 0;
+    width: 10rem;
+    height: 100%;
+    content: "";
+    z-index: 1;
+}
+
+.carousel:before {
+    left: 0;
+    background: linear-gradient(to right, #ffffff 0%, transparent 100%);
+}
+
+.carousel:after {
+    right: 0;
+    background: linear-gradient(to left, #ffffff 0%, transparent 100%);
+}
+
+.carousel-content {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    animation: scrolling var(--carousel-animation-duration) linear infinite;
+}
+.carousel-content-Plat {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    animation: scrolling var(--carousel-animation-duration) linear infinite;
+}
+
+/* .carousel-content:hover {
+    animation-play-state: paused;
+  } */
+@keyframes scrolling {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-1 * var(--carousel-element-width) * var(--carousel-elements)));
+    }
+}
+
+.carousel-content li , .carousel-content-Plat li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    flex-shrink: 0;
+    width: var(--carousel-element-width);
+    max-height: 100%;
+    font-size: calc(var(--carousel-height)*3/4);
+    /* 5rem; */
+    white-space: nowrap;
+}
+
+
+.carousel-content li img ,.carousel-content-Plat li img {
+    width: 100%;
+
+}
+
+
+
+@media (max-width: 600px) {
+    html {
+        font-size: 12px;
+    }
+
+    :root {
+        --carousel-width: 100vw;
+        --carousel-height: 16vh;
+        --carousel-elements-displayed: 3;
+    }
+
+    .carousel:before,
+    .carousel:after {
+        width: 5rem;
+    }
+}
