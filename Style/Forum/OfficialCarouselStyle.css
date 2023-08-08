@@ -13,7 +13,7 @@
     align-items: center; /* Horizontally center carousels */
 }
 
-.carousel {
+.carousel-Official {
     margin: 10px 0; /* Add spacing between carousels */
     /* ... Your carousel styles ... */
   }
@@ -25,7 +25,7 @@
     --carousel-animation-duration: calc(var(--carousel-elements) * 3s);
 }
 
-.carousel {
+.carousel-Official {
     width: var(--carousel-width);
     height: var(--carousel-height);
     background-color: #ffffff;
@@ -34,8 +34,8 @@
     position: relative;
 }
 
-.carousel:before,
-.carousel:after {
+.carousel-Official:before,
+.carousel-Official:after {
     position: absolute;
     top: 0;
     width: 10rem;
@@ -44,17 +44,17 @@
     z-index: 1;
 }
 
-.carousel:before {
+.carousel-Official:before {
     left: 0;
     background: linear-gradient(to right, #ffffff 0%, transparent 100%);
 }
 
-.carousel:after {
+.carousel-Official:after {
     right: 0;
     background: linear-gradient(to left, #ffffff 0%, transparent 100%);
 }
 
-.carousel-content {
+.carousel-Official-content {
     list-style: none;
     height: 100%;
     display: flex;
@@ -71,7 +71,7 @@
     }
 }
 
-.carousel-content li , .carousel-content-Plat li {
+.carousel-Official-content li , .carousel-Official-content-Plat li {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,7 +85,7 @@
 }
 
 
-.carousel-content li img ,.carousel-content-Plat li img {
+.carousel-Official-content li img {
     width: 100%;
 }
 
@@ -102,8 +102,8 @@
         --carousel-elements-displayed: 3;
     }
 
-    .carousel:before,
-    .carousel:after {
+    .carousel-Official:before,
+    .carousel-Official:after {
         width: 5rem;
     }
 }

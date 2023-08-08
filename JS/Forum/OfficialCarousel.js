@@ -1,6 +1,6 @@
 const root = document.documentElement;
 const carouselElementsDisplayed = getComputedStyle(root).getPropertyValue("--carousel-elements-displayed");
-const carouselContent = document.querySelector("ul.carousel-content");
+const carouselContent = document.querySelector("ul.carousel-Official-content");
 
 root.style.setProperty("--carousel-elements", carouselContent.children.length);
 
