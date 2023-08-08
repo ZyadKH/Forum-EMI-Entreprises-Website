@@ -13,29 +13,29 @@
     align-items: center; /* Horizontally center carousels */
 }
 
-.carousel-Platinum {
+.carousel-Gold {
     margin: 10px 0; /* Add spacing between carousels */
     /* ... Your carousel styles ... */
   }
 
 :root {
-    --carousel-Platinum-width: 100vw;
-    --carousel-Platinum-elements-displayed: 6;
-    --carousel-Platinum-element-width: calc(var(--carousel-Platinum-width) / var(--carousel-Platinum-elements-displayed));
-    --carousel-Platinum-animation-duration: calc(var(--carousel-Platinum-elements) * 3s);
+    --carousel-Gold-width: 100vw;
+    --carousel-Gold-elements-displayed: 5;
+    --carousel-Gold-element-width: calc(var(--carousel-Gold-width) / var(--carousel-Gold-elements-displayed));
+    --carousel-Gold-animation-duration: calc(var(--carousel-Gold-elements) * 3s);
 }
 
-.carousel-Platinum {
-    width: var(--carousel-Platinum-width);
-    height: var(--carousel-Platinum-height);
+.carousel-Gold {
+    width: var(--carousel-Gold-width);
+    height: var(--carousel-Gold-height);
     background-color: #ffffff;
     color: #eee;
     overflow: hidden;
     position: relative;
 }
 
-.carousel-Platinum:before,
-.carousel-Platinum:after {
+.carousel-Gold:before,
+.carousel-Gold:after {
     position: absolute;
     top: 0;
     width: 10rem;
@@ -44,21 +44,21 @@
     z-index: 1;
 }
 
-.carousel-Platinum:before {
+.carousel-Gold:before {
     left: 0;
     background: linear-gradient(to right, #ffffff 0%, transparent 100%);
 }
 
-.carousel-Platinum:after {
+.carousel-Gold:after {
     right: 0;
     background: linear-gradient(to left, #ffffff 0%, transparent 100%);
 }
 
-.carousel-Platinum-content {
+.carousel-Gold-content {
     list-style: none;
     height: 100%;
     display: flex;
-    animation: scrolling var(--carousel-Platinum-animation-duration) linear infinite;
+    animation: scrolling var(--carousel-Gold-animation-duration) linear infinite;
 }
 
 @keyframes scrolling {
@@ -67,25 +67,25 @@
     }
 
     100% {
-        transform: translateX(calc(-1 * var(--carousel-Platinum-element-width) * var(--carousel-Platinum-elements)));
+        transform: translateX(calc(-1 * var(--carousel-Gold-element-width) * var(--carousel-Gold-elements)));
     }
 }
 
-.carousel-Platinum-content li , .carousel-Platinum-content-Plat li {
+.carousel-Gold-content li , .carousel-Gold-content-Plat li {
     display: flex;
     justify-content: center;
     align-items: center;
     /* text-align: center; */
     flex-shrink: 0;
-    width: var(--carousel-Platinum-element-width);
+    width: var(--carousel-Gold-element-width);
     max-height: 100%;
-    font-size: calc(var(--carousel-Platinum-height)*3/4);
+    font-size: calc(var(--carousel-Gold-height)*3/4);
     /* 5rem; */
     white-space: nowrap;
 }
 
 
-.carousel-Platinum-content li img {
+.carousel-Gold-content li img {
     width: 100%;
 }
 
@@ -97,13 +97,13 @@
     }
 
     :root {
-        --carousel-Platinum-width: 100vw;
-        --carousel-Platinum-height: 16vh;
-        --carousel-Platinum-elements-displayed: 3;
+        --carousel-Gold-width: 100vw;
+        --carousel-Gold-height: 16vh;
+        --carousel-Gold-elements-displayed: 3;
     }
 
-    .carousel-Platinum:before,
-    .carousel-Platinum:after {
+    .carousel-Gold:before,
+    .carousel-Gold:after {
         width: 5rem;
     }
 }
