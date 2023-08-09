@@ -4,25 +4,17 @@
     box-sizing: border-box;
 }
 
-.Entreprises29 {
-    width: 100%;
-    min-height: 60vh;
-    background-color: #333;
-    display: flex;
-    flex-direction: column; /* Stack carousels vertically */
-    align-items: center; /* Horizontally center carousels */
-}
 
 .carousel-Platinum {
-    margin: 10px 0; /* Add spacing between carousels */
+    margin: 15px 0; /* Add spacing between carousels */
     /* ... Your carousel styles ... */
   }
 
 :root {
     --carousel-Platinum-width: 100vw;
-    --carousel-Platinum-elements-displayed: 6;
+    --carousel-Platinum-elements-displayed: 7;
     --carousel-Platinum-element-width: calc(var(--carousel-Platinum-width) / var(--carousel-Platinum-elements-displayed));
-    --carousel-Platinum-animation-duration: calc(var(--carousel-Platinum-elements) * 3s);
+    --carousel-Platinum-animation-duration: calc(var(--carousel-Platinum-elements) * 12s);
 }
 
 .carousel-Platinum {
@@ -32,13 +24,14 @@
     color: #eee;
     overflow: hidden;
     position: relative;
+    box-shadow: 0px 10px 20px 5px lightseagreen;
 }
 
 .carousel-Platinum:before,
 .carousel-Platinum:after {
     position: absolute;
     top: 0;
-    width: 10rem;
+    width: 2rem;
     height: 100%;
     content: "";
     z-index: 1;

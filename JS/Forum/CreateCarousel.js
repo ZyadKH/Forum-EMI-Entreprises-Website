@@ -4,13 +4,15 @@ function createCarousel(containerClassName, contentClassName, elementsDisplayed)
     const carouselContents = document.querySelectorAll(`.${containerClassName} ul.${contentClassName}`);
 
     carouselContents.forEach(carouselContent => {
-        root.style.setProperty(`--${containerClassName}-elements`, carouselContent.children.length);
+        const numElements = carouselContent.children.length;
+        root.style.setProperty(`--${containerClassName}-elements`, numElements);
 
         for (let i = 0; i < carouselElementsDisplayed; i++) {
             carouselContent.appendChild(carouselContent.children[i].cloneNode(true));
         }
 
-        carouselContent.style.animationDuration = `calc(var(--${containerClassName}-elements) * 3s)`;
+        const animationDuration = numElements * 3; // Adjust the factor as needed
+        carouselContent.style.animationDuration = `${animationDuration}s`;
     });
 }
 

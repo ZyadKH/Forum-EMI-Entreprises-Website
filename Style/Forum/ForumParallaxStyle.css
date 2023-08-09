@@ -5,7 +5,7 @@
 body {
     font-family: 'Aileron Regular', sans-serif;
     margin: 0;
-    /* Reset default margin */
+    overflow-x: hidden;
 }
 
 .container-IDvisu {
@@ -57,11 +57,26 @@ p {
     font-size: .875rem;
 }
 
-.blank {
+
+.Entreprises29 {
     width: 100%;
-    min-height: 60vh;
-    background-color: var(--color);
+    min-height: 80vh;
+    background-color: #333;
+    display: flex;
+    flex-direction: column; /* Stack carousels vertically */
+    align-items: center; /* Horizontally center carousels */
 }
+
+.Entreprises29-title {
+    text-align: center;
+    font-size: 60px; /* Adjust the font size as needed */
+    margin-top: 20px; /* Add top margin for spacing */
+    color: #fff; /* Set the desired text color */
+    font-family: 'Aileron Semi Bold';
+}
+
+
+
 
 .container-Espaces {
     text-align: center;
@@ -123,6 +138,16 @@ h3 {
 .img-conferences {
     background-image: url('../../images/ForumImages/EspaceConferences.JPG');
 }
+
+
+.blank {
+    width: 100%;
+    min-height: 60vh;
+    background-color: var(--color);
+}
+
+
+
 
 @media (max-width: 768px) {
     .container-Espaces {
