@@ -91,12 +91,12 @@
 
     :root {
         --carousel-Platinum-width: 100vw;
-        --carousel-Platinum-height: 16vh;
-        --carousel-Platinum-elements-displayed: 3;
+        --carousel-Platinum-height: 9vh;
+        --carousel-Platinum-elements-displayed: 4;
     }
 
     .carousel-Platinum:before,
     .carousel-Platinum:after {
-        width: 5rem;
+        width: 1rem;
     }
 }

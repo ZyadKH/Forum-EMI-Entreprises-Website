@@ -90,12 +90,12 @@
 
     :root {
         --carousel-Gold-width: 100vw;
-        --carousel-Gold-height: 16vh;
-        --carousel-Gold-elements-displayed: 3;
+        --carousel-Gold-height: 7vh;
+        --carousel-Gold-elements-displayed: 5;
     }
 
     .carousel-Gold:before,
     .carousel-Gold:after {
-        width: 5rem;
+        width: 1rem;
     }
 }

@@ -90,12 +90,12 @@
 
     :root {
         --carousel-Official-width: 100vw;
-        --carousel-Official-height: 16vh;
+        --carousel-Official-height: 10vh;
         --carousel-Official-elements-displayed: 3;
     }
 
     .carousel-Official:before,
     .carousel-Official:after {
-        width: 5rem;
+        width: 1rem;
     }
 }

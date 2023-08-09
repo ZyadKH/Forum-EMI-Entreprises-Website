@@ -91,12 +91,12 @@
 
     :root {
         --carousel-Silver-width: 100vw;
-        --carousel-Silver-height: 16vh;
-        --carousel-Silver-elements-displayed: 3;
+        --carousel-Silver-height: 5vh;
+        --carousel-Silver-elements-displayed: 6;
     }
 
     .carousel-Silver:before,
     .carousel-Silver:after {
-        width: 5rem;
+        width: 1rem;
     }
 }
