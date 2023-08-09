@@ -11,9 +11,9 @@
 
 :root {
     --carousel-Official-width: 100vw;
-    --carousel-Official-elements-displayed: 6;
+    --carousel-Official-elements-displayed: 5;
     --carousel-Official-element-width: calc(var(--carousel-Official-width) / var(--carousel-Official-elements-displayed));
-    --carousel-Official-animation-duration: calc(var(--carousel-Official-elements) * 21s);
+    --carousel-Official-animation-duration: calc(var(--carousel-Official-elements) * 16s);
 }
 
 .carousel-Official {
@@ -50,10 +50,10 @@
     list-style: none;
     height: 100%;
     display: flex;
-    animation: scrolling var(--carousel-Official-animation-duration) linear infinite;
+    animation: scrollingOfficial var(--carousel-Official-animation-duration) linear infinite;
 }
 
-@keyframes scrolling {
+@keyframes scrollingOfficial {
     0% {
         transform: translateX(0);
     }

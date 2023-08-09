@@ -12,9 +12,9 @@
 
 :root {
     --carousel-Platinum-width: 100vw;
-    --carousel-Platinum-elements-displayed: 7;
+    --carousel-Platinum-elements-displayed: 6;
     --carousel-Platinum-element-width: calc(var(--carousel-Platinum-width) / var(--carousel-Platinum-elements-displayed));
-    --carousel-Platinum-animation-duration: calc(var(--carousel-Platinum-elements) * 12s);
+    --carousel-Platinum-animation-duration: calc(var(--carousel-Platinum-elements) * 10s);
 }
 
 .carousel-Platinum {
@@ -51,10 +51,10 @@
     list-style: none;
     height: 100%;
     display: flex;
-    animation: scrolling var(--carousel-Platinum-animation-duration) linear infinite;
+    animation: scrollingPlatinum var(--carousel-Platinum-animation-duration) linear infinite;
 }
 
-@keyframes scrolling {
+@keyframes scrollingPlatinum {
     0% {
         transform: translateX(0);
     }

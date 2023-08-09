@@ -11,9 +11,9 @@
 
 :root {
     --carousel-Gold-width: 100vw;
-    --carousel-Gold-elements-displayed: 8;
+    --carousel-Gold-elements-displayed: 10;
     --carousel-Gold-element-width: calc(var(--carousel-Gold-width) / var(--carousel-Gold-elements-displayed));
-    --carousel-Gold-animation-duration: calc(var(--carousel-Gold-elements) * 4s);
+    --carousel-Gold-animation-duration: calc(var(--carousel-Gold-elements) * 5s);
 }
 
 .carousel-Gold {
@@ -50,10 +50,10 @@
     list-style: none;
     height: 100%;
     display: flex;
-    animation: scrolling var(--carousel-Gold-animation-duration) linear infinite;
+    animation: scrollingGold var(--carousel-Gold-animation-duration) linear infinite;
 }
 
-@keyframes scrolling {
+@keyframes scrollingGold {
     0% {
         transform: translateX(0);
     }
