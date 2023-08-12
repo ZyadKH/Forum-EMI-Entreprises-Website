@@ -64,6 +64,10 @@ body .container .card {
     box-shadow: 0px 10px 10px rgba(46, 54, 68, 0.03);
 }
 
+#emptyCard{
+    background: black;
+}
+
 body .container .card .content {
     position: relative;
     display: flex;
@@ -147,27 +151,29 @@ body .container .card:hover .sci li {
 
     /* For desktop, show 2 cards in the first line, 4 cards in the second line, 4 cards in the third line, and 3 cards in the fourth line */
     body .container .card:nth-child(8n + 1),
-    body .container .card:nth-child(8n + 2) {
-        flex-basis: calc(50% - 2em);
-    }
-
+    body .container .card:nth-child(8n + 2),
     body .container .card:nth-child(8n + 3),
-    body .container .card:nth-child(8n + 4),
+    body .container .card:nth-child(8n + 4) {
+        flex-basis: calc(25% - 2em);
+    }
+
     body .container .card:nth-child(8n + 5),
-    body .container .card:nth-child(8n + 6) {
-        flex-basis: calc(25% - 2em);
-    }
-
+    body .container .card:nth-child(8n + 6),
     body .container .card:nth-child(8n + 7),
-    body .container .card:nth-child(8n + 8),
-    body .container .card:nth-child(8n + 9),
-    body .container .card:nth-child(8n + 10) {
+    body .container .card:nth-child(8n + 8) {
         flex-basis: calc(25% - 2em);
     }
 
+    body .container .card:nth-child(8n + 9),
+    body .container .card:nth-child(8n + 10),
     body .container .card:nth-child(8n + 11),
-    body .container .card:nth-child(8n + 12),
-    body .container .card:nth-child(8n + 13) {
+    body .container .card:nth-child(8n + 12) {
+        flex-basis: calc(25% - 2em);
+    }
+
+    body .container .card:nth-child(8n + 13),
+    body .container .card:nth-child(8n + 14),
+    body .container .card:nth-child(8n + 15) {
         flex-basis: calc(33.3333% - 2em);
     }
 }
@@ -176,5 +182,9 @@ body .container .card:hover .sci li {
 @media (max-width: 768px) {
     .committee-title {
         font-size: 25px;
+    }
+
+    #emptyCard{
+        display: none;
     }
 }
