@@ -1,0 +1,78 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Add margin at the top and bottom of the box container */
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* Adjust the gap between boxes as needed */
+  margin: 20px;
+  /* Equal margin at the top, bottom, right, and left */
+}
+
+/* Style for each box */
+/* Style for each box */
+.box {
+  width: calc(25% - 20px);
+  /* Adjust the width and gap to fit 4 boxes in a row */
+  border: 1px solid #ccc;
+  /* Set a fixed height for the boxes */
+  height: 100px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  /* Vertically center the content */
+  transition: transform 0.3s ease-in-out;
+  /* Add transition for the hover effect */
+}
+
+/* Style for the logo */
+.logo {
+  /* Remove the padding-bottom and positioning from the logo */
+  width: 50%;
+  height: 100%; /* Set the logo's height to 100% of the box */
+  margin-right: 15px;
+}
+
+.logo img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+/* Style for the content */
+.content {
+  /* Remove flex: 1 from the content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%; /* Set the content's height to 100% of the box */
+}
+
+/* Style for the name */
+.content h3 {
+  margin-bottom: 10px;
+  font-size: 1rem; /* Set the font size */
+  overflow: hidden; /* Hide overflowing content */
+  white-space: nowrap; /* Prevent text from wrapping */
+  text-overflow: ellipsis; /* Show ellipsis (...) for long text */
+}
+
+/* Style for the article link */
+.content a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 0.8rem; /* Set the font size */
+}
+
+/* Hover effect for the box */
+.box:hover {
+  transform: translateY(-8px);
+  /* Translate the box slightly upwards */
+}
