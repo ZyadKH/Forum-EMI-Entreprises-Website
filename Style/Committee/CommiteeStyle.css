@@ -1,190 +1,83 @@
 .committee-section {
-    text-align: center;
-    /* Center the content horizontally */
+    height: 85vh;
+    margin-top: 100px;
 }
 
-.committee-title {
-    font-size: 40px;
-    font-weight: bold;
-    color: #ffffff;
-    /* Optionally, you can set the color of the title */
-    margin-top: 70px;
-}
-
-
-
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    outline: none;
-    appearance: none;
-    border-style: none;
-    color: #ffffff;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-h1,
-h2,
-h3,
-span,
-p {
-    font-family: "Aileron Regular";
-}
-
-
-body .container {
+.committee-card-container {
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 1em;
-}
-
-body .container .card {
-    position: relative;
-    width: 300px;
-    height: 400px;
-    margin: 1em;
-    background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    backdrop-filter: blur(40px);
-    border: solid 2px transparent;
-    background-clip: padding-box;
-    box-shadow: 0px 10px 10px rgba(46, 54, 68, 0.03);
 }
 
-#emptyCard{
-    background: black;
-}
-
-body .container .card .content {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    opacity: 0.5;
-    transition: 0.5s;
-}
-
-body .container .card .content .img {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+.committee-card {
+    width: 1030px;
+    height: 490px;
+    border-radius: 12px;
     overflow: hidden;
-    border: 10px solid rgba(0, 0, 0, 0.25);
+    position: relative;
+    font-family: 'Aileron Thin';
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: transform 0.4s ease-in-out;
 }
 
-body .container .card .content .img img {
-    position: absolute;
-    top: 0;
-    left: 0;
+
+.committee-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.committee-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-body .container .card .content .cardContent h3 {
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 500;
-    font-size: 18px;
-    text-align: center;
-    margin: 20px 0 10px;
-    line-height: 1.1em;
-}
-
-body .container .card .content .cardContent h3 span {
-    font-size: 12px;
-    font-weight: 300;
-    text-transform: initial;
-}
-
-body .container .card .sci {
+.committee-card .committee-card-content {
+    box-sizing: border-box;
+    width: 100%;
     position: absolute;
-    bottom: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+    padding: 30px 20px 20px 20px;
+    height: auto;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9) 90%);
 }
 
-body .container .card .sci li {
-    margin: 0 10px;
-    transform: translateY(40px);
-    opacity: 0;
-    transition: 0.5s;
-    transition-delay: calc(0.1s * var(--i));
+.committee-card .top-content,
+.committee-card .bottom-content {
+    margin: 0;
 }
 
-body .container .card .sci li a {
-    font-size: 24px;
+.committee-card .top-content {
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 4px;
 }
 
-body .container .card:hover .content {
-    opacity: 1;
-    transform: translateY(-20px);
+.committee-card .bottom-content {
+    font-size: 31px;
+    color: #fff;
 }
-
-body .container .card:hover .sci li {
-    transform: translateY(0px);
-    opacity: 1;
-}
-
-
-
-
-@media (min-width: 992px) {
-
-    /* For desktop, show 2 cards in the first line, 4 cards in the second line, 4 cards in the third line, and 3 cards in the fourth line */
-    body .container .card:nth-child(8n + 1),
-    body .container .card:nth-child(8n + 2),
-    body .container .card:nth-child(8n + 3),
-    body .container .card:nth-child(8n + 4) {
-        flex-basis: calc(25% - 2em);
-    }
-
-    body .container .card:nth-child(8n + 5),
-    body .container .card:nth-child(8n + 6),
-    body .container .card:nth-child(8n + 7),
-    body .container .card:nth-child(8n + 8) {
-        flex-basis: calc(25% - 2em);
-    }
-
-    body .container .card:nth-child(8n + 9),
-    body .container .card:nth-child(8n + 10),
-    body .container .card:nth-child(8n + 11),
-    body .container .card:nth-child(8n + 12) {
-        flex-basis: calc(25% - 2em);
-    }
-
-    body .container .card:nth-child(8n + 13),
-    body .container .card:nth-child(8n + 14),
-    body .container .card:nth-child(8n + 15) {
-        flex-basis: calc(33.3333% - 2em);
-    }
-}
-
 
 @media (max-width: 768px) {
-    .committee-title {
-        font-size: 25px;
+
+    .committee-section {
+        height: 35vh;
+        margin-top: 70px;
     }
 
-    #emptyCard{
-        display: none;
+    .committee-card {
+        width: 400px;
+        height: 220px;
     }
+
+    .committee-card .top-content {
+        font-size: 16px;
+
+    }
+    
+    .committee-card .bottom-content {
+        font-size: 22px;
+    }
+
+
 }
