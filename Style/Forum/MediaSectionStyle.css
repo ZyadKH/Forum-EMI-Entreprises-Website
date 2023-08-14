@@ -37,6 +37,9 @@
   width: 50%;
   height: 100%; /* Set the logo's height to 100% of the box */
   margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .logo img {
