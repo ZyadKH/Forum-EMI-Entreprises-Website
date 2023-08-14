@@ -48,24 +48,10 @@
     height: 100vh;
 }
 
-h3 {
-    font-size: 1.5rem;
-    margin-top: 1em;
-}
-
-.card>a {
-    margin-bottom: 2em;
-}
-
-.card p {
-    text-align: justify;
-    padding: 15px;
-}
-
 .item {
     display: flex;
     width: 320px;
-    height: 450px;
+    height: 500px;
     background-color: white;
     flex-direction: column;
     align-items: center;
@@ -80,10 +66,9 @@ h3 {
     transform: scale(1.1); /* Increase the size on hover */
 }
 
-
 .img {
     width: 90%;
-    height: 200px;
+    min-height: 170px;
     background-color: lightgrey;
     background-size: cover;
     background-position: center;
@@ -97,6 +82,19 @@ h3 {
 
 .img-conferences {
     background-image: url('../../images/ForumImages/EspaceConferences.JPG');
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.card>a {
+    margin-bottom: 2em;
+}
+
+.card p {
+    text-align: justify;
+    padding: 15px;
 }
 
 @media (max-width: 768px) {
