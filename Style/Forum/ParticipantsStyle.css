@@ -1,0 +1,47 @@
+.Entreprises29 {
+    width: 100%;
+    min-height: 60vh;
+    background-color: var(--color);
+}
+
+.container-Official {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    /* Use viewport width */
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+    /* Optional background color */
+
+    overflow: hidden;
+    /* Clip rounded corners */
+}
+
+.box-Official {
+    flex: 1;
+    /* Equal spacing */
+    width: calc(33.33% - 10px);
+    /* Adjust the width calculation and margin to control spacing */
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin: 0 5px;
+    /* Adjust margin to control spacing */
+    border-radius: 20px;
+    /* Rounded corners */
+    
+    position: relative;
+}
+
+.box-Official::before {
+    content: "";
+    display: block;
+    padding-top: 100%; /* 1:1 Aspect Ratio */
+}
+
+.box-Official img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover whole box */
+}

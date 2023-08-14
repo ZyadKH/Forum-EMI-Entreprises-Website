@@ -1,37 +1,3 @@
-
-
-.VoirPlus {
-    display: inline-block;
-    padding: 1em 3.5em;
-    background-color: var(--color);
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-radius: 0.3em;
-    font-weight: 700;
-    letter-spacing: .5px;
-    font-size: .875rem;
-    font-family: 'Aileron Thin';
-  }
-
-.buttons {
-    display: inline-block;
-    padding: 1em 3.5em;
-    background-color: var(--color);
-    color: white;
-    text-decoration: none;
-    border-radius: 0.3em;
-    font-weight: 700;
-    letter-spacing: .5px;
-    font-size: .875rem;
-}
-
-.blank {
-    width: 100%;
-    min-height: 60vh;
-    background-color: var(--color);
-}
-
 .container-Espaces {
     text-align: center;
     color: var(--color);
@@ -98,6 +64,35 @@ h3 {
 .img-conferences {
     background-image: url('../../images/ForumImages/EspaceConferences.JPG');
 }
+
+
+.VoirPlus {
+    display: inline-block;
+    padding: 1em 3.5em;
+    background-color: var(--color);
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0.3em;
+    font-weight: 700;
+    letter-spacing: .5px;
+    font-size: .875rem;
+    font-family: 'Aileron Thin';
+  }
+
+.buttons {
+    display: inline-block;
+    padding: 1em 3.5em;
+    background-color: var(--color);
+    color: white;
+    text-decoration: none;
+    border-radius: 0.3em;
+    font-weight: 700;
+    letter-spacing: .5px;
+    font-size: .875rem;
+}
+
+
 
 @media (max-width: 768px) {
     .container-Espaces {
