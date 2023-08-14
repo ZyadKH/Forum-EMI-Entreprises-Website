@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./Style/Forum/ParticipantsStyle.css">
     <link rel="stylesheet" href="./Style/Forum/SpacesStyle.css">
     <link rel="stylesheet" href="./Style/Forum/MediaSectionStyle.css">
+    <link rel="stylesheet" href="./Style/footerStyle.css">
 
 
 </head>
@@ -363,12 +364,59 @@
             </div>
         </div>
 
-
-
-
-
-
     </div>
+
+
+     <!-- -------------------------------------- Footer ---------------------------------------------->
+
+
+     <footer class="footer">
+        <!-- Top Section -->
+        <div class="footer-top">
+            <div class="footer-logoAndSocial">
+                <div class="footer-logo">
+                    <img src="./images/logoNavBarFull.png" alt="Logo Forum EMI-ENTREPRISES">
+                </div>
+                <div class="footer-social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-about">
+                <h2>À Propos</h2>
+                <p>Indétrônable du palmarès des salons de recrutement au Maroc, le Forum EMI-Enterprises se dépasse
+                    d’année en année. Les éditions se succèdent, en gardant toujours son statut de Leader National.
+                </p>
+            </div>
+            <div class="footer-contacts">
+                <h2>Contact</h2>
+                <div class="footer-contacts-inner">
+                    <p><i class="fas fa-home"></i> Ecole Mohammadia d'Ingénieurs, <br>
+                        Av Ibn Sina, Agdal. Rabat, Maroc</p>
+                    <p><i class="fas fa-phone"></i> (+212) 537 687 150 </p>
+                    <p><i class="fas fa-envelope"></i> emientreprises@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Separator -->
+        <hr class="footer-separator">
+
+        <!-- Bottom Section -->
+        <div class="footer-bottom">
+            <div class="footer-made-by">
+                <p>Made by <a href="your-linkedin-profile-url">Zyad Khalef</a></p>
+            </div>
+            <div class="footer-copyright">
+                <p>Forum EMI-Entreprises &copy; 1994-<span id="currentYear"></span>. All rights Reserved</p>
+                <script> document.getElementById("currentYear").textContent = new Date().getFullYear(); </script>
+            </div>
+        </div>
+    </footer>
+
+
 
     <script src=" ./JS/NavBarFadeAway.js"></script>
 
