@@ -40,7 +40,7 @@ sup {
     /* Position the superscript text above the baseline */
 }
 
-p {
+.container-IDvisu p {
     max-width: 52ch;
     line-height: 1.5;
 }
