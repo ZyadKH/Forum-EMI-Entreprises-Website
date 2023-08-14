@@ -14,17 +14,6 @@
     font-family: 'Aileron Thin';
   }
 
-.buttons {
-    display: inline-block;
-    padding: 1em 3.5em;
-    background-color: var(--color);
-    color: white;
-    text-decoration: none;
-    border-radius: 0.3em;
-    font-weight: 700;
-    letter-spacing: .5px;
-    font-size: .875rem;
-}
 
 .blank {
     width: 100%;
