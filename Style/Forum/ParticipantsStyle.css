@@ -9,11 +9,14 @@
 .container-Official {
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    width: 98%;
     margin: 0;
     padding: 20px;
     background-color: white;
     overflow: hidden;
+    border: 2px solid red;
+    border-radius: 15px;
+    margin: 10px;
 }
 
 .box-Official {
@@ -174,4 +177,61 @@
 
 .box-Gold:hover {
     transform: scale(1.1);
+}
+
+.Silver-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #c0c0c0;
+    /* Border color for Silver container */
+    border-radius: 15px;
+    height: 120px;
+    background-color: white;
+    /* White background */
+    padding: 20px;
+    position: relative;
+    margin-right: 16px;
+    margin-left: 14px;
+    margin-bottom: 20px;
+}
+
+.Silver-container-title {
+    position: absolute;
+    top: -20px;
+    /* Adjust as needed */
+    left: 40px;
+    /* Adjust as needed */
+    background-color: white;
+    /* Same as background color */
+    padding: 0 10px;
+    /* Adjust padding as needed */
+    color: #c0c0c0;
+    /* Silver color */
+}
+
+.Silver-container-top-boxes,
+.Silver-container-bottom-boxes {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box-Silver {
+    width: 125px;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 17px;
+}
+
+.box-Silver img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
 }
