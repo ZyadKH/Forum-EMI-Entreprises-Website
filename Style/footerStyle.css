@@ -1,14 +1,116 @@
+/* Style for the whole footer */
 .footer {
-  color: white;
-  /* To make the text white */
-  font-weight: bold;
-  /* To make the text bold */
-  text-align: center;
-  /* To center-align the text */
+  background-color: #161616;
+  color: #fff;
+  padding: 20px;
 }
 
+/* Style for the top section */
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.footer-logoAndSocial {
+  display: flex;
+  flex-direction: column; /* Align social icons below logo */
+  align-items: center; /* Center align vertically */
+  justify-content: center; /* Center align horizontally */
+  flex-basis: 20%; /* Take up a quarter of the width */
+}
+
+.footer-logo {
+  margin-top : 25px;
+}
+
+.footer-logo img {
+  width: 200px; /* Adjust the width as needed */
+  margin-bottom: 25px; /* Add margin below the logo */
+}
+
+.footer-about{
+  flex-basis: 55%; /* Adjust the width for each section and consider margin */
+  margin-bottom: 20px; /* Add margin between sections */
+  margin-top: 50px;
+}
+
+.footer-contacts {
+  flex-basis: 20%; /* Adjust the width for each section and consider margin */
+  margin-bottom: 20px; /* Add margin between sections */
+  margin-top: 20px;
+}
+
+.footer-social {
+  flex-basis: 30%;
+  margin-bottom: 20px;
+}
+
+.footer-social-icons a {
+  color: #fff;
+  margin-right: 10px; /* Increase the margin to add more space */
+  font-size: 30px; /* Adjust the font size as needed */
+}
+
+.footer-social h2,
+.footer-contacts h2,
+.footer-about h2 {
+  margin-top: 0;
+}
+
+
+/* ------------------------------------------------------------------------------------------- */
+
+/* Style for the separator */
+.footer-separator {
+  border-top: 1px solid #fff;
+  margin: 20px 0;
+}
+
+/* Style for the bottom section */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-copyright,
+.footer-made-by {
+  flex: 1;
+}
+
+.footer-copyright {
+  text-align: right;
+  margin-right: 20px; /* Adjust the margin as needed */
+}
+
+.footer-made-by a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
 @media (max-width: 768px) {
-  .footer {
-    font-size: 12px;
+  .footer-top {
+      flex-direction: column; /* Stack sections in a column for smaller screens */
+      align-items: center;
+  }
+
+  .footer-logo {
+      margin-top: 20px; /* Adjust top margin for smaller screens */
+  }
+
+  .footer-social-icons a {
+      font-size: 24px; /* Adjust the font size for smaller screens */
+  }
+
+  .footer-about {
+      text-align: center; /* Center and justify the text in smaller screens */    }
+
+
+  .footer-bottom {
+      margin-top: 20px; /* Adjust top margin for smaller screens */
   }
 }
