@@ -11,37 +11,46 @@
     /* Use viewport width */
     margin: 0;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: white;
     /* Optional background color */
-
     overflow: hidden;
     /* Clip rounded corners */
 }
 
+
+
 .box-Official {
-    flex: 1;
-    /* Equal spacing */
-    width: calc(33.33% - 10px);
-    /* Adjust the width calculation and margin to control spacing */
-    background-color: #e0e0e0;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+    width: 100px;
+    height : 100px;
     margin: 0 5px;
     /* Adjust margin to control spacing */
     border-radius: 20px;
     /* Rounded corners */
-    
     position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s ease-in-out;
+    background-color: white;
 }
 
-.box-Official::before {
-    content: "";
-    display: block;
-    padding-top: 100%; /* 1:1 Aspect Ratio */
+.vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(-180deg);
+    font-size: 22px; /* Adjust font size as needed */
+    margin: 0; /* Reset margin to center the text */
+    white-space: nowrap; /* Prevent line breaks */
+    font-family: 'Aileron Semi Bold';
 }
 
 .box-Official img {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Maintain aspect ratio and cover whole box */
+}
+
+.box-Official:hover {
+    transform: scale(1.1); /* Increase the size on hover */
 }
