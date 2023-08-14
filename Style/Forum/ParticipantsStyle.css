@@ -95,6 +95,7 @@
     background-color: white;
     padding: 0 10px;
     color: #e5e4e2;
+    font-family: 'Aileron Semi Bold';
 }
 
 
@@ -148,6 +149,7 @@
     background-color: white;
     padding: 0 10px;
     color: #ffd700;
+    font-family: 'Aileron Semi Bold';
 }
 
 .Gold-container-top-boxes,
@@ -185,11 +187,9 @@
     justify-content: center;
     align-items: center;
     border: 2px solid #c0c0c0;
-    /* Border color for Silver container */
     border-radius: 15px;
     height: 120px;
     background-color: white;
-    /* White background */
     padding: 20px;
     position: relative;
     margin-right: 16px;
@@ -200,15 +200,11 @@
 .Silver-container-title {
     position: absolute;
     top: -20px;
-    /* Adjust as needed */
     left: 40px;
-    /* Adjust as needed */
     background-color: white;
-    /* Same as background color */
     padding: 0 10px;
-    /* Adjust padding as needed */
     color: #c0c0c0;
-    /* Silver color */
+    font-family: 'Aileron Semi Bold';
 }
 
 .Silver-container-top-boxes,
