@@ -1,3 +1,37 @@
+
+
+.VoirPlus {
+    display: inline-block;
+    padding: 1em 3.5em;
+    background-color: var(--color);
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0.3em;
+    font-weight: 700;
+    letter-spacing: .5px;
+    font-size: .875rem;
+    font-family: 'Aileron Thin';
+  }
+
+.buttons {
+    display: inline-block;
+    padding: 1em 3.5em;
+    background-color: var(--color);
+    color: white;
+    text-decoration: none;
+    border-radius: 0.3em;
+    font-weight: 700;
+    letter-spacing: .5px;
+    font-size: .875rem;
+}
+
+.blank {
+    width: 100%;
+    min-height: 60vh;
+    background-color: var(--color);
+}
+
 .container-Espaces {
     text-align: center;
     color: var(--color);
@@ -50,30 +84,17 @@
     background-image: url('../../images/ForumImages/EspaceConferences.JPG');
 }
 
-.VoirPlus {
-    display: inline-block;
-    padding: 1em 3.5em;
-    background-color: var(--color);
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-radius: 0.3em;
-    font-weight: 700;
-    letter-spacing: .5px;
-    font-size: .875rem;
-    font-family: 'Aileron Thin';
-  }
+h3 {
+    font-size: 1.5rem;
+}
 
-.buttons {
-    display: inline-block;
-    padding: 1em 3.5em;
-    background-color: var(--color);
-    color: white;
-    text-decoration: none;
-    border-radius: 0.3em;
-    font-weight: 700;
-    letter-spacing: .5px;
-    font-size: .875rem;
+.card>a {
+    margin-bottom: 2em;
+}
+
+.card p {
+    text-align: justify;
+    padding: 15px;
 }
 
 @media (max-width: 768px) {
