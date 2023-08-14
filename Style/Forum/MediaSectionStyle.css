@@ -49,12 +49,12 @@
   height: auto;
 }
 
-/* Style for the content */
 .content {
   /* Remove flex: 1 from the content */
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-end; /* Align items to the right */
   height: 100%; /* Set the content's height to 100% of the box */
 }
 
