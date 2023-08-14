@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
-body {
-    background: #0c0c0c;
-    color: white;
-}
-
-.introduction {
-    color: #f2eaea;
-}
 
 .introduction-title {
     text-align: center;
