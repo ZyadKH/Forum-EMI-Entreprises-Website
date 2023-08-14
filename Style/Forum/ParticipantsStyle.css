@@ -9,7 +9,6 @@
 .container-Official {
     display: flex;
     justify-content: space-around;
-    width: 98%;
     margin: 0;
     padding: 20px;
     background-color: white;
@@ -30,6 +29,18 @@
     align-items: center;
     justify-content: center;
     transition: transform 0.4s ease-in-out;
+    background-color: white;
+}
+
+.title-box {
+    width: 20px;
+    height: 100px;
+    margin: 0 5px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: white;
 }
 
@@ -224,10 +235,68 @@
     justify-content: center;
     align-items: center;
     margin: 0 17px;
+    transition: transform 0.4s ease-in-out;
 }
 
 .box-Silver img {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
+}
+
+.box-Silver:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+
+    .box-Official {
+        display: flex; /* Center content vertically */
+        align-items: center; /* Center content vertically */
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        border-radius: 2px;
+      }
+
+    .title-box {
+        display: flex; /* Center content vertically */
+        align-items: center; /* Center content vertically */
+        width: 10px;
+        height: 50px;
+    }
+
+    .vertical-text {
+        font-size: 12px;
+    }
+
+    .Platinum-Gold-container {
+        flex-direction: column;
+    }
+
+    .Platinum-container {
+        margin-bottom: 10px;
+    }
+
+    .Gold-container {
+        margin-top: 10px;
+    }
+
+    .box-Platinum {
+        width: 50px;
+        height: 20px;
+        margin: 5px;
+    }
+
+    .box-Gold {
+        width: 30px;
+        height: 20px;
+        margin: 5px;
+    }
+
+    .box-Silver {
+        width: 30px;
+        height: 15px;
+        margin: 5px;
+    }
 }
