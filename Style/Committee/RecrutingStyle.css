@@ -40,9 +40,9 @@
 
 .button-container {
     position: absolute;
-    top: 73%;
+    top: 63%;
     /* Adjust the value to lower or raise the button */
-    left: 15%;
+    left: 12%;
     /* Adjust the value to position the button horizontally */
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -50,7 +50,7 @@
 }
 
 .recruting-button {
-    padding: 25px 30px;
+    padding: 15px 30px;
     /* This controls the size of the button */
     background-color: #050801;
     color: #9F1D35;
@@ -109,7 +109,7 @@
         position: absolute;
         top: 90%;
         /* Adjust the value to lower or raise the button */
-        left: 35%;
+        left: 24%;
         /* Adjust the value to position the button horizontally */
     }
 }
