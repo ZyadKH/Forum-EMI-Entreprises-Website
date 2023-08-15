@@ -5,14 +5,19 @@ let lastScrollPosition = window.scrollY;
 function handleScroll() {
   // Get the current scroll position
   const currentScrollPosition = window.scrollY;
+  const navbar = document.querySelector('.NavBar');
 
   // Check if scrolling down
   if (currentScrollPosition > lastScrollPosition) {
     // Add the 'fade-out' class to the navbar
-    document.querySelector('.NavBar').classList.add('fade-out');
+    navbar.classList.add('fade-out');
+    // Disable pointer events on the navbar
+    navbar.style.pointerEvents = 'none';
   } else {
     // Remove the 'fade-out' class from the navbar
-    document.querySelector('.NavBar').classList.remove('fade-out');
+    navbar.classList.remove('fade-out');
+    // Enable pointer events on the navbar
+    navbar.style.pointerEvents = 'auto';
   }
 
   // Update the last scroll position
