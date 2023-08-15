@@ -26,7 +26,7 @@ body {
 
 h1 {
     font-size: 60px;
-    font-family: 'Aileron Semi Bold';
+    font-family: 'Cabinet Grotesk Bold';
     margin: 0;
     /* Reset margin to remove any default spacing */
     padding: 0;
@@ -43,6 +43,7 @@ sup {
 .container-IDvisu p {
     max-width: 52ch;
     line-height: 1.5;
+    font-family: 'Cabinet Grotesk Regular';
 }
 
 .buttons {

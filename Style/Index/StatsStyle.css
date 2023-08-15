@@ -69,7 +69,7 @@
     color: white;
     margin-left: 243px;
     /* Adjust the margin to move the stats section towards the right */
-    font-family: 'Aileron Thin';
+    font-family: 'Cabinet Grotesk Thin';
 }
 
 .stats {
@@ -78,7 +78,7 @@
     color: white;
     margin-bottom: 1px;
     /* Add margin between stat and description */
-    font-family: 'Aileron Ultralight';
+    font-family: 'Cabinet Grotesk Extralight';
 }
 
 .description {
@@ -87,7 +87,7 @@
     color: white;
     width: 170px;
     /* Adjust the width as needed */
-    font-family: 'Aileron Ultralight';
+    font-family: 'Cabinet Grotesk Extralight';
 }
 
 
@@ -131,7 +131,7 @@
     /* Adding a smooth transition effect */
     margin-right: 160px;
     margin-bottom: 10px;
-    font-family: 'Aileron Black';
+    font-family: 'Cabinet Grotesk Light';
 }
 
 /* Styles for the hover state */

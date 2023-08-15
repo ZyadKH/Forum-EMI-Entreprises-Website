@@ -42,7 +42,7 @@ video::-webkit-media-controls-enclosure {
     left: 45%;
     transform: translate(-50%, -50%);
     text-align: left;
-    font-family: 'Aileron Regular';
+    font-family: 'Cabinet Grotesk Regular';
 }
 
 #PresentationVideoTextOverlay p {
@@ -55,8 +55,8 @@ video::-webkit-media-controls-enclosure {
 }
 
 
-#PresentationVideoTextOverlay p span.golden2 {
-    font-family: 'Aileron Semi Bold';
+#PresentationVideoTextOverlay p span.ourName {
+    font-family: 'Cabinet Grotesk Bold';
 }
 
 
@@ -68,7 +68,7 @@ video::-webkit-media-controls-enclosure {
     /* Adjust the value to position the button horizontally */
     transform: translate(-50%, -50%);
     z-index: 2;
-    font-family: 'Aileron Light';
+    font-family: 'Cabinet Grotesk Medium';
 }
 
 .recruting-button {
@@ -125,7 +125,7 @@ video::-webkit-media-controls-enclosure {
     }
 
     .recruting-button {
-        padding: 10px 10px;
+        padding: 15px 10px;
         /* This controls the size of the button */
         font-size: 10px;
     }

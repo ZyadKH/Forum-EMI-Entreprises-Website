@@ -47,10 +47,10 @@ body .carousel {
   display: inline-block;
 }
 
-.categories__title {
+.carousel__title {
   color: #f5eef5;
   font-size: 28px;
-  font-family: 'Aileron Semi Bold';
+  font-family: 'Cabinet Grotesk Extrabold';
   position: absolute;
   padding-left: 50px;
 }
@@ -104,7 +104,7 @@ body .carousel {
       rgba(0, 0, 0, 0.9) 0%,
       rgba(0, 0, 0, 0) 100%);
   font-size: 10px;
-  font-family: 'Aileron Regular';
+  font-family: 'Cabinet Grotesk Regular';
   opacity: 0;
   -webkit-transition: 450ms opacity;
   transition: 450ms opacity;
@@ -124,7 +124,7 @@ body .carousel {
   /* width: 10px;
   height: 10px; */
   font-size: 0.9rem;
-  font-family: 'Aileron Regular';
+  font-family: 'Cabinet Grotesk Regular';
   color: #2ecc71;
   /* background-color: white; */
 }

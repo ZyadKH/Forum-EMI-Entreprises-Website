@@ -10,7 +10,7 @@ body{
     margin-top: 70px;
     /* Add space on both sides of the title */
     font-size: 30px;
-    font-family: 'Aileron Thin';
+    font-family: 'Cabinet Grotesk Bold';
 }
 
 #video-container {
@@ -37,14 +37,14 @@ body{
 .introduction-description {
     text-align: center;
     font-size: 20px;
-    font-family: 'Aileron Thin';
+    font-family: 'Cabinet Grotesk Regular';
 }
 
 .introduction-details {
     text-align: left;
     text-align: justify;
     font-size: 20px;
-    font-family: 'Aileron Thin';
+    font-family: 'Cabinet Grotesk Regular';
     margin-left: 37px;
     margin-right: 37px;
     line-height: 1.5;
@@ -63,13 +63,11 @@ body{
         margin-right: 15px;
         line-height: 1.5;
         font-size: 18px;
-        font-family: 'Aileron Regular', sans-serif;
     }
 
     .introduction-details {
         text-align: justify;
         font-size: 14px;
-        font-family: 'Aileron Regular', sans-serif;
         margin-top: 100px;
         margin-left: 15px;
         margin-right: 18px;
@@ -87,7 +85,6 @@ body{
         /* Reduce space on both sides of the title for mobile */
         font-size: 20px;
         /* Decrease font size for mobile */
-        font-family: 'Aileron Thin';
     }
 
     .introduction-description {
@@ -99,14 +96,12 @@ body{
         line-height: 1.5;
         font-size: 15px;
         /* Decrease font size for mobile */
-        font-family: 'Aileron Thin';
     }
 
     .introduction-details {
         text-align: justify;
         font-size: 15px;
         /* Decrease font size for mobile */
-        font-family: 'Aileron Thin';
         margin-top: 10px;
         /* Reduce top margin for mobile */
         margin-left: 15px;

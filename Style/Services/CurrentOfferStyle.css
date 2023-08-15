@@ -23,20 +23,20 @@ p {
 .currentOffreContainertitle {
   color: #f5eef5;
   font-size: 28px;
-  font-family: 'Aileron Semi Bold';
+  font-family: 'Cabinet Grotesk Extrabold';
   position: absolute;
   margin-left: 85px;
 }
 
 h2 {
   font-size: 2.25rem;
-  font-family: 'Aileron Thin', sans-serif;
+  font-family: 'Cabinet Grotesk Thin', sans-serif;
   color: white;
   line-height: 1.1;
 }
 
 p {
-  font-family: 'Aileron Thin', sans-serif;
+  font-family: 'Cabinet Grotesk Thin', sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   color: white;
@@ -121,7 +121,7 @@ p {
   border-radius: 0.45em;
   border: none;
   background-color: #ffc400;
-  font-family: 'Aileron Thin', sans-serif;
+  font-family: 'Cabinet Grotesk Light', sans-serif;
   font-size: 1.125rem;
   color: black;
   text-decoration: none;

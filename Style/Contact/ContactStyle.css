@@ -19,11 +19,12 @@ body {
   text-align: center;
   margin: 0 auto;
   padding: 40px 0;
-  font: 300 60px 'Aileron Semi Bold', sans-serif;
+  font-family: 'Cabinet Grotesk Black';
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 6px;
   margin-top: 20px;
+  font-size: 60px;
 }
 
 .contact-wrapper {
@@ -37,20 +38,11 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
 /* Left contact page */
 .form-horizontal {
   /*float: left;*/
   max-width: 400px;
-  font-family: 'Aileron Light';
+  font-family: 'Cabinet Grotesk Light';
   font-weight: 400;
 }
 
@@ -79,21 +71,13 @@ textarea {
 .send-text {
   display: block;
   margin-top: 10px;
-  font: 700 12px 'Aileron Semi Bold', sans-serif;
+  font: 700 12px 'Cabinet Grotesk Medium', sans-serif;
   letter-spacing: 2px;
 }
 
 .alt-send-button:hover {
   transform: translate(0, -29px);
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -113,7 +97,7 @@ textarea {
 }
 
 .contact-text {
-  font-family: 'Aileron Light', sans-serif;
+  font-family: 'Cabinet Grotesk Light';
   font-size: 17px;
   letter-spacing: 1.9px;
   color: #bbb;
@@ -144,29 +128,17 @@ textarea {
 
 /* Override default link styles */
 .map-link {
-  color: inherit; /* Use the same color as the parent element */
-  text-decoration: none; /* Remove underline */
+  color: inherit;
+  /* Use the same color as the parent element */
+  text-decoration: none;
+  /* Remove underline */
 }
 
 /* Change the color of the icon */
 .map-link i {
-  color: #bbb; /* Replace with the color you want */
+  color: #bbb;
+  /* Replace with the color you want */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*------------------------------------------------------Social Media Icons Start Here ------------------------------------------------------- */
 
@@ -176,6 +148,7 @@ ul.social-icons {
   justify-content: flex-end;
   margin: 0;
   padding: 0;
+  margin-top: 30px;
 }
 
 ul.social-icons li {
@@ -200,9 +173,6 @@ ul.social-icons li a {
   outline: none;
   /*  remove the focus outline */
 }
-
-
-
 
 
 
@@ -314,11 +284,11 @@ ul.social-icons li a.facebook-icon:hover span {
 }
 
 ul.social-icons li a.instagram-icon:hover {
-  color:#A2006D;
+  color: #A2006D;
 }
 
 ul.social-icons li a.instagram-icon:hover span {
-  background:#A2006D;
+  background: #A2006D;
 }
 
 ul.social-icons li a.youtube-icon:hover {
@@ -330,18 +300,11 @@ ul.social-icons li a.youtube-icon:hover span {
 }
 
 .copyright {
-  font: 200 14px 'Aileron Regular', sans-serif;
+  font: 200 14px 'Cabinet Grotesk Light', sans-serif;
   color: #555;
   letter-spacing: 1px;
   text-align: center;
 }
-
-
-
-
-
-
-
 
 
 /* Set the display of the contact wrapper to column on mobile devices */
@@ -371,7 +334,6 @@ ul.social-icons li a.youtube-icon:hover span {
 
   .form-horizontal {
     max-width: 400px;
-    font-family: 'Aileron Light';
     font-weight: 400;
     margin: 0 auto;
     /* Center the form horizontally */
@@ -414,7 +376,6 @@ ul.social-icons li a.youtube-icon:hover span {
 
   .send-text {
     display: block;
-    font: 700 12px 'Aileron Semi Bold', sans-serif;
     letter-spacing: 2px;
   }
 
@@ -448,7 +409,6 @@ ul.social-icons li a.youtube-icon:hover span {
   }
 
   .contact-text {
-    font: 300 12px 'Aileron Regular', sans-serif;
     letter-spacing: 1.9px;
     color: #bbb;
     width: 100%;
@@ -461,18 +421,20 @@ ul.social-icons li a.youtube-icon:hover span {
     width: 100%;
   }
 
-
   /*THIS IS TO PLACE THE SOCIAL MEDIA CORRECTLY*/
 
+  ul.social-icons li {
+    margin: 0;
+  }
 
   /* Reduce the font size for social media icons */
   ul.social-icons li a {
-    font-size: 18px;
+    font-size: 10px;
   }
 
   /* Adjust the social media icon size */
   ul.social-icons li a i {
-    font-size: 18px;
+    font-size: 25px;
   }
 
   /* Reduce the font size for the copyright text */

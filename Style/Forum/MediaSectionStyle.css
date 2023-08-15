@@ -65,6 +65,7 @@
   overflow: hidden; /* Hide overflowing content */
   white-space: nowrap; /* Prevent text from wrapping */
   text-overflow: ellipsis; /* Show ellipsis (...) for long text */
+  font-family: 'Cabinet Grotesk Medium';
 }
 
 /* Style for the article link */
@@ -72,6 +73,7 @@
   text-decoration: none;
   color: #007bff;
   font-size: 0.8rem; /* Set the font size */
+    font-family: 'Cabinet Grotesk Light';
 }
 
 /* Hover effect for the box */

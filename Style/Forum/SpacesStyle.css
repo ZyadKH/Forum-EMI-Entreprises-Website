@@ -54,6 +54,7 @@ h3 {
     font-weight: 700;
     font-size: 1.6rem;
     margin-top: 1em;
+    font-family: 'Cabinet Grotesk Bold';
   }
 
 .card>a {
@@ -63,6 +64,7 @@ h3 {
 .card p {
     text-align: justify;
     padding: 15px;
+    font-family: 'Cabinet Grotesk Regular';
 }
 
 
@@ -78,7 +80,7 @@ h3 {
     font-weight: 700;
     letter-spacing: .5px;
     font-size: .875rem;
-    font-family: 'Aileron Thin';
+    font-family: 'Cabinet Grotesk Light';
 }
 
 

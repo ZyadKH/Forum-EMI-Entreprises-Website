@@ -20,7 +20,7 @@
 .recruting-text h1 {
     font-size: 25px;
     margin-bottom: 20px;
-    font-family: 'Aileron Semi Bold';
+    font-family: 'Cabinet Grotesk Bold';
 }
 
 .recruting-text {
@@ -35,18 +35,18 @@
     max-width: 800px;
     /* Adjust the maximum width of the text box as needed */
     color: white;
-    font-family: 'Aileron Regular';
+    font-family: 'Cabinet Grotesk Regular';
 }
 
 .button-container {
     position: absolute;
-    top: 63%;
+    top: 64%;
     /* Adjust the value to lower or raise the button */
-    left: 12%;
+    left: 13%;
     /* Adjust the value to position the button horizontally */
     transform: translate(-50%, -50%);
     z-index: 2;
-    font-family: 'Aileron Light';
+    font-family: 'Cabinet Grotesk Light';
 }
 
 .recruting-button {
