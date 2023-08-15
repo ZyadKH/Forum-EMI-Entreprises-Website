@@ -64,7 +64,7 @@ video::-webkit-media-controls-enclosure {
     position: absolute;
     top: 67%;
     /* Adjust the value to lower or raise the button */
-    left: 26%;
+    left: 27%;
     /* Adjust the value to position the button horizontally */
     transform: translate(-50%, -50%);
     z-index: 2;
