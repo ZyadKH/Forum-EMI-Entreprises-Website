@@ -2,13 +2,14 @@
 
 body{
     margin: 0;
+    background-image: url('../../images/Schoolimages/SchoolintroBG.jpg');
+    background-repeat: no-repeat;
 }
+
 
 .introduction-title {
     text-align: center;
-    /* Center the title */
-    margin-top: 70px;
-    /* Add space on both sides of the title */
+    margin-top: 59px;
     font-size: 30px;
     font-family: 'Cabinet Grotesk Bold';
 }
