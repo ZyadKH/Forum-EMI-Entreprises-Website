@@ -59,6 +59,46 @@ video::-webkit-media-controls-enclosure {
     font-family: 'Aileron Semi Bold';
 }
 
+
+.button-container {
+    position: absolute;
+    top: 67%;
+    /* Adjust the value to lower or raise the button */
+    left: 26%;
+    /* Adjust the value to position the button horizontally */
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    font-family: 'Aileron Light';
+}
+
+.recruting-button {
+    padding: 25px 30px;
+    /* This controls the size of the button */
+    background-color: white;
+    color: #9F1D35;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.recruting-button:hover {
+    background: #9F1D35;
+    color: #050801;
+    box-shadow: 0 0 5px #9F1D35,
+        0 0 25px #9F1D35,
+        0 0 50px #9F1D35,
+        0 0 200px #9F1D35;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+
+
 @media (max-width: 768px) {
 
     #PresentationVideoTextOverlay {
@@ -82,5 +122,19 @@ video::-webkit-media-controls-enclosure {
     }
     #PresentationVideoTextOverlay p span.no-wrap {
         white-space: nowrap; /* Prevent the word from breaking across lines */
+    }
+
+    .recruting-button {
+        padding: 10px 10px;
+        /* This controls the size of the button */
+        font-size: 10px;
+    }
+
+    .button-container {
+        position: absolute;
+        top: 68%;
+        /* Adjust the value to lower or raise the button */
+        left: 50%;
+        /* Adjust the value to position the button horizontally */
     }
 }

@@ -79,3 +79,31 @@
   transform: translateY(-8px);
   /* Translate the box slightly upwards */
 }
+
+@media (max-width: 768px) {
+  .box-container {
+    margin: 10px; /* Adjust margin for mobile devices */
+    margin-top: 100px;
+  }
+
+  .box {
+    width: 100%; /* Full width for mobile devices */
+  }
+
+  .logo {
+    width: 100%; /* Full width for mobile devices */
+    height: auto; /* Adjust height for mobile devices */
+    margin-right: 0; /* No margin for mobile devices */
+  }
+
+  .content {
+    width: 100%; /* Full width for mobile devices */
+    align-items: flex-start; /* Align items to the left for mobile devices */
+    padding: 0 20px; /* Add horizontal padding for mobile devices */
+  }
+
+  .content h3 {
+    white-space: normal; /* Allow text to wrap on mobile devices */
+    text-overflow: initial; /* Remove ellipsis */
+  }
+}

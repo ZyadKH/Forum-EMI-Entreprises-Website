@@ -18,7 +18,7 @@
 }
 
 .recruting-text h1 {
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 20px;
     font-family: 'Aileron Semi Bold';
 }
@@ -42,7 +42,7 @@
     position: absolute;
     top: 73%;
     /* Adjust the value to lower or raise the button */
-    left: 14%;
+    left: 15%;
     /* Adjust the value to position the button horizontally */
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -90,26 +90,26 @@
     }
 
     .recruting-text {
-        font-size: 12px;
+        font-size: 11px;
         position: absolute;
-        top: 25%;
+        top: 65%;
         /* Adjust the value to position the text vertically */
-        left: 34%;
+        left: 35%;
         /* Adjust the value to position the text horizontally */
         transform: translate(-50%, -50%);
     }
 
     .recruting-button {
-        padding: 10px 25px;
+        padding: 10px 10px;
         /* This controls the size of the button */
         font-size: 12px;
     }
 
     .button-container {
         position: absolute;
-        top: 45%;
+        top: 90%;
         /* Adjust the value to lower or raise the button */
-        left: 32%;
+        left: 35%;
         /* Adjust the value to position the button horizontally */
     }
 }
