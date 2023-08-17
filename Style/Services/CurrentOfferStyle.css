@@ -175,7 +175,7 @@ p {
 
   .card:hover .card__background,
   .card:focus-within .card__background {
-    transform: scale(1.17);
+    transform: scale(1.11);
   }
 
   .card:hover .card__content--container> :not(.card__title),
@@ -206,6 +206,7 @@ p {
   }
 
   .card__content {
+    height: 65%;
     transform: translateY(57%);
     /* Move the card content 100% upwards, effectively hiding it */
     transition: transform 0.8s ease;
@@ -213,7 +214,7 @@ p {
   }
 
   .card.show-content .card__content {
-    transform: translateY(1%);
+    transform: translateY(0%);
     /* Translate the card content back to its original position when show-content class is applied */
   }
 
@@ -232,5 +233,9 @@ p {
 
   .card__button {
     font-size: 1rem;
+    padding: 0.4em 1.6em;
+    font-variant: small-caps;
+    font-weight: bold;
   }
+  
 }
