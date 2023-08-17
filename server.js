@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
+require('dotenv').config(); // Load environment variables
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -8,11 +9,12 @@ app.use(bodyParser.json());
 
 // Nodemailer configuration
 const transporter = nodemailer.createTransport({
-    host: "sandbox.smtp.mailtrap.io",
-    port: 2525,
+    host: "node36-eu.n0c.com", // Update the server hostname
+    port: 465, // Update to the outgoing SMTP port you want to use (465 or 587)
+    secure: true, // Set to true because you're using port 465 (secure connection)
     auth: {
-      user: "e22ac274dd5c80",
-      pass: "e6baf79ad3a033"
+        user: process.env.EMAIL_USER, // Use environment variable for email
+        pass: process.env.EMAIL_PASS // Use environment variable for password
     }
 });
 
@@ -23,7 +25,7 @@ app.post('/send', (req, res) => {
 
     const mailOptions = {
         from: email,
-        to: 'emientreprises@gmail.com',
+        to: 'contact@forumemientreprises.com',
         subject: 'Contact Par SiteWeb',
         text: `De la part de: ${name}, \nMessage: ${message}`
     };
