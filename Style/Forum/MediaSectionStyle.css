@@ -97,6 +97,9 @@
     height: auto; /* Adjust height for mobile devices */
     margin-right: 0; /* No margin for mobile devices */
   }
+  .logo img {
+    max-height: 100px;
+  }
 
   .content {
     width: 100%; /* Full width for mobile devices */

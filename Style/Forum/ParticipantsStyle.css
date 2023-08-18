@@ -116,7 +116,7 @@
 .box-Platinum {
     width: 150px;
     height: 60px;
-    background-color: white;
+    background-color: transparent;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -172,9 +172,9 @@
 .box-Gold {
     width: 125px;
     height: 50px;
-    background-color: white;
     border-radius: 10px;
     display: flex;
+    background-color: transparent;
     justify-content: center;
     align-items: center;
     transition: transform 0.4s ease-in-out;
@@ -228,7 +228,7 @@
 .box-Silver {
     width: 125px;
     height: 50px;
-    background-color: white;
+    background-color: transparent;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -255,7 +255,7 @@
 
     .container-Official {
         display: flex;
-        justify-content: center;
+        justify-content: space-between; /* Adjusted to space-between */
         padding: 5px;
         border-radius: 15px;
         margin-left: 20px;
@@ -265,6 +265,7 @@
     }
 
     .box-Official {
+        flex: 1; /* Added to make the boxes take equal space */
         display: flex;
         align-items: center;
         width: 35px;
@@ -274,7 +275,9 @@
     }
 
     .title-box {
-        width: 20px;
+        width: auto; /* Adjusted to accommodate the title text */
+        margin-left: 5px;
+        margin-right: 30px;
         height: 48px;
     }
     
