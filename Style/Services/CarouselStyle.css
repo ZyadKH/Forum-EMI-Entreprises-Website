@@ -12,6 +12,11 @@ html {
   position: relative;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  margin-bottom: 50px;
+}
+
+body{
+  margin: 0;
 }
 
 /* For WebKit-based browsers (e.g., Chrome, Safari) */
@@ -21,14 +26,14 @@ body .carousel::-webkit-scrollbar {
 }
 
 body .carousel::-webkit-scrollbar-thumb {
-  background-color: #c42e2e;
+  background-color: #000814;
   /* Color of the scrollbar thumb */
   border-radius: 3px;
   /* Adjust the border radius to make it thinner */
 }
 
 body .carousel::-webkit-scrollbar-thumb:hover {
-  background-color: #07b388;
+  background-color: #001d3d;
   /* Color of the scrollbar thumb on hover */
 }
 
