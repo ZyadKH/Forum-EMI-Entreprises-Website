@@ -90,7 +90,8 @@ video::-webkit-media-controls-enclosure {
 .recruting-button:hover {
     background: #9F1D35;
     color: #050801;
-    box-shadow: 0 0 5px #9F1D35,
+    box-shadow: 
+        0 0 5px #9F1D35,
         0 0 25px #9F1D35,
         0 0 50px #9F1D35,
         0 0 200px #9F1D35;
