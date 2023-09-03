@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+
+    <title>Forum EMI-Entreprises</title>
+    <link rel="icon" type="image/png" href="./images/ForumIcon.png" sizes="16x16">
+
+    <!-- ------------------------------------------------- Style Sheets ------------------------------------------------- -->
+    <link rel="stylesheet" href="./Style/Fonts/Darif/DarifFont.css">
+    <link rel="stylesheet" href="./Style/NavBarStyle.css">
+    <link rel="stylesheet" href="./Style/footerStyle.css">
+    <link rel="stylesheet" href="./Style/Event/Schedule.css">
+    <link rel="stylesheet" href="./Style/Event/Timer.css">
+
+
+
+    <!-- -------------------------------------------- Footer Icons ---------------------------------------------->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+
+<body>
+
+    <!-- -------------------------------------------Desktop NAVBAR --------------------------------------------------- -->
+    <header>
+        <nav class="NavBar">
+            <a href="index.html" class="NavBarLogo">
+                <img src="./images/logoNavBarFull.png" alt="Logo Forum EMI-ENTREPRISES">
+                <div class="overlay"></div>
+            </a>
+
+            <div class="NavBarElements">
+                <a href="forum.html"> LE FORUM </a>
+                <a href="committee.html"> LE COMITÉ </a>
+                <a href="school.html"> L'ÉCOLE </a>
+                <a href="services.html"> SERVICES </a>
+                <a href="event.html"> L'ÉVÉNEMENT </a>
+                <a href="contact.html"> CONTACT </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- --------------------------------Event (conference) of the Moment---------------------------------- -->
+
+    <!-- ---------------------------------------------TIMER---------------------------------------------- -->
+    <div class="timer-container">
+        <div class="circle" style="--clr: #2F70AF">
+            <div class="dots day_dot"></div>
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="dd"></circle>
+            </svg>
+            <div class="timer-description" id="days">00 <br> <span>Days</span></div>
+        </div>
+
+        <div class="circle" style="--clr: #2F70AF">
+            <div class="dots hour_dot"></div>
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="hh"></circle>
+            </svg>
+            <div class="timer-description"  id="hours">00</div>
+        </div>
+
+        <div class="circle" style="--clr: #2F70AF">
+            <div class="dots min_dot"></div>
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="mm"></circle>
+            </svg>
+            <div class="timer-description"  id="minutes">00</div>
+        </div>
+
+        <div class="circle" style="--clr: #2F70AF">
+            <div class="dots sec_dot"></div>
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="ss"></circle>
+            </svg>
+            <div class="timer-description"  id="seconds">00</div>
+        </div>
+    </div>
+
+    <!-- --------------------------------------Program of each day------------------------------------ -->
+    <div class="schedule-container">
+        <div class="schedule-card">
+            <div class="schedule-illustration">
+                <img src="./images/SchedulePics/OuvertureOfficielle.JPG" alt="OuvertureOfficielle">
+            </div>
+            <h3 class="schedule-title">Ouverture Officelle</h3>
+            <p class="schedule-description">Participants : Ministres, Conseillers, DG d'entreprises, Médias,
+                Partenaires, Professeurs, Étudiants ...</p>
+            <button class="schedule-date">10 Octobre</button>
+        </div>
+
+        <div class="schedule-card">
+            <div class="schedule-illustration">
+                <img src="./images/SchedulePics/Recrutements.JPG" alt="Stands et Recrutement">
+            </div>
+            <h3 class="schedule-title">Stands et Recrutement</h3>
+            <p class="schedule-description">Participants : Élèves ingénieurs de l'EMI et autres Grandes Écoles
+                Marocaines ...</p>
+            <button class="schedule-date"> 1 Avril</button>
+        </div>
+
+        <div class="schedule-card">
+            <div class="schedule-illustration">
+                <img src="./images/SchedulePics/Conference.png" alt="Conférences et Panels">
+            </div>
+            <h3 class="schedule-title">Conférences et Panels</h3>
+            <p class="schedule-description">Participants : Acteurs économiques, Professionels, Chroniqueurs,
+                Journalistes, Professeurs, Étudiants ...</p>
+            <button class="schedule-date"> 30 Février</button>
+        </div>
+
+        <div class="schedule-card">
+            <div class="schedule-illustration">
+                <img src="./images/SchedulePics/DinerDeGala.png" alt="Dîner de Gala">
+            </div>
+            <h3 class="schedule-title">Dîner de Gala</h3>
+            <p class="schedule-description">Participants : Artistes, Étudiants et Professeurs...</p>
+            <button class="schedule-date"> 31 Août</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src=" ./JS/NavBarFadeAway.js"></script>
+    <script src="./JS/Event/Timer.js"></script>
+
+</body>
+
+</html>

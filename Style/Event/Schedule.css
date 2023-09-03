@@ -1,0 +1,102 @@
+body{
+    background-color: #101213;
+}
+
+.schedule-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+    margin-left: 40px;
+    background-color: #101213;
+}
+
+.schedule-card {
+    background-color: #eceff1;
+    border-radius: 30px;
+    text-align: center;
+    padding: 15px;
+    width: 375px;
+    height: 480px;
+    box-shadow: 0px 0px 10px #eceff1;
+    margin-right: 40px;
+    position: relative;
+}
+
+.schedule-card:last-child {
+    margin-right: 0;
+}
+
+.schedule-illustration {
+    margin: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.schedule-illustration img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.schedule-title {
+    font-family: 'Cabinet Grotesk Bold';
+    font-size: 24px;
+    line-height: 2.2rem;
+    color: #1d2428;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+.schedule-description {
+    font-family: 'Cabinet Grotesk Regular';
+    font-size: 15px;
+    color: #5e7280;
+    margin: 30px auto;
+    max-width: 80%;
+}
+
+.schedule-date {
+    font-family: 'Cabinet Grotesk Bold';
+    font-size: 1.1rem;
+    padding: 15px 80px;
+    border-radius: 25px;
+    color: white;
+    border: 0;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    outline: none;
+    background-color: #101213;
+    box-shadow: 10px 10px 10px rgba(122, 196, 125, 0.2), -10px -10px 10px rgba(136, 202, 139, 0.2);
+    transition: ease all 0.3s;
+}
+
+.schedule-date:hover {
+    box-shadow: 20px 20px 20px rgba(122, 196, 125, 0.1), -20px -20px 20px rgba(136, 202, 139, 0.1);
+    transform: translateY(-3px);
+}
+
+.schedule-date:active {
+    transform: scale(0.9);
+    box-shadow: inset -1px -1px 3px rgba(16, 32, 16, 0.3), -20px -20px 20px rgba(136, 202, 139, 0);
+}
+
+@media (max-width: 768px) {
+    .schedule-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .schedule-card {
+        width: 100%; 
+        margin-right: 0;
+        margin-bottom: 20px; 
+    }
+}
