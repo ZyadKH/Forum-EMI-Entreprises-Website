@@ -1,88 +1,38 @@
-
 .timer-container {
     margin-top: 100px;
     display: flex;
-    justify-content: space-around;
-    background-color: #101213;
+    justify-content: space-between;
+    padding: 10px; /* Add padding for better spacing */
+    position: relative; /* Add relative positioning for bars */
 }
 
-.timer-container .circle {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.timer-container .circle svg {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    transform: rotate(-90deg); /* Rotate the circles so that the stroke starts from the top */
-}
-
-.timer-container .circle svg circle {
-    width: 100%;
-    height: 100%;
-    fill: transparent;
-    stroke-width: 8;
-    stroke: #282828;
-    stroke-linecap: round;
-    transform: translate(5px, 5px);
-}
-
-.timer-container .circle svg circle:nth-child(2) {
-    stroke: var(--clr);
-    stroke-dasharray: 440;
-    stroke-dashoffset: 440;
-    
-}
-
-.timer-container div {
-    position: absolute;
+.timer-unit {
+    flex: 1;
     text-align: center;
     color: #fff;
-    font-size: 2rem;
+    position: relative; /* Add relative positioning for bars */
 }
 
-.timer-container .timer-description {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+.timer-number {
+    font-size: 5rem; /* Larger font size for numbers */
     font-family: 'Cabinet Grotesk Light';
 }
 
-
-.timer-container div span {
-    position: absolute;
-    transform: translateX(-50%);
-    font-size: 1rem;
-    font-weight: 300;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+.timer-description {
+    font-size: 1.3rem; /* Smaller font size for descriptions */
+    font-family: 'Cabinet Grotesk Thin';
 }
 
-.timer-container .dots {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-}
-
-.timer-container .dots::before {
+/* Vertical bars for desktop */
+.timer-unit:not(:last-child)::after {
     content: '';
     position: absolute;
-    top: -3px;
-    width: 15px;
-    height: 15px;
-    background: var(--clr);
-    border-radius: 50%;
-    box-shadow: 0 0 20px var(--clr), 0 0 60px var(--clr);
+    top: 0;
+    bottom: 0;
+    right: -5px; /* Adjust spacing as needed */
+    width: 1px; /* Adjust the width of vertical bars */
+    background-color: #fff;
+    margin-right: 5px;
 }
+
+

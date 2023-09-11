@@ -1,0 +1,228 @@
+.school-branches {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+}
+
+
+
+.school-branches-left {
+    flex: 1;
+    padding: 10px;
+}
+
+
+
+
+
+.school-fields-title {
+    text-align: center;
+    font-family: 'Cabinet Grotesk Light';
+    color: black;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+:root {
+    --n-rows: 3;
+    --n-cols: 8;
+}
+
+
+.school-fields {
+    flex: 1;
+    /* Let it grow to take available space */
+    --l: calc(100vw/var(--n-cols));
+    --hl: calc(.5*var(--l));
+    --ri: calc(.5*1.73205*var(--l));
+    box-sizing: border-box;
+    display: grid;
+    place-content: center;
+    grid-template: repeat(var(--n-rows), var(--l))/repeat(var(--n-cols), var(--ri));
+    grid-gap: var(--hl) 0;
+    overflow: hidden;
+    margin: 0;
+    padding: var(--hl) 0;
+}
+
+@media (orientation: landscape) {
+    .school-fields {
+        --l: calc(100vh/(var(--n-rows) + 3));
+    }
+}
+
+.hex-cell {
+    grid-column-start: auto;
+    position: relative;
+    overflow: hidden;
+    grid-column-end: span 2;
+    margin: calc(-1*var(--hl)) 0;
+    transform: scale(0.95);
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.hex-cell:nth-of-type(8n + 1),
+.hex-cell:nth-of-type(8n + 6) {
+    grid-column-start: 2;
+}
+
+.hex-cell:nth-of-type(5n + 4) {
+    grid-column-start: 3;
+}
+
+.hex-cell h1 {
+    font-size: 1.1rem;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    font-family: 'Cabinet Grotesk Thin';
+    text-align: center;
+    white-space: nowrap;
+}
+
+.school-fields img {
+    --hl: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(calc(1 + .2*var(--hl)));
+    filter: brightness(calc(.6*(1 + var(--hl))));
+    transition: .7s;
+}
+
+.school-fields img:hover {
+    --hl: 1;
+}
+
+
+
+/* Position the "Learn More" button */
+.hex-cell .learn-more-button {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    background-color: transparent;
+    color: #fff;
+    padding: 1% 7%;
+    border: 1px solid #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    font-family: 'Cabinet Grotesk Light';
+
+}
+
+/* Style for the "Learn More" button on hover */
+.hex-cell .learn-more-button:hover {
+    background-color: #fff;
+    color: black;
+    border: black;
+    /* Change to your desired button hover color */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.school-branches-right {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-family: 'Cabinet Grotesk Light';
+}
+
+.school-career-paths {
+    display: flex;
+    flex-direction: column;
+}
+
+.school-career-paths-image {
+    height: 100%; /* Set the image to take 75% of the height */
+    width: 100%;
+    margin-bottom: 20px; /* Adjust margin as needed */
+
+    /* Add a box shadow for a subtle effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 5px;
+}
+
+/* Add a hover effect to scale and add a stronger shadow on hover */
+.school-career-paths-image:hover {
+    transform: scale(1.05); /* Scale up the image slightly */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.school-career-paths-content-title {
+    font-size: 24px; /* Adjust font size as needed */
+}
+
+.school-career-paths-content-description {
+    font-size: 20px; /* Adjust font size as needed */
+    white-space: pre-line;
+}
+
+
+.return-button {
+    background-color: transparent;
+    color: black;
+    padding: 1% 7%;
+    border: 1px solid black;
+    text-decoration: none;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+    position: relative; /* Add relative positioning for stacking context */
+    display: none;
+}
+
+.return-button:hover {
+    background-color: black;
+    color: white;
+    border: white;
+}
+
+@media (max-width: 768px) {
+    .school-branches {
+        flex-direction: column; /* Change the flex direction to column for mobile */
+    }
+
+    .school-branches-left {
+        order: 1; /* Change the order to 1 for mobile */
+    }
+
+    .school-branches-right {
+        order: 2; /* Change the order to 2 for mobile */
+    }
+}

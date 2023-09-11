@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./Style/footerStyle.css">
     <link rel="stylesheet" href="./Style/Event/Schedule.css">
     <link rel="stylesheet" href="./Style/Event/Timer.css">
+    <link rel="stylesheet" href="./Style/School/Fields.css">
 
 
 
@@ -50,52 +51,38 @@
 
     <!-- --------------------------------Event (conference) of the Moment---------------------------------- -->
 
+
     <!-- ---------------------------------------------TIMER---------------------------------------------- -->
     <div class="timer-container">
-        <div class="circle" style="--clr: #2F70AF">
-            <div class="dots day_dot"></div>
-            <svg>
-                <circle cx="70" cy="70" r="70"></circle>
-                <circle cx="70" cy="70" r="70" id="dd"></circle>
-            </svg>
-            <div class="timer-description" id="days">00 <br> <span>Days</span></div>
+        <div class="timer-unit">
+            <div class="timer-number" id="months">00</div>
+            <div class="timer-description">MOIS</div>
         </div>
-
-        <div class="circle" style="--clr: #2F70AF">
-            <div class="dots hour_dot"></div>
-            <svg>
-                <circle cx="70" cy="70" r="70"></circle>
-                <circle cx="70" cy="70" r="70" id="hh"></circle>
-            </svg>
-            <div class="timer-description"  id="hours">00</div>
+        <div class="timer-unit">
+            <div class="timer-number" id="days">00</div>
+            <div class="timer-description">JOURS</div>
         </div>
-
-        <div class="circle" style="--clr: #2F70AF">
-            <div class="dots min_dot"></div>
-            <svg>
-                <circle cx="70" cy="70" r="70"></circle>
-                <circle cx="70" cy="70" r="70" id="mm"></circle>
-            </svg>
-            <div class="timer-description"  id="minutes">00</div>
+        <div class="timer-unit">
+            <div class="timer-number" id="hours">00</div>
+            <div class="timer-description">HEURES</div>
         </div>
-
-        <div class="circle" style="--clr: #2F70AF">
-            <div class="dots sec_dot"></div>
-            <svg>
-                <circle cx="70" cy="70" r="70"></circle>
-                <circle cx="70" cy="70" r="70" id="ss"></circle>
-            </svg>
-            <div class="timer-description"  id="seconds">00</div>
+        <div class="timer-unit">
+            <div class="timer-number" id="minutes">00</div>
+            <div class="timer-description">MINUTES</div>
+        </div>
+        <div class="timer-unit">
+            <div class="timer-number" id="seconds">00</div>
+            <div class="timer-description">SECONDES</div>
         </div>
     </div>
 
-    <!-- --------------------------------------Program of each day------------------------------------ -->
+    <!-- --------------------------------------Schedule of each day------------------------------------ -->
     <div class="schedule-container">
         <div class="schedule-card">
             <div class="schedule-illustration">
                 <img src="./images/SchedulePics/OuvertureOfficielle.JPG" alt="OuvertureOfficielle">
             </div>
-            <h3 class="schedule-title">Ouverture Officelle</h3>
+            <h3 class="schedule-title">Ouverture Officielle</h3>
             <p class="schedule-description">Participants : Ministres, Conseillers, DG d'entreprises, Médias,
                 Partenaires, Professeurs, Étudiants ...</p>
             <button class="schedule-date">10 Octobre</button>
@@ -138,10 +125,9 @@
 
 
 
-
-
     <script src=" ./JS/NavBarFadeAway.js"></script>
     <script src="./JS/Event/Timer.js"></script>
+    <script src="./JS/School/ChangeBranchContent.js"></script>
 
 </body>
 

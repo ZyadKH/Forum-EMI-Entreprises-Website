@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="./Style/Forum/ForumParallaxStyle.css">
     <link rel="stylesheet" href="./Style/Forum/ParticipantsStyle.css">
     <link rel="stylesheet" href="./Style/Forum/SpacesStyle.css">
+    <link rel="stylesheet" href="./Style/Forum/PopUpStands.css">
+    <link rel="stylesheet" href="./Style/Forum/PopUpConferences.css">
     <link rel="stylesheet" href="./Style/Forum/MediaSectionStyle.css">
     <link rel="stylesheet" href="./Style/footerStyle.css">
 
@@ -266,9 +268,20 @@
                 <h3>ESPACE STANDS</h3>
                 <p>Sur un espace dépassant les 1000 m², rencontrer individuellement une grande variété de profils, et
                     présenter des perspectives de recrutement et de carrières.</p>
-                    <a class="VoirPlus" href="#">Voir Plus</a>
+                    <a class="VoirPlus" id="openPopupButton-Stands">Voir Plus</a>
             </div>
         </div>
+
+        <div class="overlay-Stands" id="popupOverlay-Stands">
+            <div class="popup-Stands">
+              <span class="close-button-Stands" id="closeButton-Stands">&times;</span>
+              <img src="./images/ForumImages/EspaceStand/EspaceStands1.JPG" alt="Stand 1" class="slider-image-Stands" id="sliderImage-Stands">
+              <div class="slider-nav-Stands">
+                <button id="prevButton-Stands" class="nav-button-Stands"> <- </button>
+                <button id="nextButton-Stands" class="nav-button-Stands"> -> </button>
+              </div>
+            </div>
+          </div>
 
         <div class="item">
             <div class="img img-conferences"></div>
@@ -277,9 +290,20 @@
                 <p>Un espace d’échange riche, en présence de grandes personnalités du monde socio-économique.
                     <br><br><br>
                 </p>
-                <a class="VoirPlus" href="#">Voir Plus</a>
+                <a class="VoirPlus" id="openPopupButton-Conférences">Voir Plus</a>
             </div>
         </div>
+
+        <div class="overlay-Conférences" id="popupOverlay-Conférences">
+            <div class="popup-Conférences">
+              <span class="close-button-Conférences" id="closeButton-Conférences">&times;</span>
+              <img src="./images/ForumImages/EspaceConference/EspaceConferences1.JPG" alt="Conférence 1" class="slider-image-Conférences" id="sliderImage-Conférences">
+              <div class="slider-nav-Conférences">
+                <button id="prevButton-Conférences" class="nav-button-Conférences"> <- </button>
+                <button id="nextButton-Conférences" class="nav-button-Conférences"> -> </button>
+              </div>
+            </div>
+          </div>
 
     </div>
 
@@ -420,6 +444,10 @@
 
 
     <script src=" ./JS/NavBarFadeAway.js"></script>
+    <script src="./JS/Forum/PopUpStands.js"></script>
+    <script src="./JS/Forum/PopUpConferences.js"></script>
+
+
 
 </body>
 
