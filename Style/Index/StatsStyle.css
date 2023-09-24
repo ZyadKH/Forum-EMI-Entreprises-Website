@@ -209,6 +209,10 @@
         /* Add some bottom margin for spacing on mobile */
     }
 
+    .box {
+        border-color: #ffffff;
+    }
+
     .stats {
         font-size: 55px;
     }
@@ -223,6 +227,6 @@
     }
 
     .box {
-        margin: 15px;
+        margin: 30px;
     }
 }

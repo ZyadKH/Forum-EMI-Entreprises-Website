@@ -1,137 +1,175 @@
-@import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sanchez&display=swap");
 
 /* Remove default list styles */
 .NavBar {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
-
 
 /* Style the navigation bar */
 .NavBar {
-    background-color: #000000;
-    /* Choose your desired background color */
-    display: flex;
-    /* Use flexbox to align elements */
-    justify-content: space-between;
-    /* Space elements evenly across the container */
-    align-items: center;
-    /* Vertically center the elements */
-    position: fixed;
-    /* Keep the navigation bar fixed at the top */
-    top: 0;
-    /* Position the navigation bar at the top of the viewport */
-    left: 0;
-    /* Align the navigation bar to the left of the viewport */
-    width: 100%;
-    /* Make the navigation bar occupy the full width */
-    z-index: 999;
-    /* Set a high z-index to make sure the navigation bar is on top */
-    opacity: 1;
-    /* Initially set opacity to 1 */
-    transition: opacity 0.5s;
-    /* Add a fade-out transition */
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  opacity: 1;
+  transition: opacity 0.5s;
 }
 
 /* Style the logo */
 .NavBarLogo img {
-    width: 100px;
-    /* Set the width of your logo */
-    height: auto;
-    /* Automatically adjust height based on width */
-    margin-left: 90px;
-    /* Push the logo further to the right by adding margin */
+  width: 100px;
+  /* Set the width of your logo */
+  height: auto;
+  /* Automatically adjust height based on width */
+  margin-left: 90px;
+  /* Push the logo further to the right by adding margin */
 }
-
 
 /* OVERLAY EFFECT*/
 .NavBarLogo {
-    display: inline-block;
-    position: relative;
+  display: inline-block;
+  position: relative;
 }
 
 /* Style the overlay with a gradient (red to blue) */
 .NavBarLogo .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, #DCD747, #B03060);
-    /* Gradient from red to blue */
-    mix-blend-mode: multiply;
-    /* This blend mode will blend with the image */
-    opacity: 0;
-    /* Initially hidden */
-    transition: opacity 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #dcd747, #b03060);
+  /* Gradient from red to blue */
+  mix-blend-mode: multiply;
+  /* This blend mode will blend with the image */
+  opacity: 0;
+  /* Initially hidden */
+  transition: opacity 0.5s ease;
 }
 
 /* Show the overlay on hover */
 .NavBarLogo:hover .overlay {
-    opacity: 1;
+  opacity: 1;
 }
-
 
 /* Style the navigation links */
 .NavBarElements a {
-    outline: none;
-    display: inline-block;
-    /* Display the links horizontally */
-    padding: 15px 20px;
-    /* Add padding to create clickable area */
-    color: #555555;
-    /* Choose text color for the links */
-    text-decoration: none;
-    /* Remove underline from links */
-    margin-right: 10px;
-    /* Add right margin to create spacing between elements */
-    font-size: 23px;
-    /* Set the font size to 25 pixels (adjust as needed) */
-    transition: color 0.8s;
-    /* Add slow-motion effect to color change (0.5 seconds) */
-    font-family: 'Cabinet Grotesk Regular';
+  outline: none;
+  display: inline-block;
+  /* Display the links horizontally */
+  padding: 15px 20px;
+  /* Add padding to create clickable area */
+  color: #555555;
+  /* Choose text color for the links */
+  text-decoration: none;
+  /* Remove underline from links */
+  margin-right: 10px;
+  /* Add right margin to create spacing between elements */
+  font-size: 23px;
+  /* Set the font size to 25 pixels (adjust as needed) */
+  transition: color 0.8s;
+  /* Add slow-motion effect to color change (0.5 seconds) */
+  font-family: "Cabinet Grotesk Regular";
 }
 
 /* Add hover effect for the links */
 .NavBarElements a:hover {
-    color: #ffffff;
-    /* Choose a color for the hover effect */
+  color: #ffffff;
+  /* Choose a color for the hover effect */
 }
 
 /* Add a class to apply fade-out effect */
 .NavBar.fade-out {
-    opacity: 0;
-    /* Set opacity to 0 to make it fade out */
+  opacity: 0;
+  /* Set opacity to 0 to make it fade out */
 }
 
-
-
 @media (max-width: 767px) {
-    .NavBarElements {
-        display: flex;
-        /* Make the elements in the nav bar display in one line */
-        align-items: center;
-        /* Align elements vertically in the center */
-        overflow-x: auto;
-        /* Allow horizontal scrolling if elements exceed the width */
-    }
+  .NavBarElements {
+    display: flex;
+    /* Make the elements in the nav bar display in one line */
+    align-items: center;
+    /* Align elements vertically in the center */
+    overflow-x: auto;
+    /* Allow horizontal scrolling if elements exceed the width */
+  }
 
-    .NavBarElements a {
-        flex: 0 0 auto;
-        /* Control the size of the elements */
-        font-size: 16px;
-        /* Adjust the font size for mobile devices */
-        padding: 8px 12px;
-        /* Adjust padding to fit in the small navbar */
-        margin-right: 5px;
-        /* Reduce the margin for more compact spacing */
-    }
+  .NavBarElements a {
+    flex: 0 0 auto;
+    /* Control the size of the elements */
+    font-size: 16px;
+    /* Adjust the font size for mobile devices */
+    padding: 8px 12px;
+    /* Adjust padding to fit in the small navbar */
+    margin-right: 5px;
+    /* Reduce the margin for more compact spacing */
+  }
 
-    .NavBarLogo img {
-        margin-left: 5px;
-        /* Adjust the logo margin on mobile */
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
+  .NavBarLogo img {
+    margin-left: 5px;
+    /* Adjust the logo margin on mobile */
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+/* Style the mobile menu icon */
+.MobileMenuIcon {
+  display: none; /* Initially hide the icon on larger screens */
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.MobileMenuIcon .bar {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Rotate the bars to create the "X" shape for close icon */
+.MobileMenuIcon.active .bar:nth-child(1) {
+  transform: rotate(45deg) translate(0.3rem, 0.7rem);
+}
+
+.MobileMenuIcon.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.MobileMenuIcon.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(0.3rem, -0.7rem);
+}
+
+/* Show the icon on smaller screens using media query */
+@media (max-width: 767px) {
+  .MobileMenuIcon {
+    display: flex;
+  }
+
+  /* Hide the regular navigation links */
+  .NavBarElements {
+    display: none;
+    transition: 0.3s ease;
+  }
+
+  /* Show the navigation links when the icon is active */
+  .MobileMenuIcon.active + .NavBarElements {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    position: absolute;
+    top: 50px; /* Adjust this value as needed to avoid overlapping content */
+    left: 0;
+    width: 100%;
+    z-index: 998; /* Lower z-index to appear below the icon */
+  }
 }

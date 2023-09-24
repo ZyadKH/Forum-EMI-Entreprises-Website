@@ -126,10 +126,20 @@ video::-webkit-media-controls-enclosure {
     }
 
     .recruting-button {
-        padding: 15px 10px;
-        /* This controls the size of the button */
-        font-size: 10px;
+        display: inline-block;
+        white-space: nowrap; 
+        padding: 20px 25px;
+        font-size: 18px;
+        box-sizing: content-box;
     }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    
 
     .button-container {
         position: absolute;

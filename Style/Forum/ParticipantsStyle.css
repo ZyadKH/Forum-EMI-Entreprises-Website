@@ -17,7 +17,7 @@
 .container-Official {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
+    align-items: center;
     background: linear-gradient(to right, red 0%, transparent 13%);
     overflow: hidden;
     border: 2px solid red;
@@ -27,32 +27,21 @@
     margin-bottom: 25px;
 }
 
-.box-Official {
-    width: 100px;
-    height: 100px;
-    margin: 0 5px;
-    border-radius: 20px;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.4s ease-in-out;
-    background-color: white;
-}
-
 .title-box {
-    width: 20px;
+    width: auto;
     height: 100px;
-    margin: 0 5px;
-    position: relative;
-    overflow: hidden;
+    margin-right: 10px; /* Add some space between title and logos */
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: transparent;
     color: white;
+    writing-mode: horizontal-tb; /* Make the title horizontal */
+    transform: rotate(0deg); /* Reset rotation for horizontal title */
+    font-family: 'Cabinet Grotesk Black';
+    font-size: 22px;
 }
+
 
 .vertical-text {
     writing-mode: vertical-rl;
@@ -63,6 +52,27 @@
     white-space: nowrap;
     font-family: 'Cabinet Grotesk Black';
 }
+
+.Official-container-boxes {
+    display: flex;
+}
+
+.box-Official {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s ease-in-out;
+    background-color: white;
+}
+
+
+
 
 .box-Official img {
     width: 100%;
@@ -255,64 +265,98 @@
 
     .container-Official {
         display: flex;
-        justify-content: space-between; /* Adjusted to space-between */
-        padding: 5px;
-        border-radius: 15px;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-bottom: 25px;
-        height: auto;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(to bottom, red 0%, transparent 30%); /* Change gradient to top */
+        padding: 0%;
+    }
+
+    .Official-container-boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+    
+    .title-box {
+        background-color: transparent;
+        color: white;
+        writing-mode: horizontal-tb; /* Make the title horizontal */
+        transform: rotate(90deg);
+        width: 100%;
+        height: 90px;
+        font-size: 20px;
     }
 
     .box-Official {
-        flex: 1; /* Added to make the boxes take equal space */
+        flex: 0 0 calc(33.33% - 10px); /* 33.33% width for each box with margin in between */
+        margin: 5px;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
         display: flex;
         align-items: center;
-        width: 35px;
-        height: 35px;
+        justify-content: center;
+        background-color: white;
+        transition: transform 0.4s ease-in-out;
+        width: auto;
+        height: auto;
+      }
+      
+
+.Platinum-container,
+.Gold-container,
+.Silver-container{
+    height: auto;
+}
+
+    .Platinum-container-top-boxes,
+    .Platinum-container-bottom-boxes,
+    .Gold-container-top-boxes,
+    .Gold-container-bottom-boxes,
+    .Silver-container-top-boxes,
+    .Silver-container-bottom-boxes {
+        flex-direction: row; /* Change the direction to row */
+        flex-wrap: wrap; /* Allow items to wrap onto a new line */
+        justify-content: center; /* Center the items horizontally */
+        align-content: center; /* Center the items vertically */
+    }
+
+    .box-Platinum{
+        width: calc(33% - 10px); /* 25% width for each box with a bit of margin in between */
+        height: auto; /* Allow the height to adjust based on the content */
         margin: 5px;
-        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; /* Hide any overflowing content */
     }
 
-    .title-box {
-        width: auto; /* Adjusted to accommodate the title text */
-        margin-left: 5px;
-        margin-right: 30px;
-        height: 48px;
-    }
-    
 
-    .vertical-text {
-        font-size: 10px;
-    }
-
-    .Platinum-Gold-container {
-        flex-direction: column;
-    }
-
-    .Platinum-container {
-        margin-bottom: 10px;
-    }
-
-    .Gold-container {
-        margin-top: 10px;
-    }
-
-    .box-Platinum {
-        width: 50px;
-        height: 20px;
+    .box-Gold{
+        width: calc(20% - 10px); /* 25% width for each box with a bit of margin in between */
+        height: auto; /* Allow the height to adjust based on the content */
         margin: 5px;
-    }
-
-    .box-Gold {
-        width: 30px;
-        height: 20px;
-        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; /* Hide any overflowing content */
     }
 
     .box-Silver {
-        width: 30px;
-        height: 15px;
+        width: calc(25% - 10px); /* 25% width for each box with a bit of margin in between */
+        height: auto; /* Allow the height to adjust based on the content */
         margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; /* Hide any overflowing content */
     }
+
+    .box-Silver img {
+        max-width: 100%; /* Ensure the images don't exceed the width of the container */
+        max-height: 100%; /* Allow images to scale proportionally */
+        object-fit: contain; /* Keep the aspect ratio and fit inside the box */
+    }
+
 }
